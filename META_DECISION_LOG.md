@@ -374,6 +374,15 @@
 | **Razón** | El revisor exige candado; no inventar remote sin orden |
 | **Reversión** | Commit cuando exista remote/ruta autorizada |
 
+### MD-042
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | Opción 2: remote `https://gitlab.com/athena-group321329/athena.git`; issue-candado [#1](https://gitlab.com/athena-group321329/athena/-/issues/1). Protocolo E005 → **v1.1** (dos mitades) **antes de datos**. `git init` + commit local `bb86216`. SHA256 protocolo `762483fd72bc45586193beac556ba86fe935b645176e3d17b3b1fc1a5ab6689c`. **Push y nota en #1 bloqueados:** proyecto privado, sin `GITLAB_TOKEN`/credencial en el entorno del agente. **E005 no ejecutado** (secuencia de sello incompleta). |
+| **Razón** | Candado compartido exige auth; no romper secuencia 1→2→3 |
+| **Reversión** | Usuario autentica, push, comenta SHA256 en #1, luego runner |
+
 ---
 
-*Siguiente: sellar E005 (commit si hay repo) → ejecutar E005 — no catedral.*
+*Siguiente: push + comentario #1 con SHA256 → ejecutar E005 → JSON.*
