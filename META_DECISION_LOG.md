@@ -594,10 +594,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Cierre T-01 + apertura T-03:** `T01_STATUS=REFERENCE_COMPLETE`, `PSTAR=NONE`, `INTAKE=NOT_ELIGIBLE`. Regla Phase III: mecanismo puede dar matemática sin hipótesis Athena. Restricciones TR-01…TR-04 para diversidad de taxonomía (no para ajustar). **T-03** spec 1.0: CA elemental determinista \(r=1\), códigos Wolfram predeclarados, **clase distinta** de T-01; ceguera a T-01 raw y Athena; config `t03_wave1_config.json` cerrada **antes** de código. No pintar T-01 de otro color |
-| **Razón** | Carretera necesita vehículos distintos; segundo ladrillo sin catedral |
-| **Reversión** | Código T-03 solo contra spec 1.0; ola 2 = nuevo wave id |
+| **Motivo** | **Cierre T-01 + apertura T-03** spec 1.0; clase CA distinta |
+| **Razón** | Vehículos distintos en la carretera |
+| **Reversión** | — |
+
+### MD-066
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Ejecutar T-03 Ola 1:** `t03_reference_generator.py` (CA Wolfram síncrono, ciego a Athena/T-01); 1800 runs; `results/T03_REFERENCE_WAVE1/`; análisis N1–N3 / E1–E2 / S1 / U1; reproducibilidad OK; **sin P\***; **sin** Intake. N1–N3 = determinismo / W=0 / aditividad 90·150; no forzar candidato |
+| **Razón** | Segundo motor de la carretera; cartografía de clase distinta |
+| **Reversión** | raw_runs inmutable; capa necesaria opcional antes de REFERENCE_COMPLETE |
 
 ---
 
-*Siguiente: implementar T-03 generador ciego según spec; no Intake; no E008.*
+*Siguiente: capa necesaria T-03 o REFERENCE_COMPLETE si no hay P\*; no Intake; no E008.*

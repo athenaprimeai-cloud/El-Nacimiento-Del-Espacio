@@ -1,0 +1,14 @@
+{
+  "wave": "T03_REFERENCE_WAVE1",
+  "family": "T-03",
+  "spec_version": "1.0",
+  "config_path": "C:/Users/johnn/Documents/El Nacimiento del Espacio/discovery/t03_wave1_config.json",
+  "n_jobs": 1800,
+  "raw_runs": "raw_runs.jsonl",
+  "raw_runs_sha256": "cfefb9216f0e5fc260df09b289b085d88774f27035a779b28f2f7734ffcaa33f",
+  "blind": true,
+  "athena_io": "forbidden",
+  "t01_io": "forbidden",
+  "synchronous_update": true,
+  "deterministic_transition": true
+}

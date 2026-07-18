@@ -1,0 +1,966 @@
+{
+  "family": "T-03",
+  "spec_version": "1.0",
+  "n_runs": 1800,
+  "n_param_cells": 90,
+  "cells_summary": [
+    {
+      "N": 1000,
+      "W": 0,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 0,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 0,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 4,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.12525,
+      "density_std": 0.010554027667198906,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 4,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.12525,
+      "density_std": 0.010554027667198906,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 4,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.12525,
+      "density_std": 0.010554027667198906,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 22,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.35295,
+      "density_std": 0.0177326675940198,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 22,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.35735,
+      "density_std": 0.01998318042754956,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 22,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.3505,
+      "density_std": 0.018397010626729545,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 30,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5009,
+      "density_std": 0.013678084661238222,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 30,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.50235,
+      "density_std": 0.013104483965421923,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 30,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.5075500000000001,
+      "density_std": 0.017240867147565418,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 54,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.44695,
+      "density_std": 0.01825780654952834,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 54,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.47895,
+      "density_std": 0.03215505403509688,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 54,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.48495,
+      "density_std": 0.032021047765493256,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 90,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50235,
+      "density_std": 0.017041933575741932,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 90,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.4996,
+      "density_std": 0.017214528747543468,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 90,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.50165,
+      "density_std": 0.013169187522394854,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 110,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5523,
+      "density_std": 0.013103816238027739,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 110,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.56525,
+      "density_std": 0.01663693180847956,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 110,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.5700999999999999,
+      "density_std": 0.009797448647479586,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 126,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5213,
+      "density_std": 0.025418693908224318,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 126,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.4984,
+      "density_std": 0.01998099096641606,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 126,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.49785,
+      "density_std": 0.02315226770750547,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 150,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.49815,
+      "density_std": 0.014357141080312618,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 150,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.49820000000000003,
+      "density_std": 0.023483185473866196,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 150,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.5038,
+      "density_std": 0.012607934009979591,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 184,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50115,
+      "density_std": 0.016629116031828043,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 184,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.48265,
+      "density_std": 0.016047663381315046,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 1000,
+      "W": 184,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.45865,
+      "density_std": 0.015850157727921824,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 0,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 0,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 0,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 4,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.12531,
+      "density_std": 0.002945827557750116,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 4,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.12531,
+      "density_std": 0.002945827557750116,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 4,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.12531,
+      "density_std": 0.002945827557750116,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 22,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.35828,
+      "density_std": 0.009018292521314664,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 22,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.35276,
+      "density_std": 0.008356219240781093,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 22,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.35285,
+      "density_std": 0.009511230204342656,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 30,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5000600000000001,
+      "density_std": 0.006305584826168002,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 30,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.49832,
+      "density_std": 0.007302711825068814,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 30,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.50313,
+      "density_std": 0.008565809944190919,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 54,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.45286,
+      "density_std": 0.009440572016567643,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 54,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.47062,
+      "density_std": 0.014640614741191714,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 54,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.47743,
+      "density_std": 0.016173716332370868,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 90,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50254,
+      "density_std": 0.006078848575182636,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 90,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.50003,
+      "density_std": 0.0051108805503552995,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 90,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.49742000000000003,
+      "density_std": 0.007103210541719854,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 110,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5470700000000001,
+      "density_std": 0.007164712136576057,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 110,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.56357,
+      "density_std": 0.006694856234453442,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 110,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.5670999999999999,
+      "density_std": 0.004076518122123332,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 126,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5213,
+      "density_std": 0.012386524936397617,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 126,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.50686,
+      "density_std": 0.008237985190566927,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 126,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.50436,
+      "density_std": 0.01131858648418608,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 150,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50079,
+      "density_std": 0.008520205396585235,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 150,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.50187,
+      "density_std": 0.006168719478141316,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 150,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.49863999999999997,
+      "density_std": 0.007115785269385242,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 184,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50033,
+      "density_std": 0.005016084130075969,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 184,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.49671,
+      "density_std": 0.004990180357462049,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 5000,
+      "W": 184,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.49186,
+      "density_std": 0.004921422558569827,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 0,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 0,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 0,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.0,
+      "density_std": 0.0,
+      "extinction_rate": 1.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 4,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.12437,
+      "density_std": 0.002804656841754443,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 4,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.12437,
+      "density_std": 0.002804656841754443,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 4,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.12437,
+      "density_std": 0.002804656841754443,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 22,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.35786,
+      "density_std": 0.004633724204136453,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 22,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.351625,
+      "density_std": 0.007301566612720867,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 22,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.35166000000000003,
+      "density_std": 0.007531095537835117,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 30,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.49891,
+      "density_std": 0.004343719604210198,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 30,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.497915,
+      "density_std": 0.005702567404248719,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 30,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.50217,
+      "density_std": 0.005361352441315536,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 54,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.45431,
+      "density_std": 0.005792486512716276,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 54,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.46909,
+      "density_std": 0.0098902426663859,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 54,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.4738,
+      "density_std": 0.008441504605222938,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 90,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.50229,
+      "density_std": 0.003775566182706902,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 90,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.49891,
+      "density_std": 0.004233898912350174,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 90,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.49879999999999997,
+      "density_std": 0.006033324125223175,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 110,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.5459,
+      "density_std": 0.005887444267252127,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 110,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.56312,
+      "density_std": 0.005578404789901861,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 110,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.56764,
+      "density_std": 0.002069396047159656,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 126,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.520995,
+      "density_std": 0.008481832054456163,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 126,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.509275,
+      "density_std": 0.005525746555896323,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 126,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.50538,
+      "density_std": 0.006550465632304314,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 150,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.500125,
+      "density_std": 0.00691887816051128,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 150,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.50039,
+      "density_std": 0.004972313344913008,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 150,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.500145,
+      "density_std": 0.004372239128867494,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 184,
+      "T": 10,
+      "n_seeds": 20,
+      "density_mean": 0.502055,
+      "density_std": 0.0025531304314507734,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 184,
+      "T": 50,
+      "n_seeds": 20,
+      "density_mean": 0.500215,
+      "density_std": 0.0025426905041707284,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    },
+    {
+      "N": 10000,
+      "W": 184,
+      "T": 100,
+      "n_seeds": 20,
+      "density_mean": 0.497855,
+      "density_std": 0.0025433196810467997,
+      "extinction_rate": 0.0,
+      "full_rate": 0.0
+    }
+  ],
+  "properties": [
+    {
+      "id": "N1",
+      "name": "rule0_global_zero",
+      "statement": "For W=0, f≡0, so for all t>=1 the configuration is identically zero (null boundary irrelevant).",
+      "class": "NECESSARY",
+      "justification": "Every neighborhood maps to 0; synchronous step forces x^{t+1}=0 regardless of x^t (including after first step from any init)."
+    },
+    {
+      "id": "N2",
+      "name": "deterministic_trajectory",
+      "statement": "Given (N,W,p_init,T,seed), the trajectory is unique: same seed => identical occupied list.",
+      "class": "NECESSARY",
+      "justification": "Init is a function of seed; transition f is deterministic and synchronous."
+    },
+    {
+      "id": "N3",
+      "name": "additive_mod2_linearity",
+      "statement": "For additive rules (W in a known additive set, e.g. 90, 150), evolution is linear over GF(2) under XOR of initial conditions (with fixed null boundary the linear structure holds on the finite vector space).",
+      "class": "NECESSARY",
+      "justification": "Elementary CA 90 and 150 are linear: f is XOR of selected neighbors. Superposition of configs evolves as XOR of evolutions."
+    },
+    {
+      "id": "E1",
+      "name": "rule0_extinction_observed",
+      "statement": "Wave-1: W=0 mean extinction_rate=1.000 across cells (supports N1 numerically).",
+      "class": "EMPIRICAL",
+      "justification": "Numerical check of N1 on the grid; not a new theorem."
+    },
+    {
+      "id": "E2",
+      "name": "density_depends_on_W",
+      "statement": "Mean final density (over N,T,seeds) varies strongly with W: W0=0.000, W4=0.125, W22=0.354, W30=0.501, W54=0.468, W90=0.500, W110=0.560, W126=0.510, W150=0.500, W184=0.492",
+      "class": "EMPIRICAL",
+      "justification": "Observed aggregation on wave-1; not derived as closed form for all W."
+    },
+    {
+      "id": "S1",
+      "name": "seed_sensitivity",
+      "statement": "0/90 cells have density_std>0.05 across seeds (init Bernoulli sensitivity under deterministic flow).",
+      "class": "SEED_DEPENDENT",
+      "justification": "Spread across seeds for fixed (N,W,T)."
+    },
+    {
+      "id": "U1",
+      "name": "class_iv_long_horizon",
+      "statement": "Long-horizon classification (Wolfram class) for complex rules (e.g. 110) on finite N with null boundary.",
+      "class": "UNKNOWN",
+      "justification": "Finite T in {10,50,100} does not settle asymptotic class."
+    }
+  ],
+  "classification_legend": {
+    "NECESSARY": "From the CA rule / determinism (justified).",
+    "EMPIRICAL": "Wave-1 aggregate observation.",
+    "SEED_DEPENDENT": "Varies with initial seed.",
+    "UNKNOWN": "Open under this wave."
+  },
+  "note": "No Athena bridge. No T-01 comparison. No P* sealed."
+}
