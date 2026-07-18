@@ -1,0 +1,6 @@
+{"ts": "2026-07-18T00:41:13.492824+00:00", "event": "CREATE_QUESTION", "id": "Q-4a261db4", "text": "¿M2 ordinal discrimina P vs Cramér (E005 v1.1, issue #1)?"}
+{"ts": "2026-07-18T00:41:13.495861+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-99e1e9e0", "question_id": "Q-4a261db4"}
+{"ts": "2026-07-18T00:41:13.497881+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-99e1e9e0", "control_id": "C-d8bc4f15", "state": "SOPORTADA_BAJO_CONTROL"}
+{"ts": "2026-07-18T00:46:25.611163+00:00", "event": "CREATE_QUESTION", "id": "Q-73d05cb5", "text": "¿M2 ordinal discrimina P vs Cramér (E005 v1.1, issue #1)?"}
+{"ts": "2026-07-18T00:46:25.611163+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-ae9b9a57", "question_id": "Q-73d05cb5"}
+{"ts": "2026-07-18T00:46:25.620932+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-ae9b9a57", "control_id": "C-7f6116fd", "state": "SOPORTADA_BAJO_CONTROL"}

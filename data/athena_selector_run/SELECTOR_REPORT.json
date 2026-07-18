@@ -1,0 +1,408 @@
+{
+  "explorer_n": 100,
+  "selection": {
+    "n_input": 20,
+    "n_group_a": 3,
+    "n_group_b": 11,
+    "n_group_c": 6,
+    "ranked": [
+      {
+        "hypothesis_id": "H-39c76e2a",
+        "group": "A",
+        "rank": 1,
+        "score": 0.6425,
+        "novelty": 0.3333,
+        "falsifiability": 1.0,
+        "redundancy": 0.6667,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.67)",
+          "grupo A: priorizar ataque (presupuesto experimental)"
+        ]
+      },
+      {
+        "hypothesis_id": "H-64ce519c",
+        "group": "A",
+        "rank": 2,
+        "score": 0.6425,
+        "novelty": 0.3333,
+        "falsifiability": 1.0,
+        "redundancy": 0.6667,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.67)",
+          "grupo A: priorizar ataque (presupuesto experimental)"
+        ]
+      },
+      {
+        "hypothesis_id": "H-6aa62de2",
+        "group": "A",
+        "rank": 3,
+        "score": 0.6425,
+        "novelty": 0.3333,
+        "falsifiability": 1.0,
+        "redundancy": 0.6667,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.67)",
+          "grupo A: priorizar ataque (presupuesto experimental)"
+        ]
+      },
+      {
+        "hypothesis_id": "H-991ab02a",
+        "group": "B",
+        "rank": 4,
+        "score": 0.6425,
+        "novelty": 0.3333,
+        "falsifiability": 1.0,
+        "redundancy": 0.6667,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.67)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-52e5947d",
+        "group": "B",
+        "rank": 5,
+        "score": 0.6135,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.374,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-9742ae1a",
+        "group": "B",
+        "rank": 6,
+        "score": 0.6135,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.374,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-1a1a337f",
+        "group": "B",
+        "rank": 7,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-3d187c1f",
+        "group": "B",
+        "rank": 8,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-3e3cda32",
+        "group": "B",
+        "rank": 9,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-47bdd926",
+        "group": "B",
+        "rank": 10,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-62b03824",
+        "group": "B",
+        "rank": 11,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-8f50e3b4",
+        "group": "B",
+        "rank": 12,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-9e9645f0",
+        "group": "B",
+        "rank": 13,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-a02a6136",
+        "group": "B",
+        "rank": 14,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo B: valor medio"
+        ]
+      },
+      {
+        "hypothesis_id": "H-a0a900dd",
+        "group": "C",
+        "rank": 15,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      },
+      {
+        "hypothesis_id": "H-a59efbbf",
+        "group": "C",
+        "rank": 16,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      },
+      {
+        "hypothesis_id": "H-a80b0e94",
+        "group": "C",
+        "rank": 17,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      },
+      {
+        "hypothesis_id": "H-b11538b7",
+        "group": "C",
+        "rank": 18,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      },
+      {
+        "hypothesis_id": "H-b24c6812",
+        "group": "C",
+        "rank": 19,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      },
+      {
+        "hypothesis_id": "H-b43e5932",
+        "group": "C",
+        "rank": 20,
+        "score": 0.6134,
+        "novelty": 0.2727,
+        "falsifiability": 1.0,
+        "redundancy": 0.7273,
+        "cost": 0.375,
+        "completeness": 1.0,
+        "reasons": [
+          "anclas numéricas en predicción/muerte",
+          "alta falsabilidad relativa",
+          "redundante (similitud≈0.73)",
+          "grupo C: cola de prioridad / bajo score"
+        ]
+      }
+    ],
+    "claim": "Priority for experimental budget only; not truth; not knowledge claim"
+  },
+  "top_a": [
+    {
+      "hypothesis_id": "H-39c76e2a",
+      "group": "A",
+      "rank": 1,
+      "score": 0.6425,
+      "novelty": 0.3333,
+      "falsifiability": 1.0,
+      "redundancy": 0.6667,
+      "cost": 0.375,
+      "completeness": 1.0,
+      "reasons": [
+        "anclas numéricas en predicción/muerte",
+        "alta falsabilidad relativa",
+        "redundante (similitud≈0.67)",
+        "grupo A: priorizar ataque (presupuesto experimental)"
+      ]
+    },
+    {
+      "hypothesis_id": "H-64ce519c",
+      "group": "A",
+      "rank": 2,
+      "score": 0.6425,
+      "novelty": 0.3333,
+      "falsifiability": 1.0,
+      "redundancy": 0.6667,
+      "cost": 0.375,
+      "completeness": 1.0,
+      "reasons": [
+        "anclas numéricas en predicción/muerte",
+        "alta falsabilidad relativa",
+        "redundante (similitud≈0.67)",
+        "grupo A: priorizar ataque (presupuesto experimental)"
+      ]
+    },
+    {
+      "hypothesis_id": "H-6aa62de2",
+      "group": "A",
+      "rank": 3,
+      "score": 0.6425,
+      "novelty": 0.3333,
+      "falsifiability": 1.0,
+      "redundancy": 0.6667,
+      "cost": 0.375,
+      "completeness": 1.0,
+      "reasons": [
+        "anclas numéricas en predicción/muerte",
+        "alta falsabilidad relativa",
+        "redundante (similitud≈0.67)",
+        "grupo A: priorizar ataque (presupuesto experimental)"
+      ]
+    }
+  ],
+  "auditor_verdict": "PASS",
+  "bottleneck": "research economy — what to attack first",
+  "claim": "Priority only; not truth; kernel unchanged"
+}

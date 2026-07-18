@@ -1,0 +1,519 @@
+{
+  "experiment_id": "G4-002",
+  "window": {
+    "min": 4,
+    "max": 10000
+  },
+  "evidence_level": "Identificación heurística de firma modular",
+  "status": "computationally_verified_on_interval",
+  "formal_proof": false,
+  "even_inputs": 4999,
+  "counterexamples": [],
+  "channels": [
+    {
+      "name": "raw_counts",
+      "evidence_level": "Observación",
+      "peaks": [
+        {
+          "frequency": 0.00010002000400080016,
+          "period": 9998.0,
+          "nearest_rational": "0/1",
+          "candidate_modulus": 1,
+          "raw_power": 11551842903.834656,
+          "normalized_power": 1.0,
+          "windowed_power": 13801547911.733604,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        },
+        {
+          "frequency": 0.16663332666533306,
+          "period": 6.001200480192077,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 8538935691.51738,
+          "normalized_power": 0.1857905627487777,
+          "windowed_power": 2564197353.325204,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16673334666933387,
+          "period": 5.997600479904019,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 3348496314.2111483,
+          "normalized_power": 0.12302163297865958,
+          "windowed_power": 1697888961.734677,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16653330666133226,
+          "period": 6.004804804804805,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 421659041.90129405,
+          "normalized_power": 0.021122384603738418,
+          "windowed_power": 291521603.11856,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.20004000800160032,
+          "period": 4.999,
+          "nearest_rational": "1/5",
+          "candidate_modulus": 5,
+          "raw_power": 522754881.54134744,
+          "normalized_power": 0.012467352289101745,
+          "windowed_power": 172068759.95049936,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.10002000400080016,
+          "period": 9.998,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 539421602.8414286,
+          "normalized_power": 0.010611715952199507,
+          "windowed_power": 146458106.1399893,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.19993998799759952,
+          "period": 5.001500750375188,
+          "nearest_rational": "1/5",
+          "candidate_modulus": 5,
+          "raw_power": 310683126.6718166,
+          "normalized_power": 0.00965892853951114,
+          "windowed_power": 133308165.01407409,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.00020004000800160032,
+          "period": 4999.0,
+          "nearest_rational": "0/1",
+          "candidate_modulus": 1,
+          "raw_power": 3060583682.122458,
+          "normalized_power": 0.005390346697437666,
+          "windowed_power": 74395128.20554094,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        },
+        {
+          "frequency": 0.09991998399679936,
+          "period": 10.008008008008009,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 108842233.31493464,
+          "normalized_power": 0.0053339628269086815,
+          "windowed_power": 73616943.51498619,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16683336667333468,
+          "period": 5.994004796163069,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 397532163.8571669,
+          "normalized_power": 0.004184753855683554,
+          "windowed_power": 57756080.838028505,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.14282856571314262,
+          "period": 7.0014005602240905,
+          "nearest_rational": "1/7",
+          "candidate_modulus": 7,
+          "raw_power": 117640123.55771957,
+          "normalized_power": 0.0024889150280971825,
+          "windowed_power": 34350880.00851706,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.07141428285657131,
+          "period": 14.002801120448181,
+          "nearest_rational": "1/14",
+          "candidate_modulus": 14,
+          "raw_power": 119550171.75234054,
+          "normalized_power": 0.00236837830636112,
+          "windowed_power": 32687286.668353487,
+          "stability_across_ranges": "candidato_modular"
+        }
+      ]
+    },
+    {
+      "name": "smooth_residual",
+      "evidence_level": "Observación",
+      "peaks": [
+        {
+          "frequency": 0.16663332666533306,
+          "period": 6.001200480192077,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 8551070332.458277,
+          "normalized_power": 1.0,
+          "windowed_power": 2564044578.9676895,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16673334666933387,
+          "period": 5.997600479904019,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 3347072523.22449,
+          "normalized_power": 0.6622560832147825,
+          "windowed_power": 1698054120.055238,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16653330666133226,
+          "period": 6.004804804804805,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 423707381.03205866,
+          "normalized_power": 0.11367653913579452,
+          "windowed_power": 291471713.92694235,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.20004000800160032,
+          "period": 4.999,
+          "nearest_rational": "1/5",
+          "candidate_modulus": 5,
+          "raw_power": 499718607.99730074,
+          "normalized_power": 0.06450132963595873,
+          "windowed_power": 165384284.58928794,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.10002000400080016,
+          "period": 9.998,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 513449651.6286849,
+          "normalized_power": 0.054900076372120264,
+          "windowed_power": 140766243.2068471,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.19993998799759952,
+          "period": 5.001500750375188,
+          "nearest_rational": "1/5",
+          "candidate_modulus": 5,
+          "raw_power": 298771961.9491423,
+          "normalized_power": 0.049973594503717286,
+          "windowed_power": 128134524.07878584,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.09991998399679936,
+          "period": 10.008008008008009,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 106818208.96181795,
+          "normalized_power": 0.02760155680195651,
+          "windowed_power": 70771622.08912535,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16683336667333468,
+          "period": 5.994004796163069,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 396635061.18870187,
+          "normalized_power": 0.022530735273767515,
+          "windowed_power": 57769809.6388597,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.07141428285657131,
+          "period": 14.002801120448181,
+          "nearest_rational": "1/14",
+          "candidate_modulus": 14,
+          "raw_power": 124289579.01406255,
+          "normalized_power": 0.013664615021719567,
+          "windowed_power": 35036682.07012051,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.14282856571314262,
+          "period": 7.0014005602240905,
+          "nearest_rational": "1/7",
+          "candidate_modulus": 7,
+          "raw_power": 113186289.22898693,
+          "normalized_power": 0.012749974815861835,
+          "windowed_power": 32691503.808585104,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.21424284856971396,
+          "period": 4.667600373482726,
+          "nearest_rational": "3/14",
+          "candidate_modulus": 14,
+          "raw_power": 90284168.40124804,
+          "normalized_power": 0.010860582200713082,
+          "windowed_power": 27847016.916171357,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.10012002400480097,
+          "period": 9.988011988011987,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 22701760.422236703,
+          "normalized_power": 0.008747978278494897,
+          "windowed_power": 22430206.281901944,
+          "stability_across_ranges": "candidato_modular"
+        }
+      ]
+    },
+    {
+      "name": "desingularized_ratio",
+      "evidence_level": "Observación",
+      "peaks": [
+        {
+          "frequency": 0.00010002000400080016,
+          "period": 9998.0,
+          "nearest_rational": "0/1",
+          "candidate_modulus": 1,
+          "raw_power": 1473.0960726537346,
+          "normalized_power": 1.0,
+          "windowed_power": 1117190.7280388207,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        },
+        {
+          "frequency": 0.16663332666533306,
+          "period": 6.001200480192077,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 5743.737895862567,
+          "normalized_power": 0.0010000349467649905,
+          "windowed_power": 1117.2297702406431,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16673334666933387,
+          "period": 5.997600479904019,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 779.2339400962026,
+          "normalized_power": 0.0005561305182919792,
+          "windowed_power": 621.3038586152229,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.10002000400080016,
+          "period": 9.998,
+          "nearest_rational": "1/10",
+          "candidate_modulus": 10,
+          "raw_power": 1149.099882262265,
+          "normalized_power": 0.00016083622675199154,
+          "windowed_power": 179.68474126007428,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.20004000800160032,
+          "period": 4.999,
+          "nearest_rational": "1/5",
+          "candidate_modulus": 5,
+          "raw_power": 263.86771615343184,
+          "normalized_power": 6.984025687755282e-05,
+          "windowed_power": 78.02488742745149,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.03330666133226645,
+          "period": 30.024024024024026,
+          "nearest_rational": "1/30",
+          "candidate_modulus": 30,
+          "raw_power": 364.0036879351696,
+          "normalized_power": 6.652897167453232e-05,
+          "windowed_power": 74.32555030074485,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        },
+        {
+          "frequency": 0.16653330666133226,
+          "period": 6.004804804804805,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 947.1259363788396,
+          "normalized_power": 5.721827852281424e-05,
+          "windowed_power": 63.92373024003086,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.1333266653330666,
+          "period": 7.500375093773443,
+          "nearest_rational": "2/15",
+          "candidate_modulus": 15,
+          "raw_power": 249.00296779950924,
+          "normalized_power": 5.419807009576435e-05,
+          "windowed_power": 60.549581388586006,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        },
+        {
+          "frequency": 0.07141428285657131,
+          "period": 14.002801120448181,
+          "nearest_rational": "1/14",
+          "candidate_modulus": 14,
+          "raw_power": 491.32285645720003,
+          "normalized_power": 4.715434155285886e-05,
+          "windowed_power": 52.6803931696296,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.16463292658531706,
+          "period": 6.07411907654921,
+          "nearest_rational": "1/6",
+          "candidate_modulus": 6,
+          "raw_power": 232.24160241957583,
+          "normalized_power": 4.558521920770122e-05,
+          "windowed_power": 50.92738423446095,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.21424284856971396,
+          "period": 4.667600373482726,
+          "nearest_rational": "3/14",
+          "candidate_modulus": 14,
+          "raw_power": 210.78074260468458,
+          "normalized_power": 4.471527046747481e-05,
+          "windowed_power": 49.95548556801096,
+          "stability_across_ranges": "candidato_modular"
+        },
+        {
+          "frequency": 0.23334666933386677,
+          "period": 4.2854693527646806,
+          "nearest_rational": "7/30",
+          "candidate_modulus": 30,
+          "raw_power": 219.34843186551524,
+          "normalized_power": 4.436958176279444e-05,
+          "windowed_power": 49.5692853523543,
+          "stability_across_ranges": "pendiente_por_subventanas"
+        }
+      ]
+    },
+    {
+      "name": "random_control",
+      "evidence_level": "Observación",
+      "peaks": [
+        {
+          "frequency": 0.2483496699339868,
+          "period": 4.026580749093838,
+          "nearest_rational": "1/4",
+          "candidate_modulus": 4,
+          "raw_power": 29951234.17183374,
+          "normalized_power": 1.0,
+          "windowed_power": 18280047.177117255,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.22374474894978996,
+          "period": 4.469378632096558,
+          "nearest_rational": "2/9",
+          "candidate_modulus": 9,
+          "raw_power": 42130017.22619106,
+          "normalized_power": 0.8779946923839427,
+          "windowed_power": 16049784.398037024,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.04300860172034407,
+          "period": 23.251162790697673,
+          "nearest_rational": "1/23",
+          "candidate_modulus": 23,
+          "raw_power": 39210348.69547489,
+          "normalized_power": 0.8378488869695921,
+          "windowed_power": 15315917.181099327,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.022804560912182435,
+          "period": 43.85087719298246,
+          "nearest_rational": "1/30",
+          "candidate_modulus": 30,
+          "raw_power": 14799583.268456914,
+          "normalized_power": 0.7758248475440458,
+          "windowed_power": 14182114.814284958,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.1273254650930186,
+          "period": 7.853888452474471,
+          "nearest_rational": "1/8",
+          "candidate_modulus": 8,
+          "raw_power": 24399219.672081783,
+          "normalized_power": 0.7534858448601693,
+          "windowed_power": 13773756.79133395,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.14762952590518102,
+          "period": 6.773712737127372,
+          "nearest_rational": "4/27",
+          "candidate_modulus": 27,
+          "raw_power": 31730105.18065204,
+          "normalized_power": 0.7472355598547845,
+          "windowed_power": 13659501.286565084,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.008101620324064814,
+          "period": 123.43209876543209,
+          "nearest_rational": "0/1",
+          "candidate_modulus": 1,
+          "raw_power": 24603413.143061608,
+          "normalized_power": 0.7455696253349577,
+          "windowed_power": 13629047.924948663,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.21164232846569314,
+          "period": 4.724952741020794,
+          "nearest_rational": "4/19",
+          "candidate_modulus": 19,
+          "raw_power": 34115032.62006444,
+          "normalized_power": 0.7453610010267416,
+          "windowed_power": 13625234.262752179,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.23624724944988998,
+          "period": 4.232853513971211,
+          "nearest_rational": "4/17",
+          "candidate_modulus": 17,
+          "raw_power": 24064947.682744347,
+          "normalized_power": 0.7334086111295215,
+          "windowed_power": 13406744.011551695,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.2484496899379876,
+          "period": 4.024959742351046,
+          "nearest_rational": "1/4",
+          "candidate_modulus": 4,
+          "raw_power": 19984578.75209453,
+          "normalized_power": 0.7253115469336183,
+          "windowed_power": 13258729.296054438,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.17103420684136827,
+          "period": 5.846783625730994,
+          "nearest_rational": "5/29",
+          "candidate_modulus": 29,
+          "raw_power": 36507658.513534814,
+          "normalized_power": 0.7189768112770027,
+          "windowed_power": 13142930.02939694,
+          "stability_across_ranges": "control_randomizado"
+        },
+        {
+          "frequency": 0.10432086417283457,
+          "period": 9.585810162991372,
+          "nearest_rational": "3/29",
+          "candidate_modulus": 29,
+          "raw_power": 28591324.86760634,
+          "normalized_power": 0.7060099959889323,
+          "windowed_power": 12905896.034194047,
+          "stability_across_ranges": "control_randomizado"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Comparación entre conteos crudos, residuo suavizado, residuo desingularizado por factores locales y control aleatorio. Observación finita, no demostración."
+}

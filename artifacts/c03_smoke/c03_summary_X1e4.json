@@ -1,0 +1,200 @@
+{
+  "experiment_id": "G5B-005",
+  "channel": "C03",
+  "evidence_level": "Calibracion numerica de expansion truncada controlada",
+  "formal_proof": false,
+  "novelty_claim": false,
+  "explicit_formula_complete": false,
+  "expansion_status": "controlled_truncation",
+  "calibration_passed": false,
+  "calibration_status": "inconclusive_truncated_expansion",
+  "calibration_criteria": {
+    "chi3_zero_height": 50.0,
+    "audited_zero_count": 5,
+    "validation_rmse_m0": 0.0003002152954550861,
+    "validation_rmse_m1": 2.3471746377268302e-05,
+    "validation_rmse_m2": 2.332190063350813e-05,
+    "requires_m1_below_m0": true,
+    "requires_m2_below_m1": true,
+    "amplitude_ratio_interval": [
+      0.5,
+      2.0
+    ],
+    "amplitude_ratios_within_interval": false,
+    "maximum_absolute_phase_error": 0.5,
+    "phase_errors_within_limit": false
+  },
+  "window": {
+    "min": 100,
+    "max": 10000
+  },
+  "log_samples_requested": 120,
+  "log_samples_realized": 120,
+  "discovery_fraction": 0.65,
+  "chi3_zero_source": "Primitive Dirichlet character 3/2; local Hurwitz-zeta validation, with the first zero cross-checked against the LMFDB reference",
+  "chi3_zero_table_max": 143.63847714512673,
+  "chi3_zero_heights": [
+    30.0,
+    50.0
+  ],
+  "zeta_zero_height": 50.0,
+  "first_chi3_zero": 8.039737155681468,
+  "rejected_foreign_frequencies": [
+    4.5324,
+    7.8096
+  ],
+  "chi3_log_derivative_at_zero": 0.9481988266726222,
+  "pole_coefficient_before_normalization": -0.15803313777877037,
+  "frozen_channels": [
+    "C05",
+    "C35",
+    "C15"
+  ],
+  "best_validation_metric": {
+    "chi3_zero_height": 50.0,
+    "chi3_zero_count": 17,
+    "zeta_zero_height": 50.0,
+    "zeta_zero_count": 10,
+    "split": "validation",
+    "model": "M2_pole_lzeros_cross",
+    "rmse": 2.332190063350813e-05,
+    "mae": 1.9711958772540955e-05,
+    "max_absolute_error": 5.1200745518541375e-05
+  },
+  "convolution_max_absolute_error": 2.2948309919001986e-12,
+  "metrics": [
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M0_pole",
+      "rmse": 0.0010912718153024876,
+      "mae": 0.0007839422013255678,
+      "max_absolute_error": 0.0026026127901932414
+    },
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M1_pole_lzeros",
+      "rmse": 0.0010469603677896592,
+      "mae": 0.0007253717361582862,
+      "max_absolute_error": 0.002886809545914984
+    },
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 0.0010467876719358776,
+      "mae": 0.000725354609976025,
+      "max_absolute_error": 0.0028745686527076875
+    },
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M0_pole",
+      "rmse": 0.0003002152954550861,
+      "mae": 0.0002664022193869314,
+      "max_absolute_error": 0.0005626364098894874
+    },
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M1_pole_lzeros",
+      "rmse": 2.3734374337464926e-05,
+      "mae": 1.9789452944790696e-05,
+      "max_absolute_error": 5.327537029993024e-05
+    },
+    {
+      "chi3_zero_height": 30.0,
+      "chi3_zero_count": 8,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 2.3563269531576543e-05,
+      "mae": 1.973908848827211e-05,
+      "max_absolute_error": 5.250290603171087e-05
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M0_pole",
+      "rmse": 0.0010912718153024876,
+      "mae": 0.0007839422013255678,
+      "max_absolute_error": 0.0026026127901932414
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M1_pole_lzeros",
+      "rmse": 0.0010469840650503917,
+      "mae": 0.0007254151668726292,
+      "max_absolute_error": 0.0028868694981395333
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "discovery",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 0.0010467942219672156,
+      "mae": 0.0007253867969450562,
+      "max_absolute_error": 0.0028760927059276326
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M0_pole",
+      "rmse": 0.0003002152954550861,
+      "mae": 0.0002664022193869314,
+      "max_absolute_error": 0.0005626364098894874
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M1_pole_lzeros",
+      "rmse": 2.3471746377268302e-05,
+      "mae": 1.9766491269690723e-05,
+      "max_absolute_error": 5.2288944852717494e-05
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 50.0,
+      "zeta_zero_count": 10,
+      "split": "validation",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 2.332190063350813e-05,
+      "mae": 1.9711958772540955e-05,
+      "max_absolute_error": 5.1200745518541375e-05
+    }
+  ],
+  "interpretation": "Control del canal mixto C03 mediante una expansion truncada conocida. No incluye todos los ceros triviales ni todos los residuos auxiliares y no constituye evidencia de una frecuencia nueva."
+}

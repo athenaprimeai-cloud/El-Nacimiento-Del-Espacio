@@ -1,3 +1,6 @@
 {"ts": "2026-07-18T01:30:14.450262+00:00", "event": "CREATE_QUESTION", "id": "Q-89645a87", "text": "¿M2 ordinal discrimina P vs Cramér-rueda W=30 (E006, issue #2)?"}
 {"ts": "2026-07-18T01:30:14.453284+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-c467c171", "question_id": "Q-89645a87"}
 {"ts": "2026-07-18T01:30:14.456283+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-c467c171", "control_id": "C-651069fa", "state": "SOPORTADA_BAJO_CONTROL"}
+{"ts": "2026-07-18T02:01:47.966735+00:00", "event": "CREATE_QUESTION", "id": "Q-a5ee4789", "text": "¿M2 ordinal discrimina P vs Cramér-rueda W=30 (E006, issue #2)?"}
+{"ts": "2026-07-18T02:01:47.966735+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-60ad9f2c", "question_id": "Q-a5ee4789"}
+{"ts": "2026-07-18T02:01:47.971311+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-60ad9f2c", "control_id": "C-09a27dd3", "state": "SOPORTADA_BAJO_CONTROL"}

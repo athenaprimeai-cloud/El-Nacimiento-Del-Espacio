@@ -1,0 +1,15 @@
+candidate_frequency,nearest_rational,windows_detected,coverage,mean_frequency,frequency_std,mean_power_fraction,control_percentile,global_empirical_p,normalizers_survived,structural_origin,novelty_status,exclude_from_candidate_ranking,classification
+0.1665958577,1/6,8,1.0,0.16659585765006354,6.133899473122963e-05,0.0014235841627453203,1.0,1.0,3,known_modular_candidate,not_established,False,evidencia_heuristica_multiescala
+0.1000291725,1/10,8,1.0,0.1000291725112438,0.00010407140858921968,0.000259421317109765,1.0,1.0,3,known_modular_candidate,not_established,False,evidencia_heuristica_multiescala
+0.2000083050,1/5,8,1.0,0.200008304990462,0.00015140750004144482,0.00010019518950931666,0.95,1.0,3,known_modular_candidate,not_established,False,evidencia_heuristica_multiescala
+0.0714150533,1/14,6,0.75,0.07141505326623009,0.00012139702869409692,0.00011153513856286913,0.9666666666666667,1.0,3,known_modular_candidate,not_established,False,evidencia_heuristica_multiescala
+0.0002707793,0/1,8,1.0,0.0002707792784042134,0.00010329611198216513,0.9892727002850517,0.625,0.3902439024390244,2,residual_trend,not_applicable,True,residual_trend
+0.0332518207,1/30,6,0.75,0.03325182071745469,0.000112389888996934,0.00012758306948452148,0.9,1.0,1,known_modular_candidate,not_established,False,observacion_persistente
+0.2334147905,7/30,3,0.375,0.2334147904576377,6.996165876044771e-05,0.00011193353104543201,1.0,1.0,1,known_modular_candidate,not_established,False,observacion_local
+0.1332855845,2/15,2,0.25,0.13328558449864525,4.108083442137811e-05,8.220035755694314e-05,1.0,1.0,1,unresolved_residual_candidate,not_established,False,observacion_local
+0.2142166941,3/14,2,0.25,0.2142166941049769,2.615446473705485e-05,6.543261606174909e-05,1.0,1.0,3,known_modular_candidate,not_established,False,observacion_local
+0.1818302780,2/11,2,0.25,0.18183027799196375,4.846950970180397e-05,6.186256291396612e-05,0.8,1.0,1,known_modular_candidate,not_established,False,observacion_local
+0.1425716189,1/7,1,0.125,0.1425716189207195,0.0,8.424197653307674e-05,1.0,1.0,3,known_modular_candidate,not_established,False,observacion_local
+0.2368421053,5/21,1,0.125,0.23684210526315788,0.0,7.055379178652307e-05,1.0,1.0,1,unresolved_residual_candidate,not_established,False,observacion_local
+0.0952698201,2/21,1,0.125,0.09526982011992005,0.0,5.440956055524174e-05,1.0,1.0,1,unresolved_residual_candidate,not_established,False,observacion_local
+0.0746169221,2/27,1,0.125,0.07461692205196535,0.0,8.141005180559564e-05,0.8,1.0,1,unresolved_residual_candidate,not_established,False,observacion_local

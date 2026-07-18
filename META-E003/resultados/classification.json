@@ -1,0 +1,89 @@
+{
+  "campaign": "META-E003",
+  "protocol": "v1.0 CONGELADO",
+  "results": [
+    {
+      "attack": "A1",
+      "auditor_verdict": "FAIL",
+      "findings": [
+        "POST_RESULT_PREDICT_CHANGE",
+        "PREDICT_REWRITTEN"
+      ]
+    },
+    {
+      "attack": "A2",
+      "auditor_verdict": "FAIL",
+      "findings": [
+        "HYPOTHESIS_DELETED"
+      ]
+    },
+    {
+      "attack": "A3",
+      "auditor_verdict": "FAIL",
+      "core_blocked_clean_path": true,
+      "findings": [
+        "DEAD_WITHOUT_REASON",
+        "MISSING_CONTROL_RECORD"
+      ]
+    },
+    {
+      "attack": "A4",
+      "auditor_verdict": "FAIL",
+      "n_hypotheses": 51,
+      "findings": [
+        "POST_RESULT_PREDICT_CHANGE",
+        "PREDICT_REWRITTEN"
+      ]
+    },
+    {
+      "attack": "A5",
+      "auditor_verdict": "PASS",
+      "note": "semantic corruption; format valid",
+      "findings": []
+    },
+    {
+      "attack": "A6",
+      "auditor_verdict": "PASS",
+      "note": "metric omission not checked by Auditor v0.1",
+      "findings": []
+    },
+    {
+      "attack": "A7",
+      "auditor_verdict": "PASS",
+      "note": "result does not speak to prediction",
+      "findings": []
+    },
+    {
+      "attack": "CTRL_NOSABE",
+      "auditor_verdict": "PASS",
+      "findings": []
+    }
+  ],
+  "metrics": {
+    "DET_STRUCT": 1.0,
+    "PASS_SEM": 1.0,
+    "FP_NOSABE": false
+  },
+  "hypotheses": {
+    "H-META-E003-01": "SOPORTADA_BAJO_CONTROL",
+    "H-META-E003-00": "SOPORTADA_BAJO_CONTROL"
+  },
+  "verdict": "DUAL_H01_STRUCT_H00_SEMANTIC_LIMITS",
+  "area_map": {
+    "integridad_documental": "fuerte",
+    "contratos_explicitos": "fuerte",
+    "interpretacion_semantica": "limitada",
+    "supuestos_ocultos_metricas": "abierta",
+    "no_sabemos_legitimo": "ok"
+  },
+  "evidence_profile": {
+    "E-M1": "fuerte",
+    "E-M2": "no evaluada",
+    "E-M3": "parcial — forma vs semántica",
+    "E-M4": "no evaluada",
+    "E-M5": "no evaluada"
+  },
+  "reading": "Auditor v0.1 is strong on structural/protocol form; semantic and metric-choice damage can PASS — shared-assumption blind spot (H-00 on semantics).",
+  "legislation_hint": "Do not destroy Auditor; document boundary: automatic form + human/semantic review",
+  "claim_limit": "Attack suite is predeclared; not an exhaustive adversary."
+}

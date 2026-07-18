@@ -1,0 +1,158 @@
+{
+  "H-58d22580": {
+    "id": "H-58d22580",
+    "question_id": "Q-e4f8c84d",
+    "statement": "H0-E004.1: independencia esencial del módulo en {5,7,8,11}",
+    "predicts": "Cada m∈{5,7,11} tiene ≥6/8 N almost_identical vs m=8",
+    "weakens_if": "Algunos m fallan almost_identical pero no hay H1_strong",
+    "dies_if": "H1_strong: ≥2 de {5,7,11} con ≥5/8 phase flips vs m=8",
+    "state": "MUERTA",
+    "control_id": "C-16b244ce",
+    "result_summary": "H0: 0/3 módulos almost_identical; H1_strong 3/3; veredicto H1_strong",
+    "death_reason": "Ocurrió dies_if: H1_strong — dependencia de M observada",
+    "created_at": "2026-07-17T19:57:48.278256+00:00",
+    "finalized_at": "2026-07-17T19:57:48.282826+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.278256+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.282826+00:00",
+        "event": "result_recorded",
+        "control_id": "C-16b244ce",
+        "state": "MUERTA"
+      }
+    ]
+  },
+  "H-cb54f7e1": {
+    "id": "H-cb54f7e1",
+    "question_id": "Q-f8fd83ba",
+    "statement": "H-E004-01: el régimen depende de M en {5,7,8,11}",
+    "predicts": "H1_strong bajo protocolo E004.1",
+    "weakens_if": "Solo H1 parcial / PARTIAL_OR_C",
+    "dies_if": "H0: independencia esencial en la batería",
+    "state": "SOPORTADA_BAJO_CONTROL",
+    "control_id": "C-41a42099",
+    "result_summary": "Veredicto H1_strong; hecho apoyado E2 bajo dominio de la batería",
+    "death_reason": null,
+    "created_at": "2026-07-17T19:57:48.288055+00:00",
+    "finalized_at": "2026-07-17T19:57:48.291563+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.288055+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.291563+00:00",
+        "event": "result_recorded",
+        "control_id": "C-41a42099",
+        "state": "SOPORTADA_BAJO_CONTROL"
+      }
+    ]
+  },
+  "H-a91f8dfd": {
+    "id": "H-a91f8dfd",
+    "question_id": "Q-533f47b3",
+    "statement": "H-E004-03: dependencia de M por tamaño del alfabeto (solo cardinal)",
+    "predicts": "A |Σ|=8 fijo, L_mod vs L_alt almost_identical (≥6/8): outcome B",
+    "weakens_if": "Diferencias parciales / outcome C",
+    "dies_if": "n_flip≥5 a |Σ| fijo: outcome A — reorganización material sin cambiar cardinal",
+    "state": "DEBILITADA",
+    "control_id": "C-b02de295",
+    "result_summary": "Outcome A; H-E004-03 pierde apoyo relativo en este control",
+    "death_reason": null,
+    "created_at": "2026-07-17T19:57:48.296084+00:00",
+    "finalized_at": "2026-07-17T19:57:48.300884+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.296084+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.300884+00:00",
+        "event": "result_recorded",
+        "control_id": "C-b02de295",
+        "state": "DEBILITADA"
+      }
+    ]
+  },
+  "H-0e3a1de6": {
+    "id": "H-0e3a1de6",
+    "question_id": "Q-d14d2990",
+    "statement": "H-E004-02 (núcleo usable): proyector modular importa (hipótesis compuesta)",
+    "predicts": "Outcome A o divergencia material L_mod vs L_alt a |Σ|=8",
+    "weakens_if": "Outcome B (casi-identidad) o C parcial",
+    "dies_if": "Outcome B limpio: n_id≥6 a |Σ| fijo",
+    "state": "SOPORTADA_BAJO_CONTROL",
+    "control_id": "C-98e0710a",
+    "result_summary": "Outcome A; apoyo relativo E1 al núcleo proyector — no demuestra anillo Z/8Z completo; dominio = este control",
+    "death_reason": null,
+    "created_at": "2026-07-17T19:57:48.307268+00:00",
+    "finalized_at": "2026-07-17T19:57:48.310790+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.307268+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.310790+00:00",
+        "event": "result_recorded",
+        "control_id": "C-98e0710a",
+        "state": "SOPORTADA_BAJO_CONTROL"
+      }
+    ]
+  },
+  "H-55676905": {
+    "id": "H-55676905",
+    "question_id": "Q-b079851d",
+    "statement": "H-toy-fail: M>0 siempre",
+    "predicts": "M>0 en todas las celdas del control toy",
+    "weakens_if": "M=0 en alguna celda",
+    "dies_if": "M≤0 en mayoría de celdas",
+    "state": "MUERTA",
+    "control_id": "C-15306592",
+    "result_summary": "M≤0 en 7/8 celdas",
+    "death_reason": "dies_if: mayoría no positiva",
+    "created_at": "2026-07-17T19:57:48.316527+00:00",
+    "finalized_at": "2026-07-17T19:57:48.320856+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.316527+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.320856+00:00",
+        "event": "result_recorded",
+        "control_id": "C-15306592",
+        "state": "MUERTA"
+      }
+    ]
+  },
+  "H-dd5fec45": {
+    "id": "H-dd5fec45",
+    "question_id": "Q-10021ddd",
+    "statement": "H-toy-ind: efecto estable",
+    "predicts": "Signo del efecto idéntico en todas las réplicas",
+    "weakens_if": "Signo mixto en minoría",
+    "dies_if": "Signo invertido en ≥ mitad de réplicas",
+    "state": "NO_SABEMOS",
+    "control_id": "C-e481b0d7",
+    "result_summary": "2 réplicas un signo, 2 el otro, 1 nulo — no predeclarado como A/B",
+    "death_reason": null,
+    "created_at": "2026-07-17T19:57:48.324882+00:00",
+    "finalized_at": "2026-07-17T19:57:48.329545+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T19:57:48.324882+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T19:57:48.329545+00:00",
+        "event": "result_recorded",
+        "control_id": "C-e481b0d7",
+        "state": "NO_SABEMOS"
+      }
+    ]
+  }
+}

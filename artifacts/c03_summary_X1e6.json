@@ -1,0 +1,267 @@
+{
+  "experiment_id": "G5B-005",
+  "channel": "C03",
+  "evidence_level": "Calibracion numerica de expansion truncada controlada",
+  "formal_proof": false,
+  "novelty_claim": false,
+  "explicit_formula_complete": false,
+  "expansion_status": "controlled_truncation",
+  "calibration_passed": true,
+  "calibration_status": "passed",
+  "calibration_criteria": {
+    "chi3_zero_height": 143.0,
+    "audited_zero_count": 5,
+    "validation_rmse_m0": 0.00030686971884808526,
+    "validation_rmse_m1": 2.2241860234504135e-07,
+    "validation_rmse_m2": 1.0618132908362876e-07,
+    "requires_m1_below_m0": true,
+    "requires_m2_below_m1": true,
+    "amplitude_ratio_interval": [
+      0.5,
+      2.0
+    ],
+    "amplitude_ratios_within_interval": true,
+    "maximum_absolute_phase_error": 0.5,
+    "phase_errors_within_limit": true
+  },
+  "window": {
+    "min": 1000,
+    "max": 1000000
+  },
+  "log_samples_requested": 800,
+  "log_samples_realized": 800,
+  "discovery_fraction": 0.65,
+  "chi3_zero_source": "Primitive Dirichlet character 3/2; local Hurwitz-zeta validation, with the first zero cross-checked against the LMFDB reference",
+  "chi3_zero_table_max": 143.63847714512673,
+  "chi3_zero_heights": [
+    50.0,
+    100.0,
+    143.0
+  ],
+  "zeta_zero_height": 143.0,
+  "first_chi3_zero": 8.039737155681468,
+  "rejected_foreign_frequencies": [
+    4.5324,
+    7.8096
+  ],
+  "chi3_log_derivative_at_zero": 0.9481988266726222,
+  "pole_coefficient_before_normalization": -0.15803313777877037,
+  "frozen_channels": [
+    "C05",
+    "C35",
+    "C15"
+  ],
+  "best_validation_metric": {
+    "chi3_zero_height": 143.0,
+    "chi3_zero_count": 73,
+    "zeta_zero_height": 143.0,
+    "zeta_zero_count": 49,
+    "split": "validation",
+    "model": "M2_pole_lzeros_cross",
+    "rmse": 1.0618132908362876e-07,
+    "mae": 7.12358100392438e-08,
+    "max_absolute_error": 3.231171279448656e-07
+  },
+  "convolution_max_absolute_error": 3.4924596548080444e-10,
+  "metrics": [
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_pole",
+      "rmse": 0.0002988947090248646,
+      "mae": 0.0002629170315700203,
+      "max_absolute_error": 0.0005634593727722012
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_pole_lzeros",
+      "rmse": 3.6869192609979705e-05,
+      "mae": 2.093880645541549e-05,
+      "max_absolute_error": 0.00012854600620762144
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 3.7068045001990976e-05,
+      "mae": 2.0974672422961306e-05,
+      "max_absolute_error": 0.00013177395819881452
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_pole",
+      "rmse": 0.00030686971884808526,
+      "mae": 0.00027050895591745465,
+      "max_absolute_error": 0.0005469282399874222
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_pole_lzeros",
+      "rmse": 5.351044669195539e-07,
+      "mae": 4.3633663388355697e-07,
+      "max_absolute_error": 1.4286713680563504e-06
+    },
+    {
+      "chi3_zero_height": 50.0,
+      "chi3_zero_count": 17,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 4.957031103971018e-07,
+      "mae": 4.106930023051979e-07,
+      "max_absolute_error": 1.2215010683744353e-06
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_pole",
+      "rmse": 0.0002988947090248646,
+      "mae": 0.0002629170315700203,
+      "max_absolute_error": 0.0005634593727722012
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_pole_lzeros",
+      "rmse": 3.6862429547202577e-05,
+      "mae": 2.092128474198096e-05,
+      "max_absolute_error": 0.00012799081377837945
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 3.706024206978371e-05,
+      "mae": 2.095971109249581e-05,
+      "max_absolute_error": 0.00013135499902023912
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_pole",
+      "rmse": 0.00030686971884808526,
+      "mae": 0.00027050895591745465,
+      "max_absolute_error": 0.0005469282399874222
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_pole_lzeros",
+      "rmse": 2.2635803091931585e-07,
+      "mae": 1.7354864826723398e-07,
+      "max_absolute_error": 6.280572151797729e-07
+    },
+    {
+      "chi3_zero_height": 100.0,
+      "chi3_zero_count": 46,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 1.1383088030310256e-07,
+      "mae": 8.013313614002045e-08,
+      "max_absolute_error": 3.446426126286323e-07
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_pole",
+      "rmse": 0.0002988947090248646,
+      "mae": 0.0002629170315700203,
+      "max_absolute_error": 0.0005634593727722012
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_pole_lzeros",
+      "rmse": 3.686209750861277e-05,
+      "mae": 2.092067122501084e-05,
+      "max_absolute_error": 0.00012797273649853107
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 3.70593783979907e-05,
+      "mae": 2.095956259750336e-05,
+      "max_absolute_error": 0.00013123026729234665
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_pole",
+      "rmse": 0.00030686971884808526,
+      "mae": 0.00027050895591745465,
+      "max_absolute_error": 0.0005469282399874222
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_pole_lzeros",
+      "rmse": 2.2241860234504135e-07,
+      "mae": 1.7133409736490878e-07,
+      "max_absolute_error": 6.202791946910251e-07
+    },
+    {
+      "chi3_zero_height": 143.0,
+      "chi3_zero_count": 73,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_pole_lzeros_cross",
+      "rmse": 1.0618132908362876e-07,
+      "mae": 7.12358100392438e-08,
+      "max_absolute_error": 3.231171279448656e-07
+    }
+  ],
+  "interpretation": "Control del canal mixto C03 mediante una expansion truncada conocida. No incluye todos los ceros triviales ni todos los residuos auxiliares y no constituye evidencia de una frecuencia nueva."
+}

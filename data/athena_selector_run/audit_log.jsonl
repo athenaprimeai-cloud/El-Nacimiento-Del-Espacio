@@ -1,0 +1,21 @@
+{"ts": "2026-07-17T20:24:05.260844+00:00", "event": "CREATE_QUESTION", "id": "Q-fcd4f472", "text": "¿Hay diferencia medible bajo control C? (presión + selección)"}
+{"ts": "2026-07-17T20:24:05.262861+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-9742ae1a", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.262861+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-52e5947d", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.268198+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-64ce519c", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.268198+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-a02a6136", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.279833+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-b11538b7", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.282901+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-6aa62de2", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.282901+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-9e9645f0", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.288215+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-a0a900dd", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.290273+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-3d187c1f", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.294327+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-b43e5932", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.297979+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-8f50e3b4", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.297979+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-39c76e2a", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.303701+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-3e3cda32", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.309803+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-a59efbbf", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.315881+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-a80b0e94", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.317893+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-1a1a337f", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.317893+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-62b03824", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.327921+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-991ab02a", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.332221+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-47bdd926", "question_id": "Q-fcd4f472"}
+{"ts": "2026-07-17T20:24:05.336249+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-b24c6812", "question_id": "Q-fcd4f472"}

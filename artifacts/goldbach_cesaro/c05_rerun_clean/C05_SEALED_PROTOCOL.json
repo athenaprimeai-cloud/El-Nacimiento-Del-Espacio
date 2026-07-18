@@ -1,0 +1,125 @@
+{
+  "experiment_id": "G5B-005E-R",
+  "status": "sealed_pending_execution_authorization",
+  "approved": true,
+  "approved_by": "Athena-AZR project owner decision",
+  "sealed_at": "2026-06-11T14:24:53-04:00",
+  "hash_definition": "sha256_canonical_json_of_sealed_payload",
+  "protocol_sha256": "c7ea98e5d68b994ef4845226a90e8b262d5f3d9fdfd17cbd7ed07e4e387f94cf",
+  "sealed_payload": {
+    "protocol_version": 1,
+    "purpose": "Clean confirmatory rerun of the quarantined C05 controlled truncation",
+    "execution_authorized": false,
+    "official_state_before_rerun": {
+      "C05_IMPLEMENTATION": "provisional_quarantined",
+      "C05_CALIBRATION": "numerically_passed_but_not_finally_approved",
+      "C05_OFFICIAL_STATUS": "not_accepted",
+      "C05_DOWNSTREAM_USE": "forbidden",
+      "C35": "frozen",
+      "C15": "frozen",
+      "NOVELTY_CLAIM": false
+    },
+    "claim_limits": [
+      "The rerun cannot prove Goldbach or GRH.",
+      "The rerun cannot establish novelty solely from recovery of known zeros.",
+      "C05 cannot justify C35 or C15 unless a later review explicitly accepts it."
+    ],
+    "observable": {
+      "channel": "C05",
+      "character": "primitive quadratic real even character modulo 5",
+      "character_values_mod_5": [0, 1, -1, -1, 1],
+      "generator": "S0(z) * S_chi5(z)",
+      "normalization": "C05_2(X) / X^(3/2)"
+    },
+    "derived_constants": {
+      "H3": "11/6",
+      "b0": -0.022024657838726918,
+      "L_prime_at_zero": 0.48121182505960345,
+      "L_prime_at_zero_identity": "log((1+sqrt(5))/2)",
+      "first_chi5_zero": 6.648453344727717,
+      "M0_unnormalized": "X/6 * (H3 - b0 - log(X))",
+      "M0_normalized": "(H3 - b0 - log(X)) / (6*sqrt(X))"
+    },
+    "fixed_parameters": {
+      "min_x": 1000,
+      "max_x": 1000000,
+      "log_samples": 800,
+      "discovery_fraction": 0.65,
+      "validation_fraction": 0.35,
+      "chi5_zero_heights": [50.0, 100.0, 143.0],
+      "zeta_zero_height": 143.0,
+      "random_control_count": 999,
+      "window_maxima": [10000, 30000, 100000, 300000, 1000000],
+      "ablation_zero_counts": [0, 1, 2, 4, 8]
+    },
+    "fixed_models": [
+      "M0_local",
+      "M1_local_lzeros",
+      "M2_local_lzeros_cross"
+    ],
+    "excluded_model_terms": [
+      "L5-L5 zero pairs",
+      "post-observation frequency fitting",
+      "threshold changes after protocol sealing"
+    ],
+    "zero_table_policy": {
+      "implementation_source": "CHI5_ZERO_ORDINATES in athena_azr/c05_laplace_chi5.py",
+      "implementation_sha256": "8a5d131c0b097eb1287c5adf6439397e8ab5ddfe2314839294855e97692ad390",
+      "required_before_execution": "Independent certification of the exact frozen table and first-zero residual",
+      "table_changes_after_seal": "forbidden; any change requires a new protocol version and hash"
+    },
+    "preregistered_falsifiers": {
+      "wrong_frequencies": [6.0206, 9.810574],
+      "random_frequency_controls": 999,
+      "ablation_zero_counts": [0, 1, 2, 4, 8],
+      "pole_sign_flip": true,
+      "window_persistence": [10000, 30000, 100000, 300000, 1000000],
+      "out_of_sample_amplitude_phase": true,
+      "residual_audit": "separate from confirmatory calibration"
+    },
+    "statistical_protocol": {
+      "multiple_testing": "global maximum per control",
+      "null_requirement": "Controls must preserve trend, heteroscedasticity and justified dependence structure.",
+      "naive_exchangeability_permutations": "forbidden",
+      "exploratory_and_confirmatory_outputs": "reported separately"
+    },
+    "confirmatory_criteria": {
+      "rmse_m1_below_m0": true,
+      "rmse_m2_below_m1": true,
+      "first_zero_amplitude_ratio_interval": [0.9, 1.1],
+      "first_zero_maximum_absolute_phase_error": 0.1,
+      "ablation_strictly_monotone": true,
+      "wrong_frequencies_rejected": true,
+      "protected_files_unchanged": true,
+      "criteria_changes_after_seal": "forbidden"
+    },
+    "required_pre_execution_reviews": [
+      "Independent review of M0 sign and factor 1/6",
+      "Independent verification of b0 by Hurwitz, functional equation and Cauchy routes",
+      "Independent certification of the frozen chi5 zero table",
+      "Explicit inventory of auxiliary residues, trivial zeros, tails and Cesaro boundary terms",
+      "Approval of a separate execution authorization referencing this protocol hash"
+    ],
+    "integrity_baselines": {
+      "athena_azr/c05_laplace_chi5.py": "8a5d131c0b097eb1287c5adf6439397e8ab5ddfe2314839294855e97692ad390",
+      "scripts/run_c05_laplace.py": "8b9e4e1c8b5f61a7c8e32b726aee327c9fd1122065450f08147c0ea4321da4ba",
+      "tests/test_c05_laplace_chi5.py": "6309b584bbcc8e708043837e9dc45420f5bdb21ec3da308935f1a19708ad7655",
+      "docs/experimentos/experimento-005d-c05-derivacion.md": "7d1645329878a2ced5eb7e5651f7c4763ec13e3df161a2999f42ddfe7226e59d",
+      "docs/experimentos/experimento-005e-c05-final-review.md": "7a75641cebc34256fd9d4e743918663c5ab7147c5830f2926ba3097197c21c8b"
+    },
+    "output_policy": {
+      "directory": "artifacts/goldbach_cesaro/c05_rerun_clean",
+      "historical_quarantine_directory": "artifacts/goldbach_cesaro/c05_controlled",
+      "overwrite_historical_archive": false,
+      "allowed_pre_run_control_files": [
+        "C05_SEALED_PROTOCOL.json",
+        "C05_EXECUTION_AUTHORIZATION.json"
+      ]
+    },
+    "counting_note": {
+      "manifest_c05_quarantine": 17,
+      "protected_files_in_archived_run": 26,
+      "distinction": "The first count inventories C05 quarantine files; the second covers external C00/C03/C03-B baselines monitored during the archived run."
+    }
+  }
+}

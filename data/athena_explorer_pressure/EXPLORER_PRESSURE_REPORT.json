@@ -1,0 +1,714 @@
+{
+  "question_id": "Q-f0ca4046",
+  "n_requested": 100,
+  "n_accepted": 20,
+  "n_rejected": 80,
+  "rejection_rate": 0.8,
+  "attempts": [
+    {
+      "index": 0,
+      "accepted": true,
+      "hypothesis_id": "H-9ff7b3e2",
+      "error_code": null,
+      "statement": "H-cand-0: diferencia medible en métrica M_0"
+    },
+    {
+      "index": 1,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 2,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 2"
+    },
+    {
+      "index": 3,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 3"
+    },
+    {
+      "index": 4,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 4"
+    },
+    {
+      "index": 5,
+      "accepted": true,
+      "hypothesis_id": "H-d98c12d2",
+      "error_code": null,
+      "statement": "H-cand-5: diferencia medible en métrica M_5"
+    },
+    {
+      "index": 6,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 6"
+    },
+    {
+      "index": 7,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 7"
+    },
+    {
+      "index": 8,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 8"
+    },
+    {
+      "index": 9,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 10,
+      "accepted": true,
+      "hypothesis_id": "H-5030e4c7",
+      "error_code": null,
+      "statement": "H-cand-10: diferencia medible en métrica M_3"
+    },
+    {
+      "index": 11,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 11"
+    },
+    {
+      "index": 12,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 12"
+    },
+    {
+      "index": 13,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 14,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 14"
+    },
+    {
+      "index": 15,
+      "accepted": true,
+      "hypothesis_id": "H-e18e30c1",
+      "error_code": null,
+      "statement": "H-cand-15: diferencia medible en métrica M_1"
+    },
+    {
+      "index": 16,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 16"
+    },
+    {
+      "index": 17,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 18,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 18"
+    },
+    {
+      "index": 19,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 19"
+    },
+    {
+      "index": 20,
+      "accepted": true,
+      "hypothesis_id": "H-b9db470e",
+      "error_code": null,
+      "statement": "H-cand-20: diferencia medible en métrica M_6"
+    },
+    {
+      "index": 21,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 22,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 22"
+    },
+    {
+      "index": 23,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 23"
+    },
+    {
+      "index": 24,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 24"
+    },
+    {
+      "index": 25,
+      "accepted": true,
+      "hypothesis_id": "H-1c596943",
+      "error_code": null,
+      "statement": "H-cand-25: diferencia medible en métrica M_4"
+    },
+    {
+      "index": 26,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 26"
+    },
+    {
+      "index": 27,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 27"
+    },
+    {
+      "index": 28,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 28"
+    },
+    {
+      "index": 29,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 30,
+      "accepted": true,
+      "hypothesis_id": "H-1da55e68",
+      "error_code": null,
+      "statement": "H-cand-30: diferencia medible en métrica M_2"
+    },
+    {
+      "index": 31,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 31"
+    },
+    {
+      "index": 32,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 32"
+    },
+    {
+      "index": 33,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 34,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 34"
+    },
+    {
+      "index": 35,
+      "accepted": true,
+      "hypothesis_id": "H-ca5f35ad",
+      "error_code": null,
+      "statement": "H-cand-35: diferencia medible en métrica M_0"
+    },
+    {
+      "index": 36,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 36"
+    },
+    {
+      "index": 37,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 38,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 38"
+    },
+    {
+      "index": 39,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 39"
+    },
+    {
+      "index": 40,
+      "accepted": true,
+      "hypothesis_id": "H-1003c7d6",
+      "error_code": null,
+      "statement": "H-cand-40: diferencia medible en métrica M_5"
+    },
+    {
+      "index": 41,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 42,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 42"
+    },
+    {
+      "index": 43,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 43"
+    },
+    {
+      "index": 44,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 44"
+    },
+    {
+      "index": 45,
+      "accepted": true,
+      "hypothesis_id": "H-24e8c2fa",
+      "error_code": null,
+      "statement": "H-cand-45: diferencia medible en métrica M_3"
+    },
+    {
+      "index": 46,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 46"
+    },
+    {
+      "index": 47,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 47"
+    },
+    {
+      "index": 48,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 48"
+    },
+    {
+      "index": 49,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 50,
+      "accepted": true,
+      "hypothesis_id": "H-42932fcc",
+      "error_code": null,
+      "statement": "H-cand-50: diferencia medible en métrica M_1"
+    },
+    {
+      "index": 51,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 51"
+    },
+    {
+      "index": 52,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 52"
+    },
+    {
+      "index": 53,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 54,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 54"
+    },
+    {
+      "index": 55,
+      "accepted": true,
+      "hypothesis_id": "H-638ecb46",
+      "error_code": null,
+      "statement": "H-cand-55: diferencia medible en métrica M_6"
+    },
+    {
+      "index": 56,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 56"
+    },
+    {
+      "index": 57,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 58,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 58"
+    },
+    {
+      "index": 59,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 59"
+    },
+    {
+      "index": 60,
+      "accepted": true,
+      "hypothesis_id": "H-3821f2be",
+      "error_code": null,
+      "statement": "H-cand-60: diferencia medible en métrica M_4"
+    },
+    {
+      "index": 61,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 62,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 62"
+    },
+    {
+      "index": 63,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 63"
+    },
+    {
+      "index": 64,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 64"
+    },
+    {
+      "index": 65,
+      "accepted": true,
+      "hypothesis_id": "H-df7aa353",
+      "error_code": null,
+      "statement": "H-cand-65: diferencia medible en métrica M_2"
+    },
+    {
+      "index": 66,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 66"
+    },
+    {
+      "index": 67,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 67"
+    },
+    {
+      "index": 68,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 68"
+    },
+    {
+      "index": 69,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 70,
+      "accepted": true,
+      "hypothesis_id": "H-4ccfb0f5",
+      "error_code": null,
+      "statement": "H-cand-70: diferencia medible en métrica M_0"
+    },
+    {
+      "index": 71,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 71"
+    },
+    {
+      "index": 72,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 72"
+    },
+    {
+      "index": 73,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 74,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 74"
+    },
+    {
+      "index": 75,
+      "accepted": true,
+      "hypothesis_id": "H-b745dc98",
+      "error_code": null,
+      "statement": "H-cand-75: diferencia medible en métrica M_5"
+    },
+    {
+      "index": 76,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 76"
+    },
+    {
+      "index": 77,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 78,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 78"
+    },
+    {
+      "index": 79,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 79"
+    },
+    {
+      "index": 80,
+      "accepted": true,
+      "hypothesis_id": "H-d1544b49",
+      "error_code": null,
+      "statement": "H-cand-80: diferencia medible en métrica M_3"
+    },
+    {
+      "index": 81,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 82,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 82"
+    },
+    {
+      "index": 83,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 83"
+    },
+    {
+      "index": 84,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 84"
+    },
+    {
+      "index": 85,
+      "accepted": true,
+      "hypothesis_id": "H-5909d925",
+      "error_code": null,
+      "statement": "H-cand-85: diferencia medible en métrica M_1"
+    },
+    {
+      "index": 86,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 86"
+    },
+    {
+      "index": 87,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 87"
+    },
+    {
+      "index": 88,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 88"
+    },
+    {
+      "index": 89,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 90,
+      "accepted": true,
+      "hypothesis_id": "H-97beae4f",
+      "error_code": null,
+      "statement": "H-cand-90: diferencia medible en métrica M_6"
+    },
+    {
+      "index": 91,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 91"
+    },
+    {
+      "index": 92,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 92"
+    },
+    {
+      "index": 93,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 94,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 94"
+    },
+    {
+      "index": 95,
+      "accepted": true,
+      "hypothesis_id": "H-f2e41869",
+      "error_code": null,
+      "statement": "H-cand-95: diferencia medible en métrica M_4"
+    },
+    {
+      "index": 96,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "candidato ruido 96"
+    },
+    {
+      "index": 97,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": ""
+    },
+    {
+      "index": 98,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "patrón interesante 98"
+    },
+    {
+      "index": 99,
+      "accepted": false,
+      "hypothesis_id": null,
+      "error_code": "INCOMPLETE_FICHA",
+      "statement": "teoría bonita 99"
+    }
+  ],
+  "success_criterion": "Kernel absorbed pressure without redefining method; success ≠ brilliant hypothesis",
+  "auditor_verdict": "PASS",
+  "auditor_findings": [],
+  "paso3_success": true,
+  "claim": "Éxito = kernel absorbió ruido sin romperse; no se reclama hipótesis brillante ni descubrimiento."
+}

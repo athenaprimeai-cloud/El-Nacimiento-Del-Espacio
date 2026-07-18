@@ -3,3 +3,10 @@ ATHENA_DOMAIN_E005/ATHENA_DOMAIN_E005_PROTOCOL.md text eol=lf
 *.md text eol=lf
 *.py text eol=lf
 *.json text eol=lf
+
+# Snapshot evidence: preserve captured ledgers and result bytes exactly.
+/artifacts/** -text
+/data/** -text
+/ATHENA_DOMAIN_E*/resultados/kernel/** -text
+/META-E*/resultados/** -text
+/docs/deficit-field-analysis.md -text

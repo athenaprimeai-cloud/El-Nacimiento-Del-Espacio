@@ -1,0 +1,402 @@
+{
+  "H-9ff7b3e2": {
+    "id": "H-9ff7b3e2",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-0: diferencia medible en métrica M_0",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.040800+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.040800+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-d98c12d2": {
+    "id": "H-d98c12d2",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-5: diferencia medible en métrica M_5",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.044854+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.044854+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-5030e4c7": {
+    "id": "H-5030e4c7",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-10: diferencia medible en métrica M_3",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.047419+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.047419+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-e18e30c1": {
+    "id": "H-e18e30c1",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-15: diferencia medible en métrica M_1",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.052310+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.052310+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-b9db470e": {
+    "id": "H-b9db470e",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-20: diferencia medible en métrica M_6",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.056887+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.056887+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-1c596943": {
+    "id": "H-1c596943",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-25: diferencia medible en métrica M_4",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.059927+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.059927+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-1da55e68": {
+    "id": "H-1da55e68",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-30: diferencia medible en métrica M_2",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.064478+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.064478+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-ca5f35ad": {
+    "id": "H-ca5f35ad",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-35: diferencia medible en métrica M_0",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.071066+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.071066+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-1003c7d6": {
+    "id": "H-1003c7d6",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-40: diferencia medible en métrica M_5",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.077934+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.077934+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-24e8c2fa": {
+    "id": "H-24e8c2fa",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-45: diferencia medible en métrica M_3",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.081833+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.081833+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-42932fcc": {
+    "id": "H-42932fcc",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-50: diferencia medible en métrica M_1",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.087417+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.087417+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-638ecb46": {
+    "id": "H-638ecb46",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-55: diferencia medible en métrica M_6",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.096039+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.096039+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-3821f2be": {
+    "id": "H-3821f2be",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-60: diferencia medible en métrica M_4",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.101085+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.101085+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-df7aa353": {
+    "id": "H-df7aa353",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-65: diferencia medible en métrica M_2",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.107397+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.107397+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-4ccfb0f5": {
+    "id": "H-4ccfb0f5",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-70: diferencia medible en métrica M_0",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.113277+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.113277+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-b745dc98": {
+    "id": "H-b745dc98",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-75: diferencia medible en métrica M_5",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.118853+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.118853+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-d1544b49": {
+    "id": "H-d1544b49",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-80: diferencia medible en métrica M_3",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.124449+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.124449+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-5909d925": {
+    "id": "H-5909d925",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-85: diferencia medible en métrica M_1",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_1",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_1",
+    "dies_if": "|ΔM| ≈ 0 en C_1",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.132572+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.132572+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-97beae4f": {
+    "id": "H-97beae4f",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-90: diferencia medible en métrica M_6",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_0",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_0",
+    "dies_if": "|ΔM| ≈ 0 en C_0",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.140436+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.140436+00:00",
+        "event": "created"
+      }
+    ]
+  },
+  "H-f2e41869": {
+    "id": "H-f2e41869",
+    "question_id": "Q-f0ca4046",
+    "statement": "H-cand-95: diferencia medible en métrica M_4",
+    "predicts": "Si H, |ΔM| > 0.1 en control C_2",
+    "weakens_if": "0 < |ΔM| ≤ 0.1 en C_2",
+    "dies_if": "|ΔM| ≈ 0 en C_2",
+    "state": "OPEN",
+    "control_id": null,
+    "result_summary": null,
+    "death_reason": null,
+    "created_at": "2026-07-17T20:18:11.146509+00:00",
+    "finalized_at": null,
+    "history": [
+      {
+        "ts": "2026-07-17T20:18:11.146509+00:00",
+        "event": "created"
+      }
+    ]
+  }
+}

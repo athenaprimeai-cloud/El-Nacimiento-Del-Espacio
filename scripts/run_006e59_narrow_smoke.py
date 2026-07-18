@@ -1,0 +1,526 @@
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+import platform
+import sys
+from datetime import datetime, timezone
+from importlib.metadata import version as distribution_version
+from pathlib import Path
+
+
+PHASE_ID = "006E59"
+RESULT_PASS = "006E59_NEXT_NARROW_FIXED_SEMANTIC_SMOKE_PASS_LIMITED"
+RESULT_BLOCKED = "006E59_BLOCKED_ENVIRONMENT_OR_CAPTURE"
+RESULT_INCONCLUSIVE = "006E59_INCONCLUSIVE_SEMANTICS_OR_CAPTURE"
+MATRIX_ID = "006E59_REPLAY_PLUS_CENTER_FEMTO_TIGHT"
+AUTHORIZED_RUNTIME = r"C:\Users\johnn\AppData\Local\Temp\athena-006e20r\Scripts\python.exe"
+ARTIFACT_DIR = Path("artifacts/006E59-next-narrow-fixed-semantic-ledger")
+PRECISIONS = [96, 128]
+EXPECTED_RECORDS = 72
+EXPECTED_DIAGNOSTICS = 66
+
+REQUIRED_FILES = [
+    "ledger.jsonl",
+    "ledger.csv",
+    "ledger-compact.md",
+    "diagnostics.jsonl",
+    "diagnostics.csv",
+    "manifest.json",
+    "SHA256SUMS.txt",
+]
+
+HASHED_FILES = [
+    "ledger.jsonl",
+    "ledger.csv",
+    "ledger-compact.md",
+    "diagnostics.jsonl",
+    "diagnostics.csv",
+    "manifest.json",
+]
+
+MATRIX = [
+    {"label": "LBOX_P1", "source": "replay_006E55", "block": "CORE_PARENT", "parent": None, "real_mid": "1/2", "real_radius": "1/1000", "imag_mid": "7/5", "imag_radius": "1/2000"},
+    {"label": "LBOX_P1_S1", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P1", "real_mid": "1999/4000", "real_radius": "1/2000", "imag_mid": "5599/4000", "imag_radius": "1/4000"},
+    {"label": "LBOX_P1_S2", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P1", "real_mid": "1999/4000", "real_radius": "1/2000", "imag_mid": "5601/4000", "imag_radius": "1/4000"},
+    {"label": "LBOX_P1_S3", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P1", "real_mid": "2001/4000", "real_radius": "1/2000", "imag_mid": "5599/4000", "imag_radius": "1/4000"},
+    {"label": "LBOX_P1_S4", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P1", "real_mid": "2001/4000", "real_radius": "1/2000", "imag_mid": "5601/4000", "imag_radius": "1/4000"},
+    {"label": "LBOX_P1_C", "source": "replay_006E55", "block": "CENTER_REFINEMENT", "parent": "LBOX_P1", "real_mid": "1/2", "real_radius": "1/4000", "imag_mid": "7/5", "imag_radius": "1/8000"},
+    {"label": "LBOX_P1_CT", "source": "replay_006E55", "block": "CENTER_TIGHT", "parent": "LBOX_P1_C", "real_mid": "1/2", "real_radius": "1/8000", "imag_mid": "7/5", "imag_radius": "1/16000"},
+    {"label": "LBOX_P1_CUT", "source": "replay_006E55", "block": "CENTER_ULTRA_TIGHT", "parent": "LBOX_P1_CT", "real_mid": "1/2", "real_radius": "1/16000", "imag_mid": "7/5", "imag_radius": "1/32000"},
+    {"label": "LBOX_P1_CMT", "source": "replay_006E55", "block": "CENTER_MICRO_TIGHT", "parent": "LBOX_P1_CUT", "real_mid": "1/2", "real_radius": "1/32000", "imag_mid": "7/5", "imag_radius": "1/64000"},
+    {"label": "LBOX_P1_CNT", "source": "replay_006E55", "block": "CENTER_NANO_TIGHT", "parent": "LBOX_P1_CMT", "real_mid": "1/2", "real_radius": "1/64000", "imag_mid": "7/5", "imag_radius": "1/128000"},
+    {"label": "LBOX_P1_CPT", "source": "replay_006E55", "block": "CENTER_PICO_TIGHT", "parent": "LBOX_P1_CNT", "real_mid": "1/2", "real_radius": "1/128000", "imag_mid": "7/5", "imag_radius": "1/256000"},
+    {"label": "LBOX_P1_CFT", "source": "new_006E59", "block": "CENTER_FEMTO_TIGHT", "parent": "LBOX_P1_CPT", "real_mid": "1/2", "real_radius": "1/256000", "imag_mid": "7/5", "imag_radius": "1/512000"},
+    {"label": "LBOX_P2", "source": "replay_006E55", "block": "CORE_PARENT", "parent": None, "real_mid": "3/4", "real_radius": "1/2000", "imag_mid": "2/1", "imag_radius": "1/1000"},
+    {"label": "LBOX_P2_S1", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P2", "real_mid": "2999/4000", "real_radius": "1/4000", "imag_mid": "3999/2000", "imag_radius": "1/2000"},
+    {"label": "LBOX_P2_S2", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P2", "real_mid": "2999/4000", "real_radius": "1/4000", "imag_mid": "4001/2000", "imag_radius": "1/2000"},
+    {"label": "LBOX_P2_S3", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P2", "real_mid": "3001/4000", "real_radius": "1/4000", "imag_mid": "3999/2000", "imag_radius": "1/2000"},
+    {"label": "LBOX_P2_S4", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P2", "real_mid": "3001/4000", "real_radius": "1/4000", "imag_mid": "4001/2000", "imag_radius": "1/2000"},
+    {"label": "LBOX_P2_C", "source": "replay_006E55", "block": "CENTER_REFINEMENT", "parent": "LBOX_P2", "real_mid": "3/4", "real_radius": "1/8000", "imag_mid": "2/1", "imag_radius": "1/4000"},
+    {"label": "LBOX_P2_CT", "source": "replay_006E55", "block": "CENTER_TIGHT", "parent": "LBOX_P2_C", "real_mid": "3/4", "real_radius": "1/16000", "imag_mid": "2/1", "imag_radius": "1/8000"},
+    {"label": "LBOX_P2_CUT", "source": "replay_006E55", "block": "CENTER_ULTRA_TIGHT", "parent": "LBOX_P2_CT", "real_mid": "3/4", "real_radius": "1/32000", "imag_mid": "2/1", "imag_radius": "1/16000"},
+    {"label": "LBOX_P2_CMT", "source": "replay_006E55", "block": "CENTER_MICRO_TIGHT", "parent": "LBOX_P2_CUT", "real_mid": "3/4", "real_radius": "1/64000", "imag_mid": "2/1", "imag_radius": "1/32000"},
+    {"label": "LBOX_P2_CNT", "source": "replay_006E55", "block": "CENTER_NANO_TIGHT", "parent": "LBOX_P2_CMT", "real_mid": "3/4", "real_radius": "1/128000", "imag_mid": "2/1", "imag_radius": "1/64000"},
+    {"label": "LBOX_P2_CPT", "source": "replay_006E55", "block": "CENTER_PICO_TIGHT", "parent": "LBOX_P2_CNT", "real_mid": "3/4", "real_radius": "1/256000", "imag_mid": "2/1", "imag_radius": "1/128000"},
+    {"label": "LBOX_P2_CFT", "source": "new_006E59", "block": "CENTER_FEMTO_TIGHT", "parent": "LBOX_P2_CPT", "real_mid": "3/4", "real_radius": "1/512000", "imag_mid": "2/1", "imag_radius": "1/256000"},
+    {"label": "LBOX_P3", "source": "replay_006E55", "block": "CORE_PARENT", "parent": None, "real_mid": "1/3", "real_radius": "1/1500", "imag_mid": "5/3", "imag_radius": "1/1500"},
+    {"label": "LBOX_P3_S1", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P3", "real_mid": "1999/6000", "real_radius": "1/3000", "imag_mid": "4999/3000", "imag_radius": "1/3000"},
+    {"label": "LBOX_P3_S2", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P3", "real_mid": "1999/6000", "real_radius": "1/3000", "imag_mid": "5001/3000", "imag_radius": "1/3000"},
+    {"label": "LBOX_P3_S3", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P3", "real_mid": "2001/6000", "real_radius": "1/3000", "imag_mid": "4999/3000", "imag_radius": "1/3000"},
+    {"label": "LBOX_P3_S4", "source": "replay_006E55", "block": "CORE_SUBBOX", "parent": "LBOX_P3", "real_mid": "2001/6000", "real_radius": "1/3000", "imag_mid": "5001/3000", "imag_radius": "1/3000"},
+    {"label": "LBOX_P3_C", "source": "replay_006E55", "block": "CENTER_REFINEMENT", "parent": "LBOX_P3", "real_mid": "1/3", "real_radius": "1/6000", "imag_mid": "5/3", "imag_radius": "1/6000"},
+    {"label": "LBOX_P3_CT", "source": "replay_006E55", "block": "CENTER_TIGHT", "parent": "LBOX_P3_C", "real_mid": "1/3", "real_radius": "1/12000", "imag_mid": "5/3", "imag_radius": "1/12000"},
+    {"label": "LBOX_P3_CUT", "source": "replay_006E55", "block": "CENTER_ULTRA_TIGHT", "parent": "LBOX_P3_CT", "real_mid": "1/3", "real_radius": "1/24000", "imag_mid": "5/3", "imag_radius": "1/24000"},
+    {"label": "LBOX_P3_CMT", "source": "replay_006E55", "block": "CENTER_MICRO_TIGHT", "parent": "LBOX_P3_CUT", "real_mid": "1/3", "real_radius": "1/48000", "imag_mid": "5/3", "imag_radius": "1/48000"},
+    {"label": "LBOX_P3_CNT", "source": "replay_006E55", "block": "CENTER_NANO_TIGHT", "parent": "LBOX_P3_CMT", "real_mid": "1/3", "real_radius": "1/96000", "imag_mid": "5/3", "imag_radius": "1/96000"},
+    {"label": "LBOX_P3_CPT", "source": "replay_006E55", "block": "CENTER_PICO_TIGHT", "parent": "LBOX_P3_CNT", "real_mid": "1/3", "real_radius": "1/192000", "imag_mid": "5/3", "imag_radius": "1/192000"},
+    {"label": "LBOX_P3_CFT", "source": "new_006E59", "block": "CENTER_FEMTO_TIGHT", "parent": "LBOX_P3_CPT", "real_mid": "1/3", "real_radius": "1/384000", "imag_mid": "5/3", "imag_radius": "1/384000"},
+]
+
+
+def fail_summary(result: str, message: str) -> int:
+    print(json.dumps({"phase_id": PHASE_ID, "result": result, "message": message}, sort_keys=True))
+    return 1
+
+
+def component(value, attr: str):
+    part = getattr(value, attr)
+    if callable(part):
+        return part()
+    return part
+
+
+def bounds(ball) -> tuple[str, str, bool]:
+    lower = ball.lower()
+    upper = ball.upper()
+    lower_s = str(lower)
+    upper_s = str(upper)
+    return lower_s, upper_s, lower_s != upper_s
+
+
+def is_finite_acb(value) -> bool:
+    predicate = getattr(value, "is_finite", None)
+    if callable(predicate):
+        return bool(predicate())
+    value_s = str(value).lower()
+    return "nan" not in value_s and "inf" not in value_s
+
+
+def write_jsonl_record(path: Path, record: dict) -> None:
+    with path.open("a", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(record, sort_keys=True) + "\n")
+
+
+def write_csv(path: Path, rows: list[dict]) -> None:
+    fieldnames: list[str] = []
+    for row in rows:
+        for key in row:
+            if key not in fieldnames:
+                fieldnames.append(key)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(65536), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def verify_sha256sums(path: Path, base_dir: Path) -> bool:
+    for line in path.read_text(encoding="utf-8").splitlines():
+        digest, name = line.split("  ", 1)
+        if sha256_file(base_dir / name) != digest:
+            return False
+    return True
+
+
+def write_compact_markdown(path: Path, records: list[dict], diagnostics: list[dict]) -> None:
+    lines = [
+        "# 006E59 Compact Ledger",
+        "",
+        "This file is a human summary only. JSONL remains the primary authority.",
+        "",
+        "## Semantic Records",
+        "",
+        "| input_label | precision_bits | result | output_type | output_finite | output_real_width_nonzero | output_imag_width_nonzero | ctx_restored |",
+        "|---|---:|---|---|---|---|---|---|",
+    ]
+    for record in records:
+        lines.append(
+            "| {input_label} | {precision_bits} | {result} | {output_type} | {output_finite} | {output_real_lower_ne_upper} | {output_imag_lower_ne_upper} | {ctx_restored} |".format(**record)
+        )
+    lines.extend([
+        "",
+        "## Diagnostics",
+        "",
+        "| diagnostic_block | parent | child | precision_bits | contains | overlaps | result |",
+        "|---|---|---|---:|---|---|---|",
+    ])
+    for diagnostic in diagnostics:
+        lines.append(
+            "| {diagnostic_block} | {parent} | {child} | {precision_bits} | {contains} | {overlaps} | {result} |".format(**diagnostic)
+        )
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def main() -> int:
+    if not Path(AUTHORIZED_RUNTIME).exists():
+        return fail_summary(RESULT_BLOCKED, "authorized runtime does not exist")
+    if str(Path(sys.executable)) != AUTHORIZED_RUNTIME:
+        return fail_summary(RESULT_BLOCKED, "sys.executable does not match authorized runtime")
+
+    if ARTIFACT_DIR.exists() and any(ARTIFACT_DIR.iterdir()):
+        return fail_summary(RESULT_BLOCKED, "artifact directory already exists and is not empty")
+    ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)
+
+    ledger_jsonl = ARTIFACT_DIR / "ledger.jsonl"
+    diagnostics_jsonl = ARTIFACT_DIR / "diagnostics.jsonl"
+    ledger_jsonl.write_text("", encoding="utf-8")
+    diagnostics_jsonl.write_text("", encoding="utf-8")
+
+    try:
+        import flint
+        from flint import acb, arb, ctx, dirichlet_char, fmpq
+    except Exception as exc:  # pragma: no cover - environment gate
+        return fail_summary(RESULT_BLOCKED, f"import flint failed: {exc!r}")
+
+    python_flint_version = distribution_version("python-flint")
+    flint_version = str(getattr(flint, "__version__", "unavailable"))
+    flint_native_version = str(getattr(flint, "__FLINT_VERSION__", getattr(flint, "FLINT_VERSION", "unavailable")))
+    if python_flint_version != "0.8.0" or flint_version != "0.8.0" or flint_native_version != "3.3.1":
+        return fail_summary(RESULT_BLOCKED, "version precheck failed")
+
+    def make_ball(mid: str, radius: str):
+        return arb(fmpq(mid), fmpq(radius))
+
+    def make_box(row: dict):
+        return acb(make_ball(row["real_mid"], row["real_radius"]), make_ball(row["imag_mid"], row["imag_radius"]))
+
+    run_id = PHASE_ID + "-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    chi = dirichlet_char(3, 2)
+    outputs: dict[tuple[str, int], object] = {}
+    records: list[dict] = []
+    diagnostics: list[dict] = []
+
+    for row in MATRIX:
+        input_box = make_box(row)
+        input_real = component(input_box, "real")
+        input_imag = component(input_box, "imag")
+        input_real_lower, input_real_upper, input_real_width = bounds(input_real)
+        input_imag_lower, input_imag_upper, input_imag_width = bounds(input_imag)
+
+        for bits in PRECISIONS:
+            ctx_before = int(ctx.prec)
+            try:
+                with ctx.workprec(bits):
+                    ctx_inside = int(ctx.prec)
+                    output = chi.l_function(input_box)
+                ctx_after = int(ctx.prec)
+                output_real = component(output, "real")
+                output_imag = component(output, "imag")
+                output_real_lower, output_real_upper, output_real_width = bounds(output_real)
+                output_imag_lower, output_imag_upper, output_imag_width = bounds(output_imag)
+                output_type = type(output).__name__
+                output_finite = is_finite_acb(output)
+                ctx_restored = ctx_after == ctx_before
+                passed = (
+                    output_type == "acb"
+                    and output_finite
+                    and output_real_width
+                    and output_imag_width
+                    and input_real_width
+                    and input_imag_width
+                    and ctx_restored
+                )
+                record = {
+                    "phase_id": PHASE_ID,
+                    "run_id": run_id,
+                    "matrix_id": MATRIX_ID,
+                    "runtime_authorized": AUTHORIZED_RUNTIME,
+                    "runtime_sys_executable": sys.executable,
+                    "python": sys.version,
+                    "platform": platform.platform(),
+                    "python_flint_distribution": python_flint_version,
+                    "flint_version": flint_version,
+                    "flint_FLINT_VERSION": flint_native_version,
+                    "arb_independent_version_seal": False,
+                    "input_label": row["label"],
+                    "input_source": row["source"],
+                    "input_block": row["block"],
+                    "input_parent": row["parent"],
+                    "real_midpoint_rational": row["real_mid"],
+                    "real_radius_rational": row["real_radius"],
+                    "imag_midpoint_rational": row["imag_mid"],
+                    "imag_radius_rational": row["imag_radius"],
+                    "precision_bits": bits,
+                    "input_real_lower": input_real_lower,
+                    "input_real_upper": input_real_upper,
+                    "input_imag_lower": input_imag_lower,
+                    "input_imag_upper": input_imag_upper,
+                    "input_real_lower_ne_upper": input_real_width,
+                    "input_imag_lower_ne_upper": input_imag_width,
+                    "output_type": output_type,
+                    "output_finite": output_finite,
+                    "output_real_lower": output_real_lower,
+                    "output_real_upper": output_real_upper,
+                    "output_imag_lower": output_imag_lower,
+                    "output_imag_upper": output_imag_upper,
+                    "output_real_lower_ne_upper": output_real_width,
+                    "output_imag_lower_ne_upper": output_imag_width,
+                    "ctx_before": ctx_before,
+                    "ctx_inside": ctx_inside,
+                    "ctx_after": ctx_after,
+                    "ctx_restored": ctx_restored,
+                    "result": "PASS" if passed else "FAIL",
+                }
+                outputs[(row["label"], bits)] = output
+            except Exception as exc:
+                ctx_after = int(ctx.prec)
+                record = {
+                    "phase_id": PHASE_ID,
+                    "run_id": run_id,
+                    "matrix_id": MATRIX_ID,
+                    "runtime_authorized": AUTHORIZED_RUNTIME,
+                    "runtime_sys_executable": sys.executable,
+                    "python": sys.version,
+                    "platform": platform.platform(),
+                    "python_flint_distribution": python_flint_version,
+                    "flint_version": flint_version,
+                    "flint_FLINT_VERSION": flint_native_version,
+                    "arb_independent_version_seal": False,
+                    "input_label": row["label"],
+                    "input_source": row["source"],
+                    "input_block": row["block"],
+                    "input_parent": row["parent"],
+                    "real_midpoint_rational": row["real_mid"],
+                    "real_radius_rational": row["real_radius"],
+                    "imag_midpoint_rational": row["imag_mid"],
+                    "imag_radius_rational": row["imag_radius"],
+                    "precision_bits": bits,
+                    "input_real_lower": input_real_lower,
+                    "input_real_upper": input_real_upper,
+                    "input_imag_lower": input_imag_lower,
+                    "input_imag_upper": input_imag_upper,
+                    "input_real_lower_ne_upper": input_real_width,
+                    "input_imag_lower_ne_upper": input_imag_width,
+                    "output_type": "error",
+                    "output_finite": False,
+                    "output_real_lower": None,
+                    "output_real_upper": None,
+                    "output_imag_lower": None,
+                    "output_imag_upper": None,
+                    "output_real_lower_ne_upper": False,
+                    "output_imag_lower_ne_upper": False,
+                    "ctx_before": ctx_before,
+                    "ctx_inside": None,
+                    "ctx_after": ctx_after,
+                    "ctx_restored": ctx_after == ctx_before,
+                    "error": repr(exc),
+                    "result": "FAIL",
+                }
+            records.append(record)
+            write_jsonl_record(ledger_jsonl, record)
+
+    diagnostic_pairs = []
+    for prefix in ("LBOX_P1", "LBOX_P2", "LBOX_P3"):
+        diagnostic_pairs.extend(
+            ("parent_to_existing_children", prefix, child)
+            for child in (prefix + "_S1", prefix + "_S2", prefix + "_S3", prefix + "_S4", prefix + "_C")
+        )
+        diagnostic_pairs.extend([
+            ("center_to_tight_children", prefix + "_C", prefix + "_CT"),
+            ("tight_to_ultra_tight_children", prefix + "_CT", prefix + "_CUT"),
+            ("ultra_tight_to_micro_tight_children", prefix + "_CUT", prefix + "_CMT"),
+            ("micro_tight_to_nano_tight_children", prefix + "_CMT", prefix + "_CNT"),
+            ("nano_tight_to_pico_tight_children", prefix + "_CNT", prefix + "_CPT"),
+            ("pico_tight_to_femto_tight_children", prefix + "_CPT", prefix + "_CFT"),
+        ])
+
+    for bits in PRECISIONS:
+        for block, parent, child in diagnostic_pairs:
+            parent_output = outputs.get((parent, bits))
+            child_output = outputs.get((child, bits))
+            try:
+                contains = bool(parent_output.contains(child_output)) if parent_output is not None and child_output is not None else False
+                overlaps = bool(parent_output.overlaps(child_output)) if parent_output is not None and child_output is not None else False
+                result = "PASS_DIAGNOSTIC" if contains and overlaps else "FAIL_DIAGNOSTIC"
+                diagnostic = {
+                    "phase_id": PHASE_ID,
+                    "run_id": run_id,
+                    "diagnostic_block": block,
+                    "parent": parent,
+                    "child": child,
+                    "precision_bits": bits,
+                    "contains": contains,
+                    "overlaps": overlaps,
+                    "result": result,
+                }
+            except Exception as exc:
+                diagnostic = {
+                    "phase_id": PHASE_ID,
+                    "run_id": run_id,
+                    "diagnostic_block": block,
+                    "parent": parent,
+                    "child": child,
+                    "precision_bits": bits,
+                    "contains": False,
+                    "overlaps": False,
+                    "error": repr(exc),
+                    "result": "FAIL_DIAGNOSTIC",
+                }
+            diagnostics.append(diagnostic)
+            write_jsonl_record(diagnostics_jsonl, diagnostic)
+
+    ledger_csv = ARTIFACT_DIR / "ledger.csv"
+    diagnostics_csv = ARTIFACT_DIR / "diagnostics.csv"
+    compact_md = ARTIFACT_DIR / "ledger-compact.md"
+    manifest_path = ARTIFACT_DIR / "manifest.json"
+    sha_path = ARTIFACT_DIR / "SHA256SUMS.txt"
+
+    write_csv(ledger_csv, records)
+    write_csv(diagnostics_csv, diagnostics)
+    write_compact_markdown(compact_md, records, diagnostics)
+
+    records_pass = sum(1 for record in records if record["result"] == "PASS")
+    diagnostics_pass = sum(1 for diagnostic in diagnostics if diagnostic["result"] == "PASS_DIAGNOSTIC")
+    input_labels = {row["label"] for row in MATRIX}
+    new_femto_labels = {row["label"] for row in MATRIX if row["source"] == "new_006E59"}
+
+    clean_semantics = (
+        len(records) == EXPECTED_RECORDS
+        and records_pass == EXPECTED_RECORDS
+        and len(diagnostics) == EXPECTED_DIAGNOSTICS
+        and diagnostics_pass == EXPECTED_DIAGNOSTICS
+    )
+    result = RESULT_PASS if clean_semantics else RESULT_INCONCLUSIVE
+
+    manifest = {
+        "phase_id": PHASE_ID,
+        "source_phase": "006E58",
+        "result": result,
+        "result_maximum": RESULT_PASS,
+        "valid_runtime_semantic_result": RESULT_PASS if clean_semantics else RESULT_INCONCLUSIVE,
+        "run_id": run_id,
+        "runtime_authorized": AUTHORIZED_RUNTIME,
+        "runtime_exists": Path(AUTHORIZED_RUNTIME).exists(),
+        "runtime_sys_executable": sys.executable,
+        "runtime_matches_authorized": str(Path(sys.executable)) == AUTHORIZED_RUNTIME,
+        "python": sys.version,
+        "platform": platform.platform(),
+        "python_flint_distribution": python_flint_version,
+        "flint_version": flint_version,
+        "flint_FLINT_VERSION": flint_native_version,
+        "arb_independent_version_seal": False,
+        "matrix_id": MATRIX_ID,
+        "input_count": len(MATRIX),
+        "replay_inputs_from_006E55": 33,
+        "new_center_femto_tight_inputs": len(new_femto_labels),
+        "precision_values": PRECISIONS,
+        "expected_l_function_records": EXPECTED_RECORDS,
+        "observed_l_function_records": len(records),
+        "records_pass": records_pass,
+        "expected_diagnostics": EXPECTED_DIAGNOSTICS,
+        "observed_diagnostics": len(diagnostics),
+        "diagnostics_pass": diagnostics_pass,
+        "ledger_jsonl_lines": sum(1 for _ in ledger_jsonl.open("r", encoding="utf-8")),
+        "diagnostics_jsonl_lines": sum(1 for _ in diagnostics_jsonl.open("r", encoding="utf-8")),
+        "unique_input_labels": len(input_labels),
+        "new_006E59_femto_labels": len(new_femto_labels),
+        "all_inputs_constructed_from_exact_rational_descriptors": True,
+        "float_inputs_present": False,
+        "complex_inputs_present": False,
+        "decimal_float_literals_present": False,
+        "adaptive_inputs_present": False,
+        "adaptive_search": "not_executed",
+        "precision_chasing": "not_executed",
+        "ctx_restored_for_all_calls": all(record["ctx_restored"] for record in records),
+        "output_type_acb_for_all_calls": all(record["output_type"] == "acb" for record in records),
+        "output_finite_for_all_calls": all(record["output_finite"] for record in records),
+        "output_width_nonzero_for_all_calls": all(record["output_real_lower_ne_upper"] and record["output_imag_lower_ne_upper"] for record in records),
+        "input_width_nonzero_for_all_calls": all(record["input_real_lower_ne_upper"] and record["input_imag_lower_ne_upper"] for record in records),
+        "diagnostics_are_smoke_only": True,
+        "jsonl_path": str(ledger_jsonl),
+        "csv_path": str(ledger_csv),
+        "markdown_compact_path": str(compact_md),
+        "diagnostics_jsonl_path": str(diagnostics_jsonl),
+        "diagnostics_csv_path": str(diagnostics_csv),
+        "manifest_authority": "identity_and_counts",
+        "jsonl_authority": "primary",
+        "csv_authority": "secondary",
+        "markdown_authority": "summary_only",
+        "sha256sums_authority": "file_integrity_only",
+        "console_scrollback_authority": "none",
+        "manifest_initial_write_before_files_present_check": True,
+        "files_present_computed_after_manifest_initial_write": True,
+        "manifest_final_written_before_final_SHA256SUMS": True,
+        "SHA256SUMS_written_after_final_manifest": True,
+        "hashes_computed_after_manifest_finalization": True,
+        "hashes_verified_after_SHA256SUMS_write": True,
+        "semantic_rerun_performed_for_capture_correction": False,
+        "capture_warning": "none",
+        "unresolved_capture_warning": False,
+        "contours": "not_executed",
+        "Lambda_3": "not_evaluated",
+        "zero_isolation": "not_executed",
+        "zero_counting": "not_executed",
+        "zero_tables": "not_generated",
+        "project_backend": "not_invoked",
+        "H2_pipeline": "not_invoked",
+        "mathematical_proof": False,
+        "H2_certified": False,
+        "006F": "blocked",
+        "zero_certification": "forbidden",
+        "downstream_use": "forbidden",
+        "novelty_claim": False,
+    }
+    manifest_path.write_text(json.dumps(manifest, indent=4, sort_keys=True) + "\n", encoding="utf-8")
+
+    pre_sha_required = HASHED_FILES
+    files_present = all((ARTIFACT_DIR / name).exists() for name in pre_sha_required)
+    manifest["pre_sha_required_files_present_after_manifest_write"] = files_present
+    manifest["files_present"] = files_present
+    manifest["sha256sums_path"] = str(sha_path)
+    manifest["hash_records"] = len(HASHED_FILES)
+    manifest["hash_verified"] = True
+    manifest_path.write_text(json.dumps(manifest, indent=4, sort_keys=True) + "\n", encoding="utf-8")
+
+    sha_lines = [f"{sha256_file(ARTIFACT_DIR / name)}  {name}" for name in HASHED_FILES]
+    sha_path.write_text("\n".join(sha_lines) + "\n", encoding="utf-8")
+    hash_verified = verify_sha256sums(sha_path, ARTIFACT_DIR)
+    if not hash_verified:
+        manifest["hash_verified"] = False
+        manifest["result"] = RESULT_INCONCLUSIVE
+        manifest["valid_runtime_semantic_result"] = RESULT_INCONCLUSIVE
+        manifest_path.write_text(json.dumps(manifest, indent=4, sort_keys=True) + "\n", encoding="utf-8")
+        return fail_summary(RESULT_INCONCLUSIVE, "hash verification failed")
+
+    final_all_required_present = all((ARTIFACT_DIR / name).exists() for name in REQUIRED_FILES)
+    summary = {
+        "phase_id": PHASE_ID,
+        "result": result,
+        "valid_runtime_semantic_result": manifest["valid_runtime_semantic_result"],
+        "records_expected": EXPECTED_RECORDS,
+        "records_observed": len(records),
+        "records_pass": records_pass,
+        "diagnostics_expected": EXPECTED_DIAGNOSTICS,
+        "diagnostics_observed": len(diagnostics),
+        "diagnostics_pass": diagnostics_pass,
+        "files_present": files_present and final_all_required_present,
+        "hash_verified": hash_verified,
+        "capture_warning": "none",
+        "scope_leak": False,
+        "artifact_directory": str(ARTIFACT_DIR),
+    }
+    print(json.dumps(summary, sort_keys=True))
+    return 0 if result == RESULT_PASS else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

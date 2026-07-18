@@ -1,0 +1,210 @@
+{
+  "experiment_id": "G5A-005",
+  "evidence_level": "Calibracion numerica determinista",
+  "formal_proof": false,
+  "calibration_passed": true,
+  "calibration_status": "passed",
+  "calibration_criteria": {
+    "zero_height": 50.0,
+    "audited_zero_count": 5,
+    "validation_rmse_m0": 6.980854185627089e-05,
+    "validation_rmse_m1": 6.649922370700968e-07,
+    "requires_m1_rmse_below_m0": true,
+    "amplitude_ratio_interval": [
+      0.5,
+      2.0
+    ],
+    "amplitude_ratios_within_interval": true,
+    "maximum_absolute_phase_error": 0.5,
+    "phase_errors_within_limit": true
+  },
+  "window": {
+    "min": 1000,
+    "max": 1000000
+  },
+  "log_samples_requested": 800,
+  "log_samples_realized": 800,
+  "zero_source": "Andrew Odlyzko, Tables of zeros of the Riemann zeta function",
+  "formula_correction": "Includes -2*(zeta'/zeta)(0)*X/Gamma(k+2); for k=2 this is -log(2*pi)*X/3.",
+  "zero_table_max": 143.11184580762063,
+  "zero_heights": [
+    50.0,
+    100.0,
+    143.0
+  ],
+  "best_validation_metric": {
+    "zero_height": 143.0,
+    "zero_count": 49,
+    "split": "validation",
+    "model": "M2_pole_linear_double",
+    "rmse": 5.757272858089859e-08,
+    "mae": 4.3291600353743564e-08,
+    "max_absolute_error": 1.8860301699520285e-07
+  },
+  "convolution_max_absolute_error": 3.725290298461914e-09,
+  "metrics": [
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "discovery",
+      "model": "M0_pole_correction",
+      "rmse": 7.51596103922273e-05,
+      "mae": 6.466932946325593e-05,
+      "max_absolute_error": 0.00018901539595537337
+    },
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "discovery",
+      "model": "M1_pole_linear",
+      "rmse": 3.188482392776046e-05,
+      "mae": 1.7379957034588294e-05,
+      "max_absolute_error": 0.00011838839755503802
+    },
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "discovery",
+      "model": "M2_pole_linear_double",
+      "rmse": 3.189343333354624e-05,
+      "mae": 1.7378721067732106e-05,
+      "max_absolute_error": 0.00011568046574579952
+    },
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "validation",
+      "model": "M0_pole_correction",
+      "rmse": 6.980854185627089e-05,
+      "mae": 6.212179595009081e-05,
+      "max_absolute_error": 0.00012108477962101101
+    },
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "validation",
+      "model": "M1_pole_linear",
+      "rmse": 6.649922370700968e-07,
+      "mae": 5.187287564166938e-07,
+      "max_absolute_error": 1.9015006262432677e-06
+    },
+    {
+      "zero_height": 50.0,
+      "zero_count": 10,
+      "split": "validation",
+      "model": "M2_pole_linear_double",
+      "rmse": 6.523382709308741e-07,
+      "mae": 5.026279552656086e-07,
+      "max_absolute_error": 1.8248401950037279e-06
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "discovery",
+      "model": "M0_pole_correction",
+      "rmse": 7.51596103922273e-05,
+      "mae": 6.466932946325593e-05,
+      "max_absolute_error": 0.00018901539595537337
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "discovery",
+      "model": "M1_pole_linear",
+      "rmse": 3.1865252729913766e-05,
+      "mae": 1.7307342502984875e-05,
+      "max_absolute_error": 0.00011869521371059982
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "discovery",
+      "model": "M2_pole_linear_double",
+      "rmse": 3.1878911665907346e-05,
+      "mae": 1.731048514444279e-05,
+      "max_absolute_error": 0.00011610696418011546
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "validation",
+      "model": "M0_pole_correction",
+      "rmse": 6.980854185627089e-05,
+      "mae": 6.212179595009081e-05,
+      "max_absolute_error": 0.00012108477962101101
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "validation",
+      "model": "M1_pole_linear",
+      "rmse": 1.415537461687686e-07,
+      "mae": 1.0842227244240308e-07,
+      "max_absolute_error": 4.4701362335568956e-07
+    },
+    {
+      "zero_height": 100.0,
+      "zero_count": 29,
+      "split": "validation",
+      "model": "M2_pole_linear_double",
+      "rmse": 8.626044416294859e-08,
+      "mae": 7.121453043236529e-08,
+      "max_absolute_error": 2.5399996158225954e-07
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "discovery",
+      "model": "M0_pole_correction",
+      "rmse": 7.51596103922273e-05,
+      "mae": 6.466932946325593e-05,
+      "max_absolute_error": 0.00018901539595537337
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "discovery",
+      "model": "M1_pole_linear",
+      "rmse": 3.1865692593472496e-05,
+      "mae": 1.730668674482971e-05,
+      "max_absolute_error": 0.00011876497644377343
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "discovery",
+      "model": "M2_pole_linear_double",
+      "rmse": 3.1879566486009046e-05,
+      "mae": 1.7310898298614667e-05,
+      "max_absolute_error": 0.00011612457591653885
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "validation",
+      "model": "M0_pole_correction",
+      "rmse": 6.980854185627089e-05,
+      "mae": 6.212179595009081e-05,
+      "max_absolute_error": 0.00012108477962101101
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "validation",
+      "model": "M1_pole_linear",
+      "rmse": 1.25574190772832e-07,
+      "mae": 9.448086120568879e-08,
+      "max_absolute_error": 4.5259538794355236e-07
+    },
+    {
+      "zero_height": 143.0,
+      "zero_count": 49,
+      "split": "validation",
+      "model": "M2_pole_linear_double",
+      "rmse": 5.757272858089859e-08,
+      "mae": 4.3291600353743564e-08,
+      "max_absolute_error": 1.8860301699520285e-07
+    }
+  ],
+  "interpretation": "Calibracion del promedio Cesaro C2 frente a la formula explicita conocida, incluido el termino de polo de orden X. No constituye evidencia de una frecuencia nueva."
+}

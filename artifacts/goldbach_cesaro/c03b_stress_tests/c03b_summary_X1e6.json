@@ -1,0 +1,60 @@
+{
+  "experiment_id": "G5B-005-C03B",
+  "channel": "C03-B",
+  "experiment_status": "falsification_audit",
+  "expansion_status": "controlled_truncation_audit",
+  "formal_proof": false,
+  "novelty_claim": false,
+  "novelty_status": "not_established",
+  "robustness_passed": false,
+  "criteria": {
+    "ablation_strictly_monotone": true,
+    "wrong_frequencies_rejected_out_of_sample": true,
+    "correct_pole_sign_required": true,
+    "first_zero_phase_and_amplitude_persistent": true,
+    "residual_whiteness_not_rejected_at_0_05": false
+  },
+  "window": {
+    "min": 1000,
+    "max": 1000000
+  },
+  "window_maxima": [
+    10000,
+    30000,
+    100000,
+    300000,
+    1000000
+  ],
+  "ablation_counts": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "log_samples_per_window": 800,
+  "discovery_fraction": 0.65,
+  "full_chi3_zero_height": 143.0,
+  "zeta_zero_height": 143.0,
+  "random_frequency_controls": 24,
+  "max_t": {
+    "controls": 999,
+    "real_maximum": 70.70346761254201,
+    "real_peak_frequency": 2.1500000000000012,
+    "rayleigh_resolution": 2.604862478498737,
+    "peak_classification": "unresolved_low_frequency_drift",
+    "structural_origin": "finite_scale_or_known_component_leakage_candidate",
+    "p_fwer": 0.001,
+    "control_maximum_q95": 6.97474107105645
+  },
+  "immutability_passed": true,
+  "protected_file_count": 20,
+  "frozen_channels": [
+    "C00",
+    "C03",
+    "C05",
+    "C35",
+    "C15"
+  ],
+  "interpretation": "Esta auditoria no descubre una frecuencia nueva; intenta falsificar la robustez de una calibracion existente mediante controles negativos, ablacion, escalado, inversion de signo y correccion max-T."
+}

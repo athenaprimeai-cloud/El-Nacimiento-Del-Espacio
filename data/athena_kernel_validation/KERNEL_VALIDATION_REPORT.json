@@ -1,0 +1,60 @@
+{
+  "paso": "2.5",
+  "question": "¿Kernel suficiente sin reglas nuevas?",
+  "kernel_validation": "PASS",
+  "all_cases_fit": true,
+  "auditor_verdict": "PASS",
+  "cases": [
+    {
+      "id": "KV-01",
+      "hyp": "H-58d22580",
+      "label": "E004.1 H0",
+      "expect": "MUERTA",
+      "actual": "MUERTA",
+      "fit": true
+    },
+    {
+      "id": "KV-02",
+      "hyp": "H-cb54f7e1",
+      "label": "H-E004-01",
+      "expect": "SOPORTADA_BAJO_CONTROL",
+      "actual": "SOPORTADA_BAJO_CONTROL",
+      "fit": true
+    },
+    {
+      "id": "KV-03",
+      "hyp": "H-a91f8dfd",
+      "label": "H-E004-03",
+      "expect": "DEBILITADA",
+      "actual": "DEBILITADA",
+      "fit": true
+    },
+    {
+      "id": "KV-04",
+      "hyp": "H-0e3a1de6",
+      "label": "H-E004-02 núcleo",
+      "expect": "SOPORTADA_BAJO_CONTROL",
+      "actual": "SOPORTADA_BAJO_CONTROL",
+      "fit": true
+    },
+    {
+      "id": "KV-05",
+      "hyp": "H-55676905",
+      "label": "hipótesis fallida toy",
+      "expect": "MUERTA",
+      "actual": "MUERTA",
+      "fit": true
+    },
+    {
+      "id": "KV-06",
+      "hyp": "H-dd5fec45",
+      "label": "hipótesis indeterminada",
+      "expect": "NO_SABEMOS",
+      "actual": "NO_SABEMOS",
+      "fit": true
+    }
+  ],
+  "auditor_findings": [],
+  "new_protocol_rules_added": false,
+  "claim": "Investigaciones reales (E004.1, E004.2) y casos negativo/indeterminado se representan con CORE+AUDITOR existentes. No se reclama descubrimiento matemático ni PASO 3."
+}

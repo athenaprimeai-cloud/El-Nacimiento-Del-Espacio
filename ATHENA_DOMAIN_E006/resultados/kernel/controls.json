@@ -1,0 +1,8 @@
+{
+  "C-09a27dd3": {
+    "id": "C-09a27dd3",
+    "hypothesis_id": "H-60ad9f2c",
+    "description": "E006 v1.0 N=50000 k=11 B=2000 wheels={1,2,6,30} principal=30 sha256=12b9c1b7ec693047",
+    "created_at": "2026-07-18T02:01:47.971311+00:00"
+  }
+}

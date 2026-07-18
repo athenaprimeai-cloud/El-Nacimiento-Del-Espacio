@@ -1,0 +1,38 @@
+{
+  "C-16b244ce": {
+    "id": "C-16b244ce",
+    "hypothesis_id": "H-58d22580",
+    "description": "E004.1 v1.1 CONGELADO: m∈{8,5,7,11}, N malla 8, seeds 0-4, t=1000, umbrales §7.1; veredicto H1_strong",
+    "created_at": "2026-07-17T19:57:48.281253+00:00"
+  },
+  "C-41a42099": {
+    "id": "C-41a42099",
+    "hypothesis_id": "H-cb54f7e1",
+    "description": "E004.1 v1.1 CONGELADO (mismo marco que KV-01)",
+    "created_at": "2026-07-17T19:57:48.290056+00:00"
+  },
+  "C-b02de295": {
+    "id": "C-b02de295",
+    "hypothesis_id": "H-a91f8dfd",
+    "description": "E004.2 v1.0 CONGELADO: L_mod vs L_alt, |Σ|=8, malla E004.1, matriz A/B/C/D; REF pass; n_flip=6, n_id=0, n_drift=2 → outcome A",
+    "created_at": "2026-07-17T19:57:48.299375+00:00"
+  },
+  "C-98e0710a": {
+    "id": "C-98e0710a",
+    "hypothesis_id": "H-0e3a1de6",
+    "description": "E004.2 v1.0 (mismo control que KV-03)",
+    "created_at": "2026-07-17T19:57:48.309280+00:00"
+  },
+  "C-15306592": {
+    "id": "C-15306592",
+    "hypothesis_id": "H-55676905",
+    "description": "Toy control: 8 celdas sintéticas",
+    "created_at": "2026-07-17T19:57:48.319839+00:00"
+  },
+  "C-e481b0d7": {
+    "id": "C-e481b0d7",
+    "hypothesis_id": "H-dd5fec45",
+    "description": "Toy: 5 réplicas con ruido",
+    "created_at": "2026-07-17T19:57:48.327527+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "experiment_id": "G4",
+  "window": {
+    "min": 4,
+    "max": 10000
+  },
+  "evidence_level": "Observación",
+  "even_numbers": 4999,
+  "counterexamples": [],
+  "top_frequencies": [
+    {
+      "frequency": 0.16663332666533306,
+      "power": 2564044578.9676895
+    },
+    {
+      "frequency": 0.16673334666933387,
+      "power": 1698054120.055238
+    },
+    {
+      "frequency": 0.16653330666133226,
+      "power": 291471713.92694235
+    },
+    {
+      "frequency": 0.20004000800160032,
+      "power": 165384284.58928794
+    },
+    {
+      "frequency": 0.10002000400080016,
+      "power": 140766243.2068471
+    },
+    {
+      "frequency": 0.19993998799759952,
+      "power": 128134524.07878584
+    },
+    {
+      "frequency": 0.09991998399679936,
+      "power": 70771622.08912535
+    },
+    {
+      "frequency": 0.16683336667333468,
+      "power": 57769809.6388597
+    },
+    {
+      "frequency": 0.07141428285657131,
+      "power": 35036682.07012051
+    },
+    {
+      "frequency": 0.14282856571314262,
+      "power": 32691503.808585104
+    }
+  ],
+  "interpretation": "FFT sobre residuo de conteos Goldbach; observación finita, no demostración."
+}

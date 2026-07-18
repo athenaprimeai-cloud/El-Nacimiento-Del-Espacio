@@ -1,0 +1,28 @@
+{
+  "H-ae9b9a57": {
+    "id": "H-ae9b9a57",
+    "question_id": "Q-73d05cb5",
+    "statement": "H-ATH-D005-01: material M2 beyond Cramér + C2/C3 + both halves",
+    "predicts": "p_range<=0.01 and C2/C3 and HALF_BOTH_EXTREME",
+    "weakens_if": "HALF_SPLIT or gray band",
+    "dies_if": "p_range>0.10 or central80 or HALF_BOTH_NULL without H01",
+    "state": "SOPORTADA_BAJO_CONTROL",
+    "control_id": "C-7f6116fd",
+    "result_summary": "M_P=7.929942 p_range=0.000500 H01_MATERIAL_BEYOND_CRAMER",
+    "death_reason": null,
+    "created_at": "2026-07-18T00:46:25.611163+00:00",
+    "finalized_at": "2026-07-18T00:46:25.611163+00:00",
+    "history": [
+      {
+        "ts": "2026-07-18T00:46:25.611163+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-18T00:46:25.611163+00:00",
+        "event": "result_recorded",
+        "control_id": "C-7f6116fd",
+        "state": "SOPORTADA_BAJO_CONTROL"
+      }
+    ]
+  }
+}

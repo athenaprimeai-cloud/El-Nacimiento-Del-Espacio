@@ -1,0 +1,38 @@
+{
+  "Q-e4f8c84d": {
+    "id": "Q-e4f8c84d",
+    "text": "¿Los regímenes dinámicos son esencialmente independientes del módulo M bajo la malla y métricas de E004.1?",
+    "domain": "PEP-D / E004.1",
+    "created_at": "2026-07-17T19:57:48.275878+00:00"
+  },
+  "Q-f8fd83ba": {
+    "id": "Q-f8fd83ba",
+    "text": "¿El régimen depende del módulo M en la batería {5,7,8,11}?",
+    "domain": "PEP-D / E004.1",
+    "created_at": "2026-07-17T19:57:48.284836+00:00"
+  },
+  "Q-533f47b3": {
+    "id": "Q-533f47b3",
+    "text": "¿La dependencia de M se explica solo por el tamaño del alfabeto |Σ|?",
+    "domain": "PEP-D / E004.2",
+    "created_at": "2026-07-17T19:57:48.294576+00:00"
+  },
+  "Q-d14d2990": {
+    "id": "Q-d14d2990",
+    "text": "¿El proyector modular / ley de actualización importa a |Σ| fijo?",
+    "domain": "PEP-D / E004.2",
+    "created_at": "2026-07-17T19:57:48.304907+00:00"
+  },
+  "Q-b079851d": {
+    "id": "Q-b079851d",
+    "text": "¿Toy: la métrica M siempre es positiva?",
+    "domain": "validation/toy",
+    "created_at": "2026-07-17T19:57:48.313510+00:00"
+  },
+  "Q-10021ddd": {
+    "id": "Q-10021ddd",
+    "text": "¿Toy: el efecto es estable bajo ruido?",
+    "domain": "validation/toy",
+    "created_at": "2026-07-17T19:57:48.322882+00:00"
+  }
+}

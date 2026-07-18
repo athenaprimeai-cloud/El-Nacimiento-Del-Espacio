@@ -1,0 +1,268 @@
+{
+  "experiment_id": "G5B-005E",
+  "channel": "C05",
+  "evidence_level": "Resultado numerico provisional en cuarentena",
+  "formal_proof": false,
+  "novelty_claim": false,
+  "explicit_formula_complete": false,
+  "expansion_status": "controlled_truncation",
+  "local_background": "X/6 * (H3 - b0 - log X)",
+  "b0": -0.022024657838726917,
+  "double_terms": "zeta-L5 crosses only",
+  "numerical_calibration_passed": true,
+  "calibration_passed": false,
+  "calibration_status": "provisional_quarantined",
+  "implementation_status": "provisional_quarantined",
+  "official_status": "not_accepted",
+  "retrospective_approval": "rejected_for_now",
+  "final_review": "pending_clean_rerun",
+  "eligible_for_downstream_use": false,
+  "temporal_contamination": "protocol_finalized_after_observing_C05_results",
+  "calibration_criteria": {
+    "chi5_zero_height": 143.0,
+    "validation_rmse_m0": 0.0006038552803358335,
+    "validation_rmse_m1": 2.804768036978571e-07,
+    "validation_rmse_m2": 1.2596052747994743e-07,
+    "requires_m1_below_m0": true,
+    "requires_m2_below_m1": true,
+    "first_zero_amplitude_ratio": 0.9992089893414787,
+    "first_zero_phase_error": -0.014388805355039835,
+    "first_zero_amplitude_interval": [
+      0.9,
+      1.1
+    ],
+    "first_zero_maximum_absolute_phase_error": 0.1,
+    "first_zero_recovered": true
+  },
+  "window": {
+    "min": 1000,
+    "max": 1000000
+  },
+  "log_samples_requested": 800,
+  "log_samples_realized": 800,
+  "discovery_fraction": 0.65,
+  "chi5_zero_source": "Primitive quadratic Dirichlet character modulo 5; local completed-L sign changes with direct Hurwitz-zeta residual checks",
+  "chi5_zero_table_max": 143.96159112328735,
+  "chi5_zero_heights": [
+    50.0,
+    100.0,
+    143.0
+  ],
+  "zeta_zero_height": 143.0,
+  "first_chi5_zero": 6.648453344727717,
+  "rejected_foreign_frequencies": [
+    6.0206,
+    9.810574
+  ],
+  "frozen_channels": [
+    "C00",
+    "C03",
+    "C03-B",
+    "C35",
+    "C15"
+  ],
+  "immutability_passed": true,
+  "protected_file_count": 26,
+  "convolution_max_absolute_error": 1.8977175386680756e-10,
+  "metrics": [
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_local",
+      "rmse": 0.0005946809671344262,
+      "mae": 0.0005277609925457478,
+      "max_absolute_error": 0.0010257528330226782
+    },
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_local_lzeros",
+      "rmse": 4.4332878809243314e-05,
+      "mae": 2.534815665948879e-05,
+      "max_absolute_error": 0.00015219816017780774
+    },
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 4.4242861922259925e-05,
+      "mae": 2.5311268760724195e-05,
+      "max_absolute_error": 0.00014260004774678536
+    },
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_local",
+      "rmse": 0.0006038552803358335,
+      "mae": 0.0005330813806000261,
+      "max_absolute_error": 0.0010996080950371476
+    },
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_local_lzeros",
+      "rmse": 5.473609043397165e-07,
+      "mae": 4.568142618632309e-07,
+      "max_absolute_error": 1.3808082594815238e-06
+    },
+    {
+      "chi5_zero_height": 50.0,
+      "chi5_zero_count": 21,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 4.797578457343575e-07,
+      "mae": 3.9182938557578523e-07,
+      "max_absolute_error": 1.4545680625697652e-06
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_local",
+      "rmse": 0.0005946809671344262,
+      "mae": 0.0005277609925457478,
+      "max_absolute_error": 0.0010257528330226782
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_local_lzeros",
+      "rmse": 4.431264660362857e-05,
+      "mae": 2.5309197925766496e-05,
+      "max_absolute_error": 0.0001522830737127681
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 4.422776428837658e-05,
+      "mae": 2.5277361351382903e-05,
+      "max_absolute_error": 0.0001427415118995662
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_local",
+      "rmse": 0.0006038552803358335,
+      "mae": 0.0005330813806000261,
+      "max_absolute_error": 0.0010996080950371476
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_local_lzeros",
+      "rmse": 2.850278429100215e-07,
+      "mae": 2.2832479488855418e-07,
+      "max_absolute_error": 7.043411850739256e-07
+    },
+    {
+      "chi5_zero_height": 100.0,
+      "chi5_zero_count": 54,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 1.3407110445103656e-07,
+      "mae": 1.0052190889718165e-07,
+      "max_absolute_error": 4.058016254988167e-07
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M0_local",
+      "rmse": 0.0005946809671344262,
+      "mae": 0.0005277609925457478,
+      "max_absolute_error": 0.0010257528330226782
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M1_local_lzeros",
+      "rmse": 4.431251085524854e-05,
+      "mae": 2.5309207217349837e-05,
+      "max_absolute_error": 0.0001523022383421828
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "discovery",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 4.4227415397302664e-05,
+      "mae": 2.5277252037154394e-05,
+      "max_absolute_error": 0.00014271300547110538
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M0_local",
+      "rmse": 0.0006038552803358335,
+      "mae": 0.0005330813806000261,
+      "max_absolute_error": 0.0010996080950371476
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M1_local_lzeros",
+      "rmse": 2.804768036978571e-07,
+      "mae": 2.240727708513846e-07,
+      "max_absolute_error": 6.84260990488697e-07
+    },
+    {
+      "chi5_zero_height": 143.0,
+      "chi5_zero_count": 85,
+      "zeta_zero_height": 143.0,
+      "zeta_zero_count": 49,
+      "split": "validation",
+      "model": "M2_local_lzeros_cross",
+      "rmse": 1.2596052747994743e-07,
+      "mae": 9.09628575413284e-08,
+      "max_absolute_error": 3.1897969337505577e-07
+    }
+  ],
+  "interpretation": "Control del canal mixto C05 mediante una expansion truncada conocida. No constituye evidencia de una frecuencia nueva ni una formula explicita completa."
+}

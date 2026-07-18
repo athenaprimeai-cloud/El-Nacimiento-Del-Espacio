@@ -1,0 +1,8 @@
+{
+  "C-9e496bf2": {
+    "id": "C-9e496bf2",
+    "hypothesis_id": "H-7f2e30b5",
+    "description": "E004 v1.0: ordinal k=10, N=10000, M=M2 Laplacian; C1 n=100; C2 semiprimes; C3 Ulam; MD-035 edges ordinal only",
+    "created_at": "2026-07-18T00:16:37.805636+00:00"
+  }
+}

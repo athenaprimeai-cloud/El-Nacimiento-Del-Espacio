@@ -1,0 +1,28 @@
+{
+  "H-21980a3b": {
+    "id": "H-21980a3b",
+    "question_id": "Q-1ff736ef",
+    "statement": "H-ATH-D002-01: P=entropía espectral estable bajo R (T0–T4) y extrema vs permutación/bloques",
+    "predicts": "Δ0<=0.08 y p_emp<=0.05",
+    "weakens_if": "zona gris entre umbrales",
+    "dies_if": "p_emp>0.10 o Δ0>0.15",
+    "state": "MUERTA",
+    "control_id": "C-9f508006",
+    "result_summary": "Δ0=0.1013, p_N1=1.0, p_N2=1.0, interp=DESAPARECE, P_by_T={'T0_mean': 0.37626867200631253, 'T1_half_low': 0.3766091382297283, 'T2_half_high': 0.2749626396026103, 'T3_linear': 0.29983261490203816, 'T4_log_mean': 0.40700997708020276}",
+    "death_reason": "Δ0=0.1013, p_N1=1.0, p_N2=1.0",
+    "created_at": "2026-07-17T22:12:49.087834+00:00",
+    "finalized_at": "2026-07-17T22:12:49.093705+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T22:12:49.087834+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T22:12:49.093705+00:00",
+        "event": "result_recorded",
+        "control_id": "C-9f508006",
+        "state": "MUERTA"
+      }
+    ]
+  }
+}

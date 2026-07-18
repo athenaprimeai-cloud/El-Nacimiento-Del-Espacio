@@ -1,0 +1,62 @@
+{
+  "question_systemic": "¿El conjunto es mejor que la suma de las partes?",
+  "emergent_property_hypothesis": "No component alone produces knowledge; full system produces more robust evaluations",
+  "modes": {
+    "M1": {
+      "mode": "M1_explorer_only",
+      "n_candidates_generated": 100,
+      "n_open_accepted": 20,
+      "n_rejected_by_core": 80,
+      "n_group_a": 0,
+      "n_group_b": 0,
+      "n_group_c": 0,
+      "posthoc_violations": 0,
+      "auditor_verdict": "PASS",
+      "elimination_ready": 0,
+      "no_sabemos_count": 0,
+      "budget_units": 20,
+      "cost_proxy": 1.0,
+      "notes": [
+        "Budget = all OPEN; no prioritization",
+        "No Critic/Designer yet — elimination_ready stays 0"
+      ]
+    },
+    "M2": {
+      "mode": "M2_explorer_selector",
+      "n_candidates_generated": 100,
+      "n_open_accepted": 20,
+      "n_rejected_by_core": 80,
+      "n_group_a": 3,
+      "n_group_b": 11,
+      "n_group_c": 6,
+      "posthoc_violations": 0,
+      "auditor_verdict": "PASS",
+      "elimination_ready": 0,
+      "no_sabemos_count": 0,
+      "budget_units": 3,
+      "cost_proxy": 0.15,
+      "notes": [
+        "Budget = |A| (priority attacks only)",
+        "If cost_proxy < M1, selector reduces experiments per open hypothesis",
+        "Selector heuristics = methodological hypothesis"
+      ]
+    },
+    "M3": {
+      "status": "N/A",
+      "reason": "Crítico not implemented"
+    },
+    "M4": {
+      "status": "N/A",
+      "reason": "Full pipeline not implemented"
+    }
+  },
+  "comparison": {
+    "budget_reduction_M2_vs_M1": 0.85,
+    "posthoc_clean": true,
+    "m2_improves_experiment_economy": true,
+    "interpretation": "M2 better on economy if fewer budget_units (group A) with auditor PASS; not a claim about mathematical truth"
+  },
+  "compass_stable": true,
+  "architecture_falsifiable": true,
+  "claim_limit": "Process metrics only. No Goldbach. Does not prove M4. Selector bias still open."
+}

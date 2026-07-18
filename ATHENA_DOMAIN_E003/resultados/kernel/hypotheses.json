@@ -1,0 +1,28 @@
+{
+  "H-931d69e8": {
+    "id": "H-931d69e8",
+    "question_id": "Q-e6833d84",
+    "statement": "H-ATH-D003-01: Δ_real < Δ_nulo bajo W1–W5 rectangulares y D_{1/2}",
+    "predicts": "p_N1<=0.05 y p_N2<=0.05 y Δ_real < median Δ_nulo en ambos",
+    "weakens_if": "zona gris entre umbrales",
+    "dies_if": "p>0.10 o Δ_real >= median Δ_nulo",
+    "state": "MUERTA",
+    "control_id": "C-9b2ef5ac",
+    "result_summary": "Δ_real=4.541335, p_N1=1.0, p_N2=0.99, med_N1=0.315798, med_N2=1.879237, interp=DESAPARECE",
+    "death_reason": "Δ_real=4.541335, p_N1=1.0, p_N2=0.99, med_N1=0.315798, med_N2=1.879237",
+    "created_at": "2026-07-17T22:32:08.154252+00:00",
+    "finalized_at": "2026-07-17T22:32:08.157777+00:00",
+    "history": [
+      {
+        "ts": "2026-07-17T22:32:08.154252+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-17T22:32:08.157777+00:00",
+        "event": "result_recorded",
+        "control_id": "C-9b2ef5ac",
+        "state": "MUERTA"
+      }
+    ]
+  }
+}

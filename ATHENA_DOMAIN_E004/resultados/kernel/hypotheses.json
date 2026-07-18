@@ -1,0 +1,28 @@
+{
+  "H-7f2e30b5": {
+    "id": "H-7f2e30b5",
+    "question_id": "Q-fcc3bb16",
+    "statement": "H-ATH-D004-01: firma M_2 estable vs C1/C2/C3 bajo grafo ordinal k=10",
+    "predicts": "p_C1<=0.05 y D(P,C2),D(P,C3)>2*D_C1_med",
+    "weakens_if": "zona gris",
+    "dies_if": "p_C1>0.10 o no separación de impostores",
+    "state": "SOPORTADA_BAJO_CONTROL",
+    "control_id": "C-9e496bf2",
+    "result_summary": "M_P=7.739626, μ_C1=10.611261, p_C1=0.0, interp=PERSISTE",
+    "death_reason": null,
+    "created_at": "2026-07-18T00:16:37.802632+00:00",
+    "finalized_at": "2026-07-18T00:16:37.805636+00:00",
+    "history": [
+      {
+        "ts": "2026-07-18T00:16:37.802632+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-18T00:16:37.805636+00:00",
+        "event": "result_recorded",
+        "control_id": "C-9e496bf2",
+        "state": "SOPORTADA_BAJO_CONTROL"
+      }
+    ]
+  }
+}

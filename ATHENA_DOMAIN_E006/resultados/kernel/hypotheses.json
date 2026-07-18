@@ -1,0 +1,28 @@
+{
+  "H-60ad9f2c": {
+    "id": "H-60ad9f2c",
+    "question_id": "Q-a5ee4789",
+    "statement": "H-ATH-D006-01: material beyond wheel-30 + C2/C3 + halves",
+    "predicts": "p_range_30<=0.01 and C2/C3 and HALF_BOTH_EXTREME",
+    "weakens_if": "gray band or HALF_SPLIT",
+    "dies_if": "p_range_30>0.10 or central80 or HALF_BOTH_NULL",
+    "state": "SOPORTADA_BAJO_CONTROL",
+    "control_id": "C-09a27dd3",
+    "result_summary": "M_P=5.846873 p30=0.000500 H01_MATERIAL_BEYOND_WHEEL_30 curve=CURVE_MONOTONE",
+    "death_reason": null,
+    "created_at": "2026-07-18T02:01:47.966735+00:00",
+    "finalized_at": "2026-07-18T02:01:47.971311+00:00",
+    "history": [
+      {
+        "ts": "2026-07-18T02:01:47.966735+00:00",
+        "event": "created"
+      },
+      {
+        "ts": "2026-07-18T02:01:47.971311+00:00",
+        "event": "result_recorded",
+        "control_id": "C-09a27dd3",
+        "state": "SOPORTADA_BAJO_CONTROL"
+      }
+    ]
+  }
+}

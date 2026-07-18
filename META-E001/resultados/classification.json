@@ -1,0 +1,100 @@
+{
+  "campaign": "META-E001",
+  "protocol": "v1.0 CONGELADO",
+  "n_rep": 10,
+  "n_candidates": 100,
+  "budget_reduction_threshold": 0.5,
+  "replicas_summary": [
+    {
+      "seed": 0,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 1,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 2,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 3,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 4,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 5,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 6,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 7,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 8,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    },
+    {
+      "seed": 9,
+      "budget_m1": 20,
+      "budget_m2": 3,
+      "reduction": 0.85,
+      "posthoc_clean": true
+    }
+  ],
+  "aggregate": {
+    "mean_budget_reduction": 0.85,
+    "min_budget_reduction": 0.85,
+    "n_replicas_meet_50pct": 10,
+    "all_posthoc_clean": true,
+    "all_m2_budget_lt_m1": true
+  },
+  "verdict": "H-META-E001-01_WINS_E-M2",
+  "hypotheses": {
+    "H-META-E001-01": "SOPORTADA_BAJO_CONTROL",
+    "H-META-E001-00": "MUERTA"
+  },
+  "evidence_profile": {
+    "E-M1": "fuerte",
+    "E-M2": "fuerte",
+    "E-M3": "insuficiente",
+    "E-M4": "no evaluada",
+    "E-M5": "no evaluada"
+  },
+  "local_vs_global": "E-M2 local economy improvement does not prove global scientific quality; Selector bias (hard-but-important hypotheses) remains open",
+  "scope_limit": "MONOLITO = without Selector only; Core+Auditor present in both arms. Not a pure unstructured process without Core."
+}

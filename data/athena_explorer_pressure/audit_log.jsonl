@@ -1,0 +1,21 @@
+{"ts": "2026-07-17T20:18:11.038791+00:00", "event": "CREATE_QUESTION", "id": "Q-f0ca4046", "text": "¿Existe alguna diferencia medible en un sistema toy bajo control C?"}
+{"ts": "2026-07-17T20:18:11.041814+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-9ff7b3e2", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.045390+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-d98c12d2", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.050280+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-5030e4c7", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.054832+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-e18e30c1", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.057903+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-b9db470e", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.061941+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-1c596943", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.068539+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-1da55e68", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.073164+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-ca5f35ad", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.079263+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-1003c7d6", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.084854+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-24e8c2fa", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.092761+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-42932fcc", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.098064+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-638ecb46", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.103088+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-3821f2be", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.109246+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-df7aa353", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.116832+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-4ccfb0f5", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.122389+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-b745dc98", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.128530+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-d1544b49", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.136651+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-5909d925", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.142450+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-97beae4f", "question_id": "Q-f0ca4046"}
+{"ts": "2026-07-17T20:18:11.148527+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-f2e41869", "question_id": "Q-f0ca4046"}
