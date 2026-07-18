@@ -1,0 +1,14 @@
+{
+  "wave": "T04_REFERENCE_WAVE1",
+  "family": "T-04",
+  "spec_version": "1.0",
+  "config_path": "C:/Users/johnn/Documents/El Nacimiento del Espacio/discovery/t04_wave1_config.json",
+  "n_jobs": 240,
+  "raw_runs": "raw_runs.jsonl",
+  "raw_runs_sha256": "0a28ff537f6c2c37bc7c1ca3eb12d556125149edd043be8de396b2d9a7e7fa85",
+  "blind": true,
+  "athena_io": "forbidden",
+  "t01_io": "forbidden",
+  "t03_io": "forbidden",
+  "generation": "gap_renewal_geometric"
+}

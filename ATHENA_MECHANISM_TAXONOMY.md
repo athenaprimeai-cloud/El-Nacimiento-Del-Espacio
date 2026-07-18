@@ -37,7 +37,7 @@ Respuestas: `sí` / `no` / `?` (hipótesis de inventario, no resultado experimen
 | T-03 | Autómata 1D / Wolfram \(r=1\) | config binaria | vecindad \(2r+1\), tabla \(f\) | T-01 raw, Athena, factores | ocupación tras \(T\) | — | — | — | — | **REFERENCE_COMPLETE** (`discovery/T03_STATUS.md`) |
 | T-02 | Hard-core / repulsión en la línea | min dist \(d\) entre 1s | posiciones, \(d\) | \(p\mid n\), gcd en \(E\) | conjunto | ? | ? | ? | ? | inventario |
 
-| T-04 | Renovación / gaps paramétricos | puntos en \(\mathbb{N}\) | ley de gaps (params) | “porque primo” | conjunto | ? | ? | ? | ? | inventario |
+| T-04 | Renovación / gaps geométricos | puntos en \(\mathbb{N}\) | ley de gaps \(q\) | T-01/T-03 raw, Athena, factores | conjunto | — | — | — | — | **REFERENCE_COMPLETE** (`discovery/T04_STATUS.md`) |
 | T-05 | Embedding + umbral | \(T:i\mapsto\mathbb{R}^d\) | \(T(i)\), \(\varepsilon\) | \(T\) vía factores | ocupación/aristas | ? | ? | ? | ? | inventario |
 | T-06 | Memoria finita | estado \(s_t\) finito | \(s_t\), ventana | primalidad | ocupación | ? | ? | ? | ? | inventario |
 | T-07 | Exclusión por capacidad local | cupo en ventanas | conteos locales | factorización | conjunto | ? | ? | ? | ? | inventario |

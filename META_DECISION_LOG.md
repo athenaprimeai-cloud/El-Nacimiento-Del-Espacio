@@ -621,10 +621,28 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Síntesis Phase III** (`ATHENA_MECHANISM_DISCOVERY_SYNTHESIS.md`): clases T-01/T-03; tipos de NECESSARY; tipos de P\* **ausentes** (P\*-A…E); huecos T-02/T-04/T-05/…; reglas de diversidad R-DIV-1…6. Pregunta: *¿qué región no cartografiada?* no *¿qué mecanismo más?*. **No** abrir generador arbitrario; **una** clase nueva solo tras elección consciente post-síntesis |
-| **Razón** | Cobertura del espacio, no estacionamiento de vehículos |
-| **Reversión** | Apertura de T-0x solo con tabla “por qué no es T-01/T-03” |
+| **Motivo** | **Síntesis Phase III:** cobertura; R-DIV; huecos |
+| **Razón** | Mapa, no estacionamiento |
+| **Reversión** | — |
+
+### MD-069
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **T-04 renovación/gaps:** frontera R-DIV; spec; generador; 240 runs; análisis N1–N3 |
+| **Razón** | Hueco de cobertura (proceso de puntos) |
+| **Reversión** | — |
+
+### MD-070
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Cierre T-04** `REFERENCE_COMPLETE`; P\*=NONE; INTAKE=NOT_ELIGIBLE. Necessary = renovación clásica (densidad \(q\)), no P\* Athena. Mapa: T-01 · T-03 · T-04 tres regiones distintas |
+| **Razón** | Cartografía de hueco prioritario; sin forzar hipótesis |
+| **Reversión** | — |
 
 ---
 
-*Siguiente: elegir una región (p.ej. T-04 o T-02) con R-DIV; no Intake; no E008.*
+*Siguiente: actualizar síntesis de cobertura o pausa Phase III; no Intake; no E008.*

@@ -1,0 +1,12 @@
+{
+  "wave": "T04_REFERENCE_WAVE1",
+  "family": "T-04",
+  "spec_version": "1.0",
+  "spec_doc": "ATHENA_T04_REFERENCE_GENERATOR.md",
+  "gap_law": "geometric",
+  "note": "Gap renewal process. NOT T-01/T-03 paint. Chosen for structural hole (point process), not Athena fit. Closed before runs.",
+  "N_list": [1000, 5000, 10000],
+  "q_list": [0.1, 0.2, 0.3, 0.5],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "design_blindness": "no T-01/T-03 raw; no SURVIVORS; no E00x"
+}
