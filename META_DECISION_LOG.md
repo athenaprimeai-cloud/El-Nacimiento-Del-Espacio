@@ -576,10 +576,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Ejecutar T-01 Ola 1:** `discovery/t01_reference_generator.py` (síncrono, ciego); config `t01_wave1_config.json`; `results/T01_REFERENCE_WAVE1/` (1920 runs); análisis `analyze_t01_wave1.py` con clases NECESSARY/EMPIRICAL/SEED_DEPENDENT/UNKNOWN. Consecuencias **NECESSARY** = N1–N3 (regla); empíricas E1–E2; **sin P\*** sellada; **sin** comparación Athena. T-01 sigue referencia de carretera |
-| **Razón** | Primero existe el mecanismo; luego se ve a qué está obligado |
+| **Motivo** | **Ejecutar T-01 Ola 1:** generador ciego; 1920 runs; N1–N3 / E1–E2 / S1 / U1; sin P\*; sin Athena |
+| **Razón** | Primero existe el mecanismo; luego a qué está obligado |
 | **Reversión** | No reescribir raw_runs; ola 2 = nuevo wave id |
+
+### MD-064
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Capa necesaria T-01** (`discovery/T01_NECESSARY_LAYER.md`): N4–N5 paramétricas (\(p_{\mathrm{birth}}=0\): densidad no crece; \(\theta=1\): empaquetamiento gap≥r+1); N7 births síncronos rompen empaquetamiento; E1 no sostenido (extinción 0 en ola 1); **no** elevar a P\*/Intake. T-01 **permanece referencia**; no toda familia es candidato. Siguiente: archivar T-01 o segundo vehículo (T-03), no forzar P\* |
+| **Razón** | Consecuencia no trivial de la dinámica ≠ predicción Athena; no forzar Intake |
+| **Reversión** | Solo si se sella P\* independiente derivada de N4–N7 en escenario nuevo (improbable sin contrabando) |
 
 ---
 
-*Siguiente: si hay consecuencia necesaria cuantificable → P\* candidata → Intake; si no, T-01 cumple como vehículo. No Athena bridge aún. No E008.*
+*Siguiente: T-01 archivado como referencia; opcional T-03 spec; no Intake; no E008.*
