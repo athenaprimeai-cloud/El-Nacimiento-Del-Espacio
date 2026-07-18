@@ -1,141 +1,234 @@
-# ATHENA — Supervivientes (restricciones empíricas)
+# ATHENA — Supervivientes (contrato metodológico)
 
-**Estado:** documento transversal · **fase de acumulación de evidencia**  
+**Estado:** núcleo organizativo de Era II · **fase de acumulación de evidencia**  
 **Fecha de apertura:** 2026-07-18  
-**No es:** hipótesis · teoría · interpretación · operador · montaña narrativa  
-
-**Regla de uso:**  
-Cualquier modelo futuro \(\mathcal{M}\) se evalúa por **cuántas de estas restricciones satisface** sin violar MD-035 ni las decisiones congeladas del log — no por elegancia.
-
-**Carga de la prueba (invertida):**  
-\(\mathcal{M}\) debe encajar en la lista. La lista no se reescribe para encajar en \(\mathcal{M}\).
+**No es:** hipótesis · teoría · interpretación · operador · “la realidad”  
 
 ---
 
-## Restricciones
+## Criterio de progreso (explícito)
 
-### S-001
+El programa **no** acumula ideas.  
+Acumula **restricciones**.
 
-**E001 no sobrevivió.**
+| Forma clásica (hasta E003) | Forma actual (E004 → E007+) |
+| -------------------------- | --------------------------- |
+| hipótesis → experimento → muerte o supervivencia | conjunto de **condiciones de contorno** empíricas |
+| “¿Qué explicación me gusta?” | “¿Qué explicación **sobrevive a todas** las restricciones conocidas?” |
+
+Eso no es semántica. Es el **criterio de progreso**.
+
+---
+
+## Naturaleza de un superviviente
+
+Un ítem S-xxx **no** describe “la realidad”.
+
+Describe:
+
+> **lo que este conjunto de protocolos ha conseguido distinguir.**
+
+Eso parece una diferencia semántica. No lo es.
+
+Mañana puede existir un E011 que mate S-004. Entonces:
+
+```text
+S-004
+  ↓
+ARCHIVED (killed by E011)
+```
+
+Eso **no** invalida el programa.  
+Significa que el programa **sigue vivo**.
+
+---
+
+## Carga de la prueba (invertida)
+
+Hasta ahora el laboratorio justificaba cada experimento.
+
+Ahora cada modelo justifica su existencia:
+
+```text
+Modelo ℳ
+    │
+    ▼
+¿explica S-004?
+    │
+    ▼
+¿explica S-005?
+    │
+    ▼
+¿explica S-006?
+    │
+    ▼
+¿rompe MD-035 / PROHIBICIONES?
+    │
+    ├── sí → descartado
+    └── no  → candidato (aún no “verdad”)
+```
+
+El laboratorio **deja de defender hipótesis**.  
+Las hipótesis **se defienden ante el laboratorio**.
+
+---
+
+## Restricciones (condiciones de contorno)
+
+### S-001 — E001 no sobrevivió
 
 - Campaña: DOMAIN-E001  
-- Objeto de prueba: pico espectral \(\sim 1/6\) en residual Goldbach (media)  
-- Resultado: H-01 **MUERTA** bajo nulos prerregistrados  
-- Código: no extremidad vs controles  
+- Pico \(\sim 1/6\) residual Goldbach: H-01 **MUERTA** bajo nulos prerregistrados  
 
-### S-002
-
-**E002 no sobrevivió.**
+### S-002 — E002 no sobrevivió
 
 - Campaña: DOMAIN-E002  
-- Objeto de prueba: conservación de entropía espectral bajo familia \(\mathcal{R}\)  
-- Resultado: **DESAPARECE** (no diferencial vs nulos)  
-- Código: `H00_NO_DIFFERENTIAL_CONSERVATION`  
+- Conservación de entropía espectral bajo \(\mathcal{R}\): **DESAPARECE** (no diferencial)  
 
-### S-003
-
-**E003 no sobrevivió.**
+### S-003 — E003 no sobrevivió
 
 - Campaña: DOMAIN-E003  
-- Objeto de prueba: resistencia de identidad (\(\Delta_{\mathrm{real}}\) vs \(\Delta_{\mathrm{nulo}}\)) bajo ventanas rectangulares y \(D_{1/2}\)  
-- Resultado: **DESAPARECE**  
-- Código: `H00_NO_DIFFERENTIAL_IDENTITY_RESISTANCE`  
-- Nota: FASE 2 borde no abierta (no había sombra que auditar)  
+- Resistencia de identidad \(\Delta_{\mathrm{real}}\) vs \(\Delta_{\mathrm{nulo}}\): **DESAPARECE**  
 
-### S-004
+### S-004 — Diferencia bajo protocolo E004
 
-**E004 persistió frente a controles (nulo uniforme equicardinal).**
+```text
+Existe una diferencia bajo el protocolo E004
+(M₂ ordinal vs controles equicardinales uniformes, tal como congelado).
+```
 
-- Campaña: DOMAIN-E004  
-- Objeto de prueba: \(M_2\) Laplaciano inducido, grafo ordinal, vs C1 uniforme / C2 / C3  
-- Resultado protocolar histórico: PERSISTE vs C1 uniforme  
-- **Addendum revisor:** H-00 global **no** muerta con nulo uniforme solo; Cramér es el asesino legítimo de densidad local (→ E005)  
-- Restricción operativa: existe firma de \(M_2\) ordinal **distinta** de un conjunto equicardinal uniforme bajo el protocolo E004  
+- No eleva el nulo uniforme a “densidad local”.  
+- Addendum revisor: Cramér es el nulo de densidad local legítimo (E005).  
 
-### S-005
+### S-005 — La diferencia no desaparece tras Cramér ni rueda 30
 
-**E005 persistió frente a Cramér; E006 persistió frente a rueda 30.**
+```text
+La diferencia no desaparece tras Cramér (E005)
+ni tras Cramér-rueda W=30 (E006),
+bajo protocolos sellados.
+```
 
-- **E005:** PERSISTE / `H01_MATERIAL_BEYOND_CRAMER` (sello #1)  
-  - Addendum: Cramér es hombre de paja conocido; no implica material “nuevo”  
-- **E006:** PERSISTE / `H01_MATERIAL_BEYOND_WHEEL_30` (sello #2)  
-  - Curva \(S(W)\) monótona en \(W\in\{1,2,6,30\}\) en \(N=10^5\)  
-- Restricción operativa conjunta: la firma **no** se disuelve bajo Cramér ni bajo Cramér-rueda \(W=30\) en los protocolos sellados  
+- E006: además curva monótona \(S(1)>S(2)>S(6)>S(30)\) en \(N=10^5\).  
+- No implica geometría generativa ni “material ontológico”.  
 
-### S-006
+### S-006 — Reproducción de clasificación y orden
 
-**E007 reprodujo clasificación y orden.**
+```text
+La clasificación PERSISTE y el orden
+S(1) > S(2) > S(6) > S(30)
+se reproducen al cambiar N (E007, N=5·10⁴),
+únicas reglas: las de E006 + cambio de N.
+```
 
-- Campaña: DOMAIN-E007 (réplica, no descubrimiento)  
-- Único cambio: \(N=5\cdot 10^4\) (vs \(N=10^5\) en E006)  
-- Resultado: **REPRODUCIDA**  
-  - class_W30 = PERSISTE  
-  - orden \(S(1)>S(2)>S(6)>S(30)\)  
-- **No** se reprodujeron (ni se exigieron): valores de \(M_2\), amplitudes de \(S(W)\), ley funcional de la curva  
-- Regla: E007 **no** reescribe E006  
+- **No** se reprodujeron (ni se exigieron): valores de \(M_2\), amplitudes de \(S(W)\), ley funcional.  
+- E007 no reescribe E006.  
 
 ---
 
-## Lo que la familia **no** es
+## NO EXPLICADO
 
-Esta lista **no** afirma:
+Actualmente **ningún** mecanismo explica **simultáneamente**:
 
-- geometría generativa de primos  
-- Hilbert–Pólya  
-- conexión con ceros de \(\zeta\)  
-- que \(M_2\) sea “la” variable correcta  
-- ontología de “material”  
+- S-004  
+- S-005  
+- S-006  
 
-Describe únicamente: **familia reproducida de observables** bajo protocolos prerregistrados.
+(Respectando PROHIBICIONES y MD-035.)
+
+Esta sección se actualiza solo cuando un modelo documentado pase el banco de pruebas — o cuando una nueva restricción lo invalide.
 
 ---
 
-## Tres preguntas obligatorias a cualquier modelo mínimo \(\mathcal{M}\)
+## PROHIBICIONES
 
-Antes de aceptar \(\mathcal{M}\), debe responder **simultáneamente**:
+Un mecanismo \(\mathcal{M}\) queda **descartado** si:
 
-| # | Pregunta | Restricciones que toca |
-| - | -------- | ---------------------- |
-| **(1)** | ¿Por qué aparece E004? | S-004 |
-| **(2)** | ¿Por qué E006 no desaparece bajo rueda 30? | S-005 |
-| **(3)** | ¿Por qué la réplica E007 conserva el orden \(S(1)>S(2)>S(6)>S(30)\)? | S-006 |
+| # | Prohibición |
+| - | ----------- |
+| P1 | Introduce **divisibilidad / gcd / factores** en la geometría del grafo o en \(E\) (**MD-035**) |
+| P2 | Necesita **ajustar parámetros tras observar** resultados (post-hoc) |
+| P3 | Explica un superviviente **rompiendo** otro (p.ej. salva S-004 matando la lectura protocolar de S-006) |
+| P4 | Requiere **redefinir protocolos ya congelados** para “hacer encajar” la historia |
+| P5 | Resucita S-001…S-003 como “señal” **sin** nuevo ID de campaña y nuevos controles |
 
-Si no explica las tres a la vez, \(\mathcal{M}\) **no** ha ganado el derecho a existir en Athena.
+---
 
-Además: no puede violar **S-001…S-003** reinventando como “señal” lo ya matado sin nuevo ID y nuevo control.
+## Tres preguntas obligatorias a \(\mathcal{M}\)
+
+Antes de aceptar un modelo mínimo:
+
+| # | Pregunta | Toca |
+| - | -------- | ---- |
+| (1) | ¿Por qué aparece E004? | S-004 |
+| (2) | ¿Por qué E006 no desaparece bajo rueda 30? | S-005 |
+| (3) | ¿Por qué E007 conserva el orden \(S(1)>S(2)>S(6)>S(30)\)? | S-006 |
+
+Si no las tres a la vez → \(\mathcal{M}\) **no** ha ganado el derecho a existir en Athena.
+
+---
+
+## Sobre E008
+
+**No** se abre por defecto.
+
+Tentación común:
+
+```text
+hay resultados → hagamos otro experimento
+```
+
+Pregunta correcta:
+
+```text
+¿qué falta exactamente para que exista un mecanismo mínimo?
+```
+
+No siempre hace falta otro experimento.  
+A veces hace falta formular con precisión qué debe satisfacer el mecanismo (este documento).
 
 ---
 
 ## Disciplina de fase
 
-| Fase anterior | Fase actual |
-| ------------- | ----------- |
-| Exploración / linterna | **Acumulación de evidencia** |
-| Peligro dominante: falso positivo | Peligro dominante: **modelo demasiado grande** |
-| Pregunta: ¿hay señal? | Pregunta: ¿mecanismo mínimo compatible con **todos** los supervivientes? |
+| | |
+| - | - |
+| Peligro dominante (E001–E003) | Falso positivo |
+| Peligro dominante (ahora) | **Modelo demasiado grande** |
+| Vocabulario | “familia reproducida de observables”, no “la realidad” |
+| Progreso | +restricciones que sobreviven; no +ideas elegantes |
 
-**No** abrir E008 experimental por defecto.  
-Primero: confrontar propuestas de modelo con esta lista.
+Si se mantiene: no reinterpretar supervivientes como demostraciones; no reabrir experimentos fallidos para “hacerlos funcionar”.
 
 ---
 
-## Montaña (vocabulario operativo)
+## Montaña (operativa)
 
 ```text
 ¿Operador oculto?
         ↑
 ¿Geometría generativa?
         ↑
-¿Mecanismo mínimo?          ← debe satisfacer S-004, S-005, S-006 (+ no resucitar S-001..003)
+¿Mecanismo mínimo?     ← banco: S-004..S-006 + PROHIBICIONES
         ↑
 Familia reproducida de observables
         │
-        ├── S-001 E001 muerto
-        ├── S-002 E002 muerto
-        ├── S-003 E003 muerto
-        ├── S-004 E004 persistió (uniforme)
-        ├── S-005 E005/E006 persistió (Cramér / rueda 30)
-        └── S-006 E007 reprodujo clasificación y orden
+        ├── S-001..S-003  muertos (restricciones negativas)
+        ├── S-004..S-006  supervivientes / réplica
+        └── NO EXPLICADO  (simultáneo)
+```
+
+---
+
+## Archivo de restricciones (plantilla)
+
+Cuando una S-xxx muera por campaña posterior:
+
+```text
+### S-00k — ARCHIVED (killed by E0xx)
+- Fecha de archivo: …
+- Campaña asesina: …
+- Veredicto protocolar: …
+- La restricción deja de ser condición de contorno activa.
 ```
 
 ---
@@ -144,9 +237,10 @@ Familia reproducida de observables
 
 | Fecha | Cambio |
 | ----- | ------ |
-| 2026-07-18 | Apertura: S-001…S-006 desde E001–E007 |
+| 2026-07-18 | Apertura S-001…S-006 |
+| 2026-07-18 | Contrato: NO EXPLICADO, PROHIBICIONES, naturaleza no ontológica, carga invertida, anti-E008 por defecto |
 
-*Añadir nuevas filas S-xxx solo con campaña ID y veredicto protocolar — no con narrativa.*
+*Añadir S-xxx solo con campaña ID y veredicto protocolar — no con narrativa.*
 
 ---
 
@@ -154,4 +248,5 @@ Familia reproducida de observables
 
 *No hipótesis.  
 Restricciones.  
-La elegancia no puntúa.*
+La elegancia no puntúa.  
+El laboratorio no defiende modelos: los modelos se defienden aquí.*

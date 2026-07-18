@@ -482,6 +482,15 @@
 | **Razón** | Disciplina de fase: modelos se miden contra restricciones, no al revés |
 | **Reversión** | Añadir S-xxx solo con campaña ID y veredicto protocolar |
 
+### MD-054
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **SURVIVORS como contrato metodológico:** progreso = acumular restricciones, no ideas; supervivientes ≠ “la realidad” (solo lo que los protocolos distinguen; archivables por E0xx futuro); secciones **NO EXPLICADO** y **PROHIBICIONES** (P1–P5); carga de prueba invertida formalizada; E008 no por defecto — primero qué debe satisfacer un mecanismo mínimo |
+| **Razón** | Evitar ontologizar S-xxx; mantener banco de pruebas vivo |
+| **Reversión** | Solo si se abandona la fase de acumulación (decisión de Era explícita) |
+
 ---
 
-*Siguiente: confrontar modelos candidatos con ATHENA_SURVIVORS — no E008 ni catedral por defecto.*
+*Siguiente: confrontar ℳ con SURVIVORS (NO EXPLICADO / PROHIBICIONES) — no E008 ni catedral por defecto.*
