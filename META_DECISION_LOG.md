@@ -464,6 +464,24 @@
 | **Razón** | Estabilidad bajo cambio de escala; cadena de inferencia limpia |
 | **Reversión** | Réplica en otro \(N\) = nuevo ID (p.ej. E007b); no reabrir E007 con más variables |
 
+### MD-052
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Cambio de estatus experimental:** la unidad ya no es un experimento aislado sino una **familia reproducida de observables**. Pregunta científica: “¿mecanismo mínimo compatible con todos los supervivientes?” (no “¿hay señal?”). Peligro dominante: modelo demasiado grande (no solo falso positivo). Vocabulario: evitar “material” ontológico → “familia reproducida”. **No** abrir E008 por defecto |
+| **Razón** | E007 completó réplica prerregistrada; transición exploración → acumulación de evidencia |
+| **Reversión** | Solo si se demuestra que E007 no era réplica válida (fallo de protocolo) |
+
+### MD-053
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | Abrir **`ATHENA_SURVIVORS.md`**: lista S-001…S-006 de restricciones empíricas (muertos E001–E003; persistencias E004–E006; réplica E007). Sin hipótesis ni interpretación. Tres preguntas obligatorias a cualquier modelo \(\mathcal{M}\). Carga de la prueba invertida |
+| **Razón** | Disciplina de fase: modelos se miden contra restricciones, no al revés |
+| **Reversión** | Añadir S-xxx solo con campaña ID y veredicto protocolar |
+
 ---
 
-*Siguiente: mecanismo mínimo E004+E006+E007 sin contrabando, o réplica N distinto con nuevo ID — no catedral.*
+*Siguiente: confrontar modelos candidatos con ATHENA_SURVIVORS — no E008 ni catedral por defecto.*
