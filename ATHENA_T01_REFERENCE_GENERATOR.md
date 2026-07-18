@@ -215,7 +215,21 @@ Misma versión de spec + mismos params + misma semilla → **bit-idéntico** `oc
 
 ## 3. Parámetros de referencia (cerrados para la primera ola)
 
-No se exploran grillas enormes. Una **rejilla mínima** predeclarada:
+La **familia** (regla) está en esta spec.  
+Los **valores concretos de Ola 1** viven en archivo de configuración separado  
+(no alteran la familia):
+
+```text
+discovery/t01_wave1_config.json
+```
+
+El script acepta el vector:
+
+```text
+(N, r, θ, p_init, p_birth, T, seed)
+```
+
+No se exploran grillas enormes. Rejilla mínima de Ola 1 (también en el JSON):
 
 | Parámetro | Valores de referencia (ola 1) |
 | --------- | ----------------------------- |

@@ -567,10 +567,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **T-01 reference generator — spec 1.0 congelada** (`ATHENA_T01_REFERENCE_GENERATOR.md`): un solo vehículo; ciego a SURVIVORS/E00x; objeto abstracto (conjunto ocupación); regla local exclusión/nacimiento; rejilla ola 1 cerrada; P\* solo tras consecuencia necesaria (no “parecerse a”); **código aún no escrito**. No diez generadores. T-03 segundo vehículo |
+| **Motivo** | **T-01 reference generator — spec 1.0 congelada** (`ATHENA_T01_REFERENCE_GENERATOR.md`): un solo vehículo; ciego a SURVIVORS/E00x; objeto abstracto (conjunto ocupación); regla local exclusión/nacimiento; rejilla ola 1 en config separada; P\* solo tras consecuencia necesaria |
 | **Razón** | Primer ladrillo de la carretera sin catedral ni post-hoc |
 | **Reversión** | Cambios de regla = spec 2.0 / T-01b, no edición silenciosa |
 
+### MD-063
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Ejecutar T-01 Ola 1:** `discovery/t01_reference_generator.py` (síncrono, ciego); config `t01_wave1_config.json`; `results/T01_REFERENCE_WAVE1/` (1920 runs); análisis `analyze_t01_wave1.py` con clases NECESSARY/EMPIRICAL/SEED_DEPENDENT/UNKNOWN. Consecuencias **NECESSARY** = N1–N3 (regla); empíricas E1–E2; **sin P\*** sellada; **sin** comparación Athena. T-01 sigue referencia de carretera |
+| **Razón** | Primero existe el mecanismo; luego se ve a qué está obligado |
+| **Reversión** | No reescribir raw_runs; ola 2 = nuevo wave id |
+
 ---
 
-*Siguiente: implementar `discovery/t01_reference_generator.py` según spec 1.0 — ciego; luego ola 1. No Intake hasta P\*.*
+*Siguiente: si hay consecuencia necesaria cuantificable → P\* candidata → Intake; si no, T-01 cumple como vehículo. No Athena bridge aún. No E008.*
