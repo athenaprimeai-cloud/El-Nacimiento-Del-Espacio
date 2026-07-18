@@ -161,10 +161,10 @@ EXPERIMENT    (solo con admisión)
 ## Primer trabajo concreto
 
 1. ~~Taxonomía mínima MD-035~~ → `ATHENA_MECHANISM_TAXONOMY.md`  
-2. **En curso:** un solo generador ciego de referencia — **T-01**  
-   → spec cerrada: `ATHENA_T01_REFERENCE_GENERATOR.md`  
-   → código **después** de la spec; sin leer SURVIVORS/E00x  
-3. No diez generadores en paralelo  
+2. ~~T-01~~ → `REFERENCE_COMPLETE`  
+3. ~~T-03~~ → `REFERENCE_COMPLETE`  
+4. **Ahora:** síntesis de cobertura → `ATHENA_MECHANISM_DISCOVERY_SYNTHESIS.md`  
+5. **Después:** **una** sola clase nueva (hueco de cobertura), no acumulación  
 
 ### Primer trabajo (histórico)
 

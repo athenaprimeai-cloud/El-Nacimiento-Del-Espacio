@@ -10,7 +10,8 @@
 
 ```text
 NO E008 por inercia.
-PHASE III: generar y filtrar candidatos ciegos.
+PHASE III: T-01 y T-03 REFERENCE_COMPLETE; P*=NONE.
+SYNTHESIS de cobertura (no tercer generador por acumulación).
 INTAKE: vacío (ningún ℳ admitido).
 ```
 
@@ -19,7 +20,8 @@ INTAKE: vacío (ningún ℳ admitido).
 | Protocolos E001–E007 | ✓ congelados |
 | SURVIVORS / contrato | ✓ |
 | Intake / aduana | ✓ vacía de candidatos |
-| **Mechanism Discovery** | **✓ abierta** |
+| Mechanism Discovery | ✓ T-01 · T-03 cerrados |
+| **Discovery synthesis** | **✓** `ATHENA_MECHANISM_DISCOVERY_SYNTHESIS.md` |
 | Candidato ℳ en registro | ✗ |
 | \(P^*\) sellada | ✗ |
 

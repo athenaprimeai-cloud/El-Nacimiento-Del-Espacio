@@ -612,10 +612,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Capa necesaria T-03 + cierre:** `T03_NECESSARY_LAYER` N4–N9 (quiescencia W par, cono de luz, aditividad, anti-teoremas); **no** P\*/Intake. `T03_STATUS=REFERENCE_COMPLETE`. Regla: matemática válida ≠ hipótesis Athena. Carretera: T-01 y T-03 archivados como clases distintas |
-| **Razón** | Auditar la regla sin forzar apuesta; no alas a cada bicicleta |
-| **Reversión** | Solo con P\* independiente sellable (no prevista) |
+| **Motivo** | **Cierre T-03** REFERENCE_COMPLETE; sin P\* |
+| **Razón** | Segunda clase cartografiada |
+| **Reversión** | — |
+
+### MD-068
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Síntesis Phase III** (`ATHENA_MECHANISM_DISCOVERY_SYNTHESIS.md`): clases T-01/T-03; tipos de NECESSARY; tipos de P\* **ausentes** (P\*-A…E); huecos T-02/T-04/T-05/…; reglas de diversidad R-DIV-1…6. Pregunta: *¿qué región no cartografiada?* no *¿qué mecanismo más?*. **No** abrir generador arbitrario; **una** clase nueva solo tras elección consciente post-síntesis |
+| **Razón** | Cobertura del espacio, no estacionamiento de vehículos |
+| **Reversión** | Apertura de T-0x solo con tabla “por qué no es T-01/T-03” |
 
 ---
 
-*Siguiente: tercer vehículo de taxonomía (clase distinta) o pausa Phase III; no Intake; no E008.*
+*Siguiente: elegir una región (p.ej. T-04 o T-02) con R-DIV; no Intake; no E008.*
