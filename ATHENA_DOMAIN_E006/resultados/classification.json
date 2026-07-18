@@ -1,0 +1,165 @@
+{
+  "campaign": "ATHENA_DOMAIN_E006",
+  "protocol": "v1.0 PREREGISTERED",
+  "issue": "https://gitlab.com/athena-group321329/athena/-/issues/2",
+  "protocol_sha256": "12b9c1b7ec6930472efc2a774d484a90ea64e9db9f15270394c24e15161f9e5b",
+  "design": "direct_curve",
+  "N": 100000,
+  "k": 12,
+  "B": 2000,
+  "m_pi_N": 9592,
+  "M_P": 7.92994162,
+  "principal_W": 30,
+  "wheels": {
+    "W1": {
+      "W": 1,
+      "n_U": 100000,
+      "n_U_L": 50000,
+      "n_U_H": 50000,
+      "median": 10.04378649,
+      "p_range": 0.0004997501249375312,
+      "D_C1_med": 0.1234362,
+      "senal": 2.11384487,
+      "in_central_80": false,
+      "threshold_2_D_med": 0.24687239,
+      "halves": {
+        "M_P_L": 8.88330411,
+        "M_P_H": 6.83247365,
+        "med_L": 11.2129359,
+        "med_H": 8.66651716,
+        "p_range_L": 0.0004997501249375312,
+        "p_range_H": 0.0004997501249375312,
+        "half_code": "HALF_BOTH_EXTREME",
+        "universe": "U_W ∩ half (not cardinality-only)"
+      },
+      "D_P_C2": 1.24332777,
+      "D_P_C3": 0.38343882,
+      "cond_C2": true,
+      "cond_C3": true
+    },
+    "W2": {
+      "W": 2,
+      "n_U": 50000,
+      "n_U_L": 25000,
+      "n_U_H": 25000,
+      "median": 9.72789825,
+      "p_range": 0.0004997501249375312,
+      "D_C1_med": 0.10529608,
+      "senal": 1.79795663,
+      "in_central_80": false,
+      "threshold_2_D_med": 0.21059216,
+      "halves": {
+        "M_P_L": 8.88330411,
+        "M_P_H": 6.83247365,
+        "med_L": 10.83654783,
+        "med_H": 8.47454586,
+        "p_range_L": 0.0004997501249375312,
+        "p_range_H": 0.0004997501249375312,
+        "half_code": "HALF_BOTH_EXTREME",
+        "universe": "U_W ∩ half (not cardinality-only)"
+      },
+      "D_P_C2": 1.24332777,
+      "D_P_C3": 0.38343882,
+      "cond_C2": true,
+      "cond_C3": true
+    },
+    "W6": {
+      "W": 6,
+      "n_U": 33333,
+      "n_U_L": 16667,
+      "n_U_H": 16666,
+      "median": 9.43557131,
+      "p_range": 0.0004997501249375312,
+      "D_C1_med": 0.08152627,
+      "senal": 1.50562969,
+      "in_central_80": false,
+      "threshold_2_D_med": 0.16305254,
+      "halves": {
+        "M_P_L": 8.88330411,
+        "M_P_H": 6.83247365,
+        "med_L": 10.49210988,
+        "med_H": 8.29468491,
+        "p_range_L": 0.0004997501249375312,
+        "p_range_H": 0.0004997501249375312,
+        "half_code": "HALF_BOTH_EXTREME",
+        "universe": "U_W ∩ half (not cardinality-only)"
+      },
+      "D_P_C2": 1.24332777,
+      "D_P_C3": 0.38343882,
+      "cond_C2": true,
+      "cond_C3": true
+    },
+    "W30": {
+      "W": 30,
+      "n_U": 26666,
+      "n_U_L": 13334,
+      "n_U_H": 13332,
+      "median": 8.926397,
+      "p_range": 0.0004997501249375312,
+      "D_C1_med": 0.0704754,
+      "senal": 0.99645538,
+      "in_central_80": false,
+      "threshold_2_D_med": 0.14095079,
+      "halves": {
+        "M_P_L": 8.88330411,
+        "M_P_H": 6.83247365,
+        "med_L": 9.89479836,
+        "med_H": 7.86992599,
+        "p_range_L": 0.0004997501249375312,
+        "p_range_H": 0.0004997501249375312,
+        "half_code": "HALF_BOTH_EXTREME",
+        "universe": "U_W ∩ half (not cardinality-only)"
+      },
+      "D_P_C2": 1.24332777,
+      "D_P_C3": 0.38343882,
+      "cond_C2": true,
+      "cond_C3": true
+    }
+  },
+  "signals": {
+    "1": 2.11384487,
+    "2": 1.79795663,
+    "6": 1.50562969,
+    "30": 0.99645538
+  },
+  "curve_code": "CURVE_MONOTONE",
+  "C2_semiprimes_sample": {
+    "M": 9.17326939,
+    "D_P_C2": 1.24332777,
+    "note": "sample m of all semiprimes ≤ N",
+    "n_semi_all": 23378
+  },
+  "C3_ulam": {
+    "M": 5.25263713,
+    "D_P_C3": 0.38343882,
+    "note": "Ulam 7584<m; P subsampled",
+    "m3": 7584
+  },
+  "conditions_W30": {
+    "p_range_le_0.01": true,
+    "D_PC2_gt_thr": true,
+    "D_PC3_gt_thr": true,
+    "HALF_BOTH_EXTREME": true,
+    "gray_band_0.01_to_0.10": false
+  },
+  "interpretation": "PERSISTE",
+  "verdict": "H01_MATERIAL_BEYOND_WHEEL_30",
+  "hypotheses": {
+    "H-ATH-D006-01": "SOPORTADA_BAJO_CONTROL",
+    "H-ATH-D006-00": "MUERTA"
+  },
+  "md035_audit": {
+    "edges": "only 0 < |i-j| <= k in degrees_induced_ordinal",
+    "gcd": "only constructs U_W for null sampling (and U_W ∩ half)",
+    "halves": "wheel universe restricted per half, not cardinality-only",
+    "sieve_Omega": "labels P and C2 only",
+    "status": "PASS"
+  },
+  "a_priori_prediction": "collapse on W=2; shrink to W=30; likely H-00",
+  "no_claims": [
+    "Not Hardy–Littlewood theorem",
+    "Not Hilbert–Pólya",
+    "Dissolved by wheel ≠ no structure in primes",
+    "Only M2+ordinal vs these wheel nulls"
+  ]
+}

@@ -419,6 +419,15 @@
 | **Razón** | Una campaña, curva informativa, barata; no escalera lenta |
 | **Reversión** | Cambiar a escalera solo con nuevo ID y justificación |
 
+### MD-047
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | Ejecutar y cerrar **DOMAIN-E006** bajo sello #2: \(p_{\mathrm{range}}^{(30)}=1/2001\), HALF_BOTH_EXTREME, C2/C3 OK; **PERSISTE** / `H01_MATERIAL_BEYOND_WHEEL_30`; curva **CURVE_MONOTONE** (2.11>1.80>1.51>1.00). Predicción H-00 (disolución rueda 30) **falsada**. No catedral |
+| **Razón** | Lectura mecánica §5; rueda 30 no disolvió \(M_2\) ordinal |
+| **Reversión** | Nuevo ID para nulos HL u otro \(M\)/grafo |
+
 ---
 
-*Siguiente: issue-candado E006 en GitLab + sha256 protocolo → runner — no catedral.*
+*Siguiente: push resultados E006; si se abre lupa = nulos HL con nuevo ID — no Hilbert–Pólya.*
