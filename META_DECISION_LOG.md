@@ -657,10 +657,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **T-05 R-DIV + spec 1.0:** primer hueco que cambia **representación** (recta → \(\mathbb{R}^d\)). Boundary: no pintura ordinal; geometría **generativa** (Unif/PPP + hard-core métrico secuencial \(\varepsilon\)). Checks de novedad = SÍ. Config ola 1 cerrada. **Generador aún no implementado**. Sin P\*/Intake/Athena |
-| **Razón** | De estructura sobre una línea a estructura en un espacio; reducir espacio de ℳ aunque no haya candidato |
-| **Reversión** | Código solo contra spec; si falla checks al implementar → cerrar sin ola |
+| **Motivo** | **T-05 R-DIV + spec 1.0** (métrica generativa) |
+| **Razón** | Salto de representación |
+| **Reversión** | — |
+
+### MD-073
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Ejecutar y cerrar T-05:** generador ciego; 240 runs; hard-core 0 violaciones; N1–N4 (packing métrico); E1–E2/S1/U1; **REFERENCE_COMPLETE**; P\*=NONE; INTAKE=NOT_ELIGIBLE. Pregunta respondida: qué **obliga** la máquina (no si se parece a primos). Mapa: 4 clases · 3 representaciones (binario / puntos en ℕ / métrica ℝᵈ) · 0 candidatos |
+| **Razón** | Tercera representación genuina; reduce espacio de ℳ sin fabricar visitante |
+| **Reversión** | raw inmutable |
 
 ---
 
-*Siguiente: implementar t05_reference_generator.py ciego; ola 1; no Intake; no E008.*
+*Siguiente: síntesis v3 de cobertura o pausa Phase III; no Intake; no E008.*

@@ -1,0 +1,188 @@
+{
+  "family": "T-05",
+  "spec_version": "1.0",
+  "n_runs": 240,
+  "n_param_cells": 12,
+  "cells_summary": [
+    {
+      "n": 500,
+      "d": 2,
+      "epsilon": 0.03,
+      "n_seeds": 20,
+      "density_mean": 0.5771,
+      "density_std": 0.014275503493747586,
+      "cardinality_mean": 288.55,
+      "min_dist_mean": 0.030075870455235864
+    },
+    {
+      "n": 500,
+      "d": 2,
+      "epsilon": 0.05,
+      "n_seeds": 20,
+      "density_mean": 0.3377,
+      "density_std": 0.007437069315261208,
+      "cardinality_mean": 168.85,
+      "min_dist_mean": 0.050171266246762734
+    },
+    {
+      "n": 500,
+      "d": 2,
+      "epsilon": 0.08,
+      "n_seeds": 20,
+      "density_mean": 0.1722,
+      "density_std": 0.005861740355901131,
+      "cardinality_mean": 86.1,
+      "min_dist_mean": 0.0802839318061799
+    },
+    {
+      "n": 500,
+      "d": 2,
+      "epsilon": 0.12,
+      "n_seeds": 20,
+      "density_mean": 0.0909,
+      "density_std": 0.0038716921365211897,
+      "cardinality_mean": 45.45,
+      "min_dist_mean": 0.12073284922307669
+    },
+    {
+      "n": 1000,
+      "d": 2,
+      "epsilon": 0.03,
+      "n_seeds": 20,
+      "density_mean": 0.4127,
+      "density_std": 0.008099999999999991,
+      "cardinality_mean": 412.7,
+      "min_dist_mean": 0.0300326545327429
+    },
+    {
+      "n": 1000,
+      "d": 2,
+      "epsilon": 0.05,
+      "n_seeds": 20,
+      "density_mean": 0.205,
+      "density_std": 0.005079370039680112,
+      "cardinality_mean": 205,
+      "min_dist_mean": 0.05010862020971582
+    },
+    {
+      "n": 1000,
+      "d": 2,
+      "epsilon": 0.08,
+      "n_seeds": 20,
+      "density_mean": 0.0971,
+      "density_std": 0.003096772513440407,
+      "cardinality_mean": 97.1,
+      "min_dist_mean": 0.0801811084074739
+    },
+    {
+      "n": 1000,
+      "d": 2,
+      "epsilon": 0.12,
+      "n_seeds": 20,
+      "density_mean": 0.0482,
+      "density_std": 0.0024413111231467405,
+      "cardinality_mean": 48.2,
+      "min_dist_mean": 0.12037501137332346
+    },
+    {
+      "n": 2000,
+      "d": 2,
+      "epsilon": 0.03,
+      "n_seeds": 20,
+      "density_mean": 0.260525,
+      "density_std": 0.00462459457682509,
+      "cardinality_mean": 521.05,
+      "min_dist_mean": 0.030024983497982743
+    },
+    {
+      "n": 2000,
+      "d": 2,
+      "epsilon": 0.05,
+      "n_seeds": 20,
+      "density_mean": 0.115925,
+      "density_std": 0.0022151467220028536,
+      "cardinality_mean": 231.85,
+      "min_dist_mean": 0.05006950837358206
+    },
+    {
+      "n": 2000,
+      "d": 2,
+      "epsilon": 0.08,
+      "n_seeds": 20,
+      "density_mean": 0.051425,
+      "density_std": 0.0008257572282456856,
+      "cardinality_mean": 102.85,
+      "min_dist_mean": 0.08015937777087637
+    },
+    {
+      "n": 2000,
+      "d": 2,
+      "epsilon": 0.12,
+      "n_seeds": 20,
+      "density_mean": 0.02515,
+      "density_std": 0.0007599342076785327,
+      "cardinality_mean": 50.3,
+      "min_dist_mean": 0.12036296416825071
+    }
+  ],
+  "properties": [
+    {
+      "id": "N1",
+      "name": "hard_core_min_distance",
+      "statement": "By construction of sequential hard-core acceptance, any two accepted points satisfy Euclidean distance >= epsilon (up to floating-point error).",
+      "class": "NECESSARY",
+      "justification": "Acceptance condition forbids adding a point within epsilon of an accepted one."
+    },
+    {
+      "id": "N2",
+      "name": "diameter_bound_single_point",
+      "statement": "If epsilon > sqrt(d) (diameter of [0,1]^d), at most one point can be accepted.",
+      "class": "NECESSARY",
+      "justification": "Any two points in the unit cube are at distance <= sqrt(d)."
+    },
+    {
+      "id": "N3",
+      "name": "metric_not_ordinal",
+      "statement": "Selection depends only on Euclidean positions and epsilon, not on integer adjacency |i-j|; permuting labels without moving points leaves the geometry rule invariant.",
+      "class": "NECESSARY",
+      "justification": "Rule uses only X_i and ||·||_2; indices are tags."
+    },
+    {
+      "id": "N4",
+      "name": "packing_cardinality_bound",
+      "statement": "Accepted set is an epsilon-packing of [0,1]^d; cardinality is O(epsilon^{-d}) (e.g. area argument with disjoint balls of radius epsilon/2 intersected with a slightly enlarged cube).",
+      "class": "NECESSARY",
+      "justification": "Standard packing bound for hard-core point sets in a bounded domain."
+    },
+    {
+      "id": "E1",
+      "name": "density_decreases_with_epsilon",
+      "statement": "For 3/3 values of n, mean density strictly decreases as epsilon increases.",
+      "class": "EMPIRICAL",
+      "justification": "Wave-1 observation; consistent with packing but finite-n/seed."
+    },
+    {
+      "id": "E2",
+      "name": "hard_core_numerical_check",
+      "statement": "Hard-core violations in raw min_distance < epsilon: 0 (expect 0).",
+      "class": "EMPIRICAL",
+      "justification": "Numerical support of N1."
+    },
+    {
+      "id": "S1",
+      "name": "seed_sensitivity",
+      "statement": "0/12 cells have density_std > 0.02 across seeds.",
+      "class": "SEED_DEPENDENT",
+      "justification": "Random points + random order."
+    },
+    {
+      "id": "U1",
+      "name": "matérn_intensity_limit",
+      "statement": "Exact limiting intensity of this sequential thinning vs classical Matérn hard-core processes.",
+      "class": "UNKNOWN",
+      "justification": "Not derived in wave-1; literature exists but not claimed here."
+    }
+  ],
+  "hard_core_violations": 0,
+  "note": "Intrinsic geometry only. Question: what MUST happen given this machine? Not: does it look like primes? No P* sealed."
+}
