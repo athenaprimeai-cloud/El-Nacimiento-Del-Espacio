@@ -1,0 +1,5 @@
+# Seal-critical: keep LF so SHA-256 of protocol matches issue #1 (762483fd...689c)
+ATHENA_DOMAIN_E005/ATHENA_DOMAIN_E005_PROTOCOL.md text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
