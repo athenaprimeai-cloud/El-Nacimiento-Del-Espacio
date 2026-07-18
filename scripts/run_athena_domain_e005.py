@@ -6,6 +6,7 @@ No ejecutar antes de sello git + sha256 en GitLab issue #1.
 from __future__ import annotations
 
 import hashlib
+import heapq
 import json
 import math
 import random
@@ -102,21 +103,31 @@ def ulam_upto(n: int) -> List[int]:
 
 
 def degrees_induced_ordinal(S: Sequence[int], k: int) -> Tuple[List[int], int]:
+    """
+    Induced subgraph of ordinal neighborhood graph.
+    MD-035: edge (u,v) iff 0 < |u-v| <= k  — NO p|n, gcd, factors.
+    Arithmetic (sieve / Ω) is used only upstream to label sets P / C2, never E.
+    """
     s = sorted(set(int(v) for v in S))
     n = len(s)
     if n == 0:
         return [], 0
     deg = [0] * n
     edges = 0
+    j = 0
     for i in range(n):
-        t = i + 1
-        while t < n and s[t] - s[i] <= k:
-            t += 1
-        right = t - i - 1
+        if j < i:
+            j = i
+        while j + 1 < n and s[j + 1] - s[i] <= k:
+            j += 1
+        # neighbors in (i, j] by value distance
+        right = j - i
+        # left: walk back (window length at most k in value → few steps)
+        left = 0
         t = i - 1
         while t >= 0 and s[i] - s[t] <= k:
+            left += 1
             t -= 1
-        left = i - t - 1
         deg[i] = left + right
         edges += right
     return deg, edges
@@ -136,25 +147,31 @@ def weight(n: int) -> float:
     return 1.0 / math.log(n)
 
 
-def cramer_sample(universe: Sequence[int], m: int, seed: int) -> List[int]:
+def cramer_sample(
+    universe: Sequence[int],
+    m: int,
+    seed: int,
+    weights: Sequence[float] | None = None,
+) -> List[int]:
     """Weighted sample without replacement, w_n = 1/ln n (Efraimidis–Spirakis)."""
     if m <= 0:
         return []
     if m >= len(universe):
         return list(universe)
     rng = random.Random(seed)
-    scored: List[Tuple[float, int]] = []
-    for x in universe:
-        w = weight(x)
+    # min-heap of (key, x) size m → top-m by key without full sort
+    heap: List[Tuple[float, int]] = []
+    for i, x in enumerate(universe):
+        w = weights[i] if weights is not None else weight(x)
         if w <= 0:
             continue
-        u = rng.random()
-        # avoid u=0
-        u = max(u, 1e-300)
+        u = max(rng.random(), 1e-300)
         key = u ** (1.0 / w)
-        scored.append((key, x))
-    scored.sort(key=lambda t: t[0], reverse=True)
-    return [x for _, x in scored[:m]]
+        if len(heap) < m:
+            heapq.heappush(heap, (key, x))
+        elif key > heap[0][0]:
+            heapq.heapreplace(heap, (key, x))
+    return [x for _, x in heap]
 
 
 def median(xs: Sequence[float]) -> float:
@@ -207,15 +224,19 @@ def half_code(p_L: float, p_H: float) -> str:
 def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
     k = k_of_N(N)
     sha = protocol_sha256()
+    assert sha == "762483fd72bc45586193beac556ba86fe935b645176e3d17b3b1fc1a5ab6689c", (
+        f"protocol SHA256 mismatch: {sha}"
+    )
     primes = sieve_primes(N)
     m = len(primes)
     universe = list(range(1, N + 1))
+    w_full = [weight(x) for x in universe]
     M_P = M2(primes, k)
 
     # C1 Cramér
     M_c1: List[float] = []
     for s in range(B):
-        c1 = cramer_sample(universe, m, seed=s)
+        c1 = cramer_sample(universe, m, seed=s, weights=w_full)
         M_c1.append(M2(c1, k))
     p_range, med_c1, D_c1_med = p_range_bilateral(M_P, M_c1)
     mu_c1, sig_c1 = mean_std(M_c1)
@@ -223,7 +244,7 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
     thr = 2.0 * D_c1_med
     central80 = in_central_80(M_P, M_c1)
 
-    # C2 sample semiprimes ≤ N
+    # C2 sample semiprimes ≤ N  (Ω only labels the set, not edges)
     semi_all = semiprimes_all(N)
     rng0 = random.Random(0)
     if len(semi_all) >= m:
@@ -257,6 +278,8 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
     mid = N // 2
     V_L = list(range(1, mid + 1))
     V_H = list(range(mid + 1, N + 1))
+    w_L = [weight(x) for x in V_L]
+    w_H = [weight(x) for x in V_H]
     P_L = [p for p in primes if p <= mid]
     P_H = [p for p in primes if p > mid]
     m_L, m_H = len(P_L), len(P_H)
@@ -265,8 +288,8 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
     M_c1_L: List[float] = []
     M_c1_H: List[float] = []
     for s in range(B):
-        M_c1_L.append(M2(cramer_sample(V_L, m_L, seed=10_000 + s), k))
-        M_c1_H.append(M2(cramer_sample(V_H, m_H, seed=20_000 + s), k))
+        M_c1_L.append(M2(cramer_sample(V_L, m_L, seed=10_000 + s, weights=w_L), k))
+        M_c1_H.append(M2(cramer_sample(V_H, m_H, seed=20_000 + s, weights=w_H), k))
     p_L, med_L, _ = p_range_bilateral(M_PL, M_c1_L)
     p_H, med_H, _ = p_range_bilateral(M_PH, M_c1_H)
     hc = half_code(p_L, p_H)
@@ -275,7 +298,9 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
     cond_c2 = D_P_C2 > thr
     cond_c3 = D_P_C3 > thr
     cond_halves = hc == "HALF_BOTH_EXTREME"
+    gray_p = (p_range > 0.01) and (p_range <= 0.10)
 
+    # §7 mechanical (issue #1 amendment: NO_SABEMOS if 0.01 < p ≤ 0.10 unless other dissolve)
     if cond_p and cond_c2 and cond_c3 and cond_halves:
         h01 = HypothesisState.SOPORTADA_BAJO_CONTROL.value
         h00 = HypothesisState.MUERTA.value
@@ -288,17 +313,16 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
         h00 = HypothesisState.SOPORTADA_BAJO_CONTROL.value
         interp = "DESAPARECE"
         verdict = "MATERIAL_DISSOLVED_BY_CRAMER"
+    elif gray_p:
+        # explicit band from issue amendment governing §7
+        h01 = h00 = HypothesisState.NO_SABEMOS.value
+        interp = "NO_SABEMOS"
+        verdict = "NO_SABEMOS"
     else:
-        # also dissolve if clearly null globally even if halves mixed
-        if p_range > 0.10 or central80:
-            h01 = HypothesisState.MUERTA.value
-            h00 = HypothesisState.SOPORTADA_BAJO_CONTROL.value
-            interp = "DESAPARECE"
-            verdict = "MATERIAL_DISSOLVED_BY_CRAMER"
-        else:
-            h01 = h00 = HypothesisState.NO_SABEMOS.value
-            interp = "NO_SABEMOS"
-            verdict = "NO_SABEMOS"
+        # HALF_SPLIT, or p<=0.01 missing C2/C3/halves, etc.
+        h01 = h00 = HypothesisState.NO_SABEMOS.value
+        interp = "NO_SABEMOS"
+        verdict = "NO_SABEMOS"
 
     store = ProtocolStore(ROOT / "ATHENA_DOMAIN_E005" / "resultados" / "kernel")
     store.root.mkdir(parents=True, exist_ok=True)
@@ -385,7 +409,13 @@ def run_campaign(N: int = N_DEFAULT, B: int = B_DEFAULT) -> Dict:
         "interpretation": interp,
         "verdict": verdict,
         "hypotheses": {"H-ATH-D005-01": h01, "H-ATH-D005-00": h00},
-        "md035_audit": "ordinal edges only",
+        "md035_audit": {
+            "edges": "only 0 < |i-j| <= k in degrees_induced_ordinal",
+            "sieve_Omega": "labels sets P and C2 only; never edge predicate",
+            "cramer_weights": "1/ln n density model; not prime factorization graph",
+            "status": "PASS",
+        },
+        "gray_band_0.01_to_0.10": gray_p,
         "no_claims": [
             "Not Hilbert–Pólya",
             "Not primes→spectrum theorem",

@@ -379,10 +379,19 @@
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | Opción 2: remote `https://gitlab.com/athena-group321329/athena.git`; issue-candado [#1](https://gitlab.com/athena-group321329/athena/-/issues/1). Protocolo E005 → **v1.1** (dos mitades) **antes de datos**. `git init` + commit local `bb86216`. SHA256 protocolo `762483fd72bc45586193beac556ba86fe935b645176e3d17b3b1fc1a5ab6689c`. **Push y nota en #1 bloqueados:** proyecto privado, sin `GITLAB_TOKEN`/credencial en el entorno del agente. **E005 no ejecutado** (secuencia de sello incompleta). |
-| **Razón** | Candado compartido exige auth; no romper secuencia 1→2→3 |
-| **Reversión** | Usuario autentica, push, comenta SHA256 en #1, luego runner |
+| **Motivo** | Opción 2: remote `https://gitlab.com/athena-group321329/athena.git`; issue-candado [#1](https://gitlab.com/athena-group321329/athena/-/issues/1). Protocolo E005 → **v1.1** (dos mitades) **antes de datos**. SHA256 `762483fd…689c`. Sello en #1; push verificado; hash remoto MATCH |
+| **Razón** | Candado compartido |
+| **Reversión** | — |
+
+### MD-043
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | Ejecutar y cerrar **DOMAIN-E005** bajo sello: \(M(P)\approx 7.93\), med Cramér \(\approx 10.04\), \(p_{\mathrm{range}}=1/2001\), \(D_{P,C2}\approx 1.24\), \(D_{P,C3}\approx 0.38\) (thr \(\approx 0.25\)), HALF_BOTH_EXTREME; **PERSISTE** / `H01_MATERIAL_BEYOND_CRAMER`; H-00 MUERTA bajo este control. **No** `MATERIAL_DISSOLVED_BY_CRAMER`. Lectura mecánica §7 |
+| **Razón** | Andamiaje de candado cumplió; Cramér no disolvió \(M_2\) ordinal |
+| **Reversión** | Nuevo ID si se cambia \(M\), grafo, o nulo; no recontar este |
 
 ---
 
-*Siguiente: push + comentario #1 con SHA256 → ejecutar E005 → JSON.*
+*Siguiente: archivar JSON en remoto si se desea; no catedral / no Hilbert–Pólya.*

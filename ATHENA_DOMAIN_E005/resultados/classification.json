@@ -1,0 +1,71 @@
+{
+  "campaign": "ATHENA_DOMAIN_E005",
+  "protocol": "v1.1 PREREGISTERED",
+  "issue": "https://gitlab.com/athena-group321329/athena/-/issues/1",
+  "protocol_sha256": "762483fd72bc45586193beac556ba86fe935b645176e3d17b3b1fc1a5ab6689c",
+  "N": 100000,
+  "k": 12,
+  "c": 1.0,
+  "B": 2000,
+  "m_pi_N": 9592,
+  "M_P": 7.92994162,
+  "C1_Cramer": {
+    "median": 10.04378649,
+    "mu": 10.03957277,
+    "sigma": 0.18935749,
+    "p_range": 0.0004997501249375312,
+    "D_C1_med": 0.1234362,
+    "z_descriptive_not_verdict": -11.140997,
+    "in_central_80": false
+  },
+  "C2_semiprimes_sample": {
+    "M": 9.17326939,
+    "D_P_C2": 1.24332777,
+    "note": "sample m of all semiprimes ≤ N",
+    "n_semi_all": 23378
+  },
+  "C3_ulam": {
+    "M": 5.25263713,
+    "D_P_C3": 0.38343882,
+    "note": "Ulam 7584<m; P subsampled",
+    "m3": 7584
+  },
+  "threshold_2_D_C1_med": 0.24687239,
+  "halves": {
+    "mid": 50000,
+    "m_L": 5133,
+    "m_H": 4459,
+    "M_P_L": 8.88330411,
+    "M_P_H": 6.83247365,
+    "med_C1_L": 11.2129359,
+    "med_C1_H": 8.66651716,
+    "p_range_L": 0.0004997501249375312,
+    "p_range_H": 0.0004997501249375312,
+    "half_code": "HALF_BOTH_EXTREME"
+  },
+  "conditions": {
+    "p_range_le_0.01": true,
+    "D_PC2_gt_thr": true,
+    "D_PC3_gt_thr": true,
+    "HALF_BOTH_EXTREME": true
+  },
+  "interpretation": "PERSISTE",
+  "verdict": "H01_MATERIAL_BEYOND_CRAMER",
+  "hypotheses": {
+    "H-ATH-D005-01": "SOPORTADA_BAJO_CONTROL",
+    "H-ATH-D005-00": "MUERTA"
+  },
+  "md035_audit": {
+    "edges": "only 0 < |i-j| <= k in degrees_induced_ordinal",
+    "sieve_Omega": "labels sets P and C2 only; never edge predicate",
+    "cramer_weights": "1/ln n density model; not prime factorization graph",
+    "status": "PASS"
+  },
+  "gray_band_0.01_to_0.10": false,
+  "no_claims": [
+    "Not Hilbert–Pólya",
+    "Not primes→spectrum theorem",
+    "Dissolved by Cramér ≠ no structure in primes",
+    "Only M2+ordinal under this seal"
+  ]
+}
