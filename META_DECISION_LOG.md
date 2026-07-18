@@ -585,10 +585,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Capa necesaria T-01** (`discovery/T01_NECESSARY_LAYER.md`): N4–N5 paramétricas (\(p_{\mathrm{birth}}=0\): densidad no crece; \(\theta=1\): empaquetamiento gap≥r+1); N7 births síncronos rompen empaquetamiento; E1 no sostenido (extinción 0 en ola 1); **no** elevar a P\*/Intake. T-01 **permanece referencia**; no toda familia es candidato. Siguiente: archivar T-01 o segundo vehículo (T-03), no forzar P\* |
-| **Razón** | Consecuencia no trivial de la dinámica ≠ predicción Athena; no forzar Intake |
-| **Reversión** | Solo si se sella P\* independiente derivada de N4–N7 en escenario nuevo (improbable sin contrabando) |
+| **Motivo** | **Capa necesaria T-01** (N4–N7); sin P\*/Intake; T-01 referencia |
+| **Razón** | Matemática del mecanismo ≠ hipótesis Athena |
+| **Reversión** | — |
+
+### MD-065
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Cierre T-01 + apertura T-03:** `T01_STATUS=REFERENCE_COMPLETE`, `PSTAR=NONE`, `INTAKE=NOT_ELIGIBLE`. Regla Phase III: mecanismo puede dar matemática sin hipótesis Athena. Restricciones TR-01…TR-04 para diversidad de taxonomía (no para ajustar). **T-03** spec 1.0: CA elemental determinista \(r=1\), códigos Wolfram predeclarados, **clase distinta** de T-01; ceguera a T-01 raw y Athena; config `t03_wave1_config.json` cerrada **antes** de código. No pintar T-01 de otro color |
+| **Razón** | Carretera necesita vehículos distintos; segundo ladrillo sin catedral |
+| **Reversión** | Código T-03 solo contra spec 1.0; ola 2 = nuevo wave id |
 
 ---
 
-*Siguiente: T-01 archivado como referencia; opcional T-03 spec; no Intake; no E008.*
+*Siguiente: implementar T-03 generador ciego según spec; no Intake; no E008.*

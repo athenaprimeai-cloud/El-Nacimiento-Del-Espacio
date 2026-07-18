@@ -1,0 +1,15 @@
+{
+  "wave": "T03_REFERENCE_WAVE1",
+  "family": "T-03",
+  "spec_version": "1.0",
+  "spec_doc": "ATHENA_T03_REFERENCE_GENERATOR.md",
+  "note": "Wolfram codes chosen for class diversity (literature CA), NOT by T-01 or Athena outcomes. Closed before any T-03 run.",
+  "r": 1,
+  "p_init": 0.5,
+  "N_list": [1000, 5000, 10000],
+  "W_list": [0, 4, 22, 30, 54, 90, 110, 126, 150, 184],
+  "T_list": [10, 50, 100],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "boundary": "null",
+  "design_blindness": "no T-01 raw/analysis; no SURVIVORS; no E00x"
+}
