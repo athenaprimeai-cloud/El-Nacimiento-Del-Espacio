@@ -428,6 +428,24 @@
 | **Razón** | Lectura mecánica §5; rueda 30 no disolvió \(M_2\) ordinal |
 | **Reversión** | Nuevo ID para nulos HL u otro \(M\)/grafo |
 
+### MD-048
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Lectura de lab post-E006 (no teoría):** (1) E006 **sí** rechazó H-00 “la firma E004 se explica solo por rueda W=30”; (2) E006 **no** demuestra geometría generativa, Hilbert–Pólya, ceros de \(\zeta\), ni que \(M_2\) sea “la” variable; (3) la curva monotónica \(S(W)\) es **objeto experimental propio** (escenarios A: núcleo residual vs B: reescalado — E006 no distingue); (4) **no** abrir catedral ni \(N=10^6\)/grafos nuevos primero — abrir pregunta de **estabilidad de la curva** (réplica mismo protocolo, otro \(N\)); (5) reto de mecanismo: qué mínimo explica E004+E006 sin contrabando MD-035 |
+| **Razón** | Familia prerregistrada > resultado aislado; pendiente de \(S(W)\) no es adorno |
+| **Reversión** | Solo si se argumenta que la curva es ruido de cuatro puntos (después de réplica de estabilidad) |
+
+### MD-049
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Siguiente ladrillo = DOMAIN-E007 (propuesto):** ¿es estable \(S(W)\) bajo el mismo protocolo E006 con otro \(N\) (p.ej. \(N=5\cdot10^4\) y/o \(N=2\cdot10^5\))? No más métricas; no HL todavía; no operador. Predicción a registrar en sello E007: monotonía se reproduce; \(S(30)\) sigue extremo vs rueda-30 o se disuelve al cambiar escala |
+| **Razón** | “¿Es estable la curva?” > “más grande / más sofisticado” |
+| **Reversión** | Saltar a nulos HL solo con nuevo ID y justificación post-estabilidad |
+
 ---
 
-*Siguiente: push resultados E006; si se abre lupa = nulos HL con nuevo ID — no Hilbert–Pólya.*
+*Siguiente: prerregistrar E007 (estabilidad de \(S(W)\)) con sello — no catedral.*
