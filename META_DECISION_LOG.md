@@ -544,6 +544,15 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | **Razón** | Precisión de aduana; evitar acomodación retrospectiva |
 | **Reversión** | — (ley de entrada; solo ampliar con primer ℳ-ID) |
 
+### MD-060
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Cierre de la capa de admisión:** no añadir más a intake hasta candidato real. Estado: *máquina capaz de probar hipótesis; todavía no hay hipótesis digna de ser probada* — carencia legítima, no defecto. Siguiente evento válido: intuición externa → reglas → frontera → cadena causal → P\* → sello → Athena. No experimento/métrica/grafo/interpretación por inercia |
+| **Razón** | Preservar el vacío; no reabrir puertas a retrospectiva |
+| **Reversión** | Solo con el primer ℳ-ID admitido |
+
 ---
 
-*Siguiente: silencio productivo — o visitante con paquete cerrado (reglas/info/explicación/P\*). No fabricar ℳ. No E008.*
+*Siguiente: silencio productivo. La máquina está encendida; no inventar al visitante.*
