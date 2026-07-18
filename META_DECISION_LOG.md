@@ -520,4 +520,12 @@
 
 ---
 
-*Siguiente: silencio productivo — o el primer ℳ con P\* sellable. No E008/catedral.*
+### Cierre de fase (MD-057)
+
+**Athena está en espera de una hipótesis falsable.**  
+Sin predicción nueva, no hay candidatura experimental.  
+Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
+
+---
+
+*Siguiente: el primer \(\mathcal{M}\) mínimo que arriesgue \(P^*\) — o silencio. No dominio por defecto.*
