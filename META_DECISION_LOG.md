@@ -648,10 +648,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Síntesis v2:** ejes representación/interacción/dinámica; P\* ausentes reafirmados; huecos que **sí** cambian el mapa (T-05 embedding, T-06/T-08 memoria-contagio; T-02 con cautela; T-07 riesgo pintura). **No** T-05-por-tocar. Pregunta: *¿qué hueco de representación/relación?* Propiedad sana: diversidad crece sin candidato |
-| **Razón** | Unidad de progreso = cobertura, no conteo de T-0x |
-| **Reversión** | Apertura solo con R-DIV + hueco real documentado |
+| **Motivo** | **Síntesis v2:** cobertura; huecos; no T-05-por-tocar |
+| **Razón** | Mapa como herramienta de decisión |
+| **Reversión** | — |
+
+### MD-072
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **T-05 R-DIV + spec 1.0:** primer hueco que cambia **representación** (recta → \(\mathbb{R}^d\)). Boundary: no pintura ordinal; geometría **generativa** (Unif/PPP + hard-core métrico secuencial \(\varepsilon\)). Checks de novedad = SÍ. Config ola 1 cerrada. **Generador aún no implementado**. Sin P\*/Intake/Athena |
+| **Razón** | De estructura sobre una línea a estructura en un espacio; reducir espacio de ℳ aunque no haya candidato |
+| **Reversión** | Código solo contra spec; si falla checks al implementar → cerrar sin ola |
 
 ---
 
-*Siguiente: elegir un hueco real (p.ej. T-05 o T-06/T-08) o pausa; no Intake; no E008.*
+*Siguiente: implementar t05_reference_generator.py ciego; ola 1; no Intake; no E008.*

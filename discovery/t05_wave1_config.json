@@ -1,0 +1,15 @@
+{
+  "wave": "T05_REFERENCE_WAVE1",
+  "family": "T-05",
+  "spec_version": "1.0",
+  "spec_doc": "ATHENA_T05_REFERENCE_GENERATOR.md",
+  "boundary_doc": "discovery/T05_RDIV_BOUNDARY.md",
+  "note": "Metric generative hard-core in unit cube. NOT ordinal paint. Config closed before generator runs. No Athena/T-01/T-03/T-04 design.",
+  "d": 2,
+  "n_list": [500, 1000, 2000],
+  "epsilon_list": [0.03, 0.05, 0.08, 0.12],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "selection": "sequential_hard_core_metric",
+  "point_process": "iid_uniform_unit_cube",
+  "design_blindness": "no T-01/T-03/T-04 raw; no SURVIVORS; no E00x"
+}

@@ -38,7 +38,7 @@ Respuestas: `sí` / `no` / `?` (hipótesis de inventario, no resultado experimen
 | T-02 | Hard-core / repulsión en la línea | min dist \(d\) entre 1s | posiciones, \(d\) | \(p\mid n\), gcd en \(E\) | conjunto | ? | ? | ? | ? | inventario |
 
 | T-04 | Renovación / gaps geométricos | puntos en \(\mathbb{N}\) | ley de gaps \(q\) | T-01/T-03 raw, Athena, factores | conjunto | — | — | — | — | **REFERENCE_COMPLETE** (`discovery/T04_STATUS.md`) |
-| T-05 | Embedding + umbral | \(T:i\mapsto\mathbb{R}^d\) | \(T(i)\), \(\varepsilon\) | \(T\) vía factores | ocupación/aristas | ? | ? | ? | ? | inventario |
+| T-05 | PPP/Unif en \(\mathbb{R}^d\) + hard-core métrico | puntos en caja | distancia euclídea, \(\varepsilon\) | ordinal como regla; Athena; T-01/03/04 raw | etiquetas aceptadas | ? | ? | ? | ? | **spec 1.0** (R-DIV OK; gen. pendiente) |
 | T-06 | Memoria finita | estado \(s_t\) finito | \(s_t\), ventana | primalidad | ocupación | ? | ? | ? | ? | inventario |
 | T-07 | Exclusión por capacidad local | cupo en ventanas | conteos locales | factorización | conjunto | ? | ? | ? | ? | inventario |
 | T-08 | Proceso de contacto / infección 1D | estados salud/ocup. | vecinos | aritmética | conjunto | ? | ? | ? | ? | inventario |
