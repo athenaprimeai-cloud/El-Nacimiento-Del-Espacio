@@ -639,10 +639,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Cierre T-04** `REFERENCE_COMPLETE`; P\*=NONE; INTAKE=NOT_ELIGIBLE. Necessary = renovación clásica (densidad \(q\)), no P\* Athena. Mapa: T-01 · T-03 · T-04 tres regiones distintas |
-| **Razón** | Cartografía de hueco prioritario; sin forzar hipótesis |
+| **Motivo** | **Cierre T-04** REFERENCE_COMPLETE; mapa T-01·T-03·T-04 |
+| **Razón** | Hueco proceso de puntos |
 | **Reversión** | — |
+
+### MD-071
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Síntesis v2:** ejes representación/interacción/dinámica; P\* ausentes reafirmados; huecos que **sí** cambian el mapa (T-05 embedding, T-06/T-08 memoria-contagio; T-02 con cautela; T-07 riesgo pintura). **No** T-05-por-tocar. Pregunta: *¿qué hueco de representación/relación?* Propiedad sana: diversidad crece sin candidato |
+| **Razón** | Unidad de progreso = cobertura, no conteo de T-0x |
+| **Reversión** | Apertura solo con R-DIV + hueco real documentado |
 
 ---
 
-*Siguiente: actualizar síntesis de cobertura o pausa Phase III; no Intake; no E008.*
+*Siguiente: elegir un hueco real (p.ej. T-05 o T-06/T-08) o pausa; no Intake; no E008.*

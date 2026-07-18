@@ -1,6 +1,6 @@
 # ATHENA — Síntesis de Mechanism Discovery (Phase III)
 
-**Estado:** **SYNTHESIS** · MD-068  
+**Estado:** **SYNTHESIS v2** · MD-068 · MD-071  
 **Fecha:** 2026-07-18  
 **No es:** nuevo generador · Intake · P\* · explicación de S-004…S-006  
 
@@ -17,33 +17,57 @@ Eso es exactamente lo que Phase III debía comprobar.
 ```text
 T-01  REFERENCE_COMPLETE  P*=NONE  INTAKE=NOT_ELIGIBLE
 T-03  REFERENCE_COMPLETE  P*=NONE  INTAKE=NOT_ELIGIBLE
+T-04  REFERENCE_COMPLETE  P*=NONE  INTAKE=NOT_ELIGIBLE
 ```
+
+### Propiedad sana de la carretera
+
+```text
+nueva clase
+   ↓
+nueva matemática
+   ≠
+nueva explicación
+```
+
+> **La diversidad de mecanismos puede crecer  
+> sin que Athena tenga todavía un candidato.**
+
+Eso no es estancamiento: es el **mapa aprendiendo a distinguir terreno**.
 
 ---
 
-## 1. Clases ya exploradas
+## 1. Clases ya exploradas (mapa, no colección)
 
-| ID | Clase dinámica | Naturaleza de la generación | Estado |
-| -- | -------------- | --------------------------- | ------ |
-| **T-01** | Ocupación + exclusión local + birth | **Estocástica** (init + births cada paso) | REFERENCE_COMPLETE |
-| **T-03** | Autómata elemental Wolfram \(r=1\) | **Determinista** (init aleatorio → trayectoria única) | REFERENCE_COMPLETE |
-
-### Diferencia real (no cosmética)
+| ID | Representación | Interacción | Dinámica | Estado |
+| -- | -------------- | ----------- | -------- | ------ |
+| **T-01** | campo binario 1D | vecindad / exclusión por conteo | estocástica (birth continuo) | REFERENCE_COMPLETE |
+| **T-03** | campo binario 1D | tabla local \(f\) / Wolfram | determinista (solo init aleatorio) | REFERENCE_COMPLETE |
+| **T-04** | **proceso de puntos** | **ninguna local** (gaps i.i.d.) | **renovación** (un barrido) | REFERENCE_COMPLETE |
 
 ```text
-T-01:  estado → regla + azar continuo → estado siguiente
-T-03:  estado inicial → regla fija f → trayectoria única
+T-01 → campo binario + interacción local + azar dinámico
+T-03 → campo binario + regla determinista + evolución CA
+T-04 → proceso de puntos + gaps i.i.d. + renovación
 ```
 
-| Eje | T-01 | T-03 |
-| --- | ---- | ---- |
-| Azar en la transición | sí (\(p_{\mathrm{birth}}\)) | no |
-| Forma de la regla | umbral de conteo \(\theta\) | tabla booleana / código \(W\) |
-| Consecuencias típicas | empaquetamiento **solo si** \(p_{\mathrm{birth}}=0\) | cono de luz; aditividad GF(2) en 90/150 |
-| Extinción global trivial | solo N1 (saturación de vecinos) | \(W=0\) en un paso |
+### Ejes estructurales (los tres que importan)
 
-**Prohibido en el futuro:** reabrir T-01/T-03 con “otra pintura”  
-(otro \(\theta\), otra lista \(W\)) y llamarlo **nueva clase**.
+| Eje | T-01 | T-03 | T-04 |
+| --- | ---- | ---- | ---- |
+| **Representación** | campo \(x\in\{0,1\}^N\) | campo \(x\in\{0,1\}^N\) | conjunto \(S\) por renovación |
+| **Interacción** | local (vecindad) | local (tabla) | **ausente** (i.i.d.) |
+| **Dinámica** | síncrona estocástica | síncrona determinista | **no-CA** (gaps) |
+
+### Matemática típica (sin P\*)
+
+| ID | NECESSARY no trivial (en su mundo) |
+| -- | ---------------------------------- |
+| T-01 | packing solo si \(p_b=0,\theta=1\); densidad no crece si \(p_b=0\) |
+| T-03 | cono de luz; aditividad GF(2) en 90/150; W=0 aniquila |
+| T-04 | densidad asintótica \(=q\); \(\mathbb{E}[G]=1/q\); sin campo local |
+
+**Prohibido:** reabrir T-01/T-03/T-04 con “otra pintura” y llamarlo nueva clase.
 
 ---
 
@@ -91,24 +115,50 @@ Eso **no** es fracaso del generador: es información sobre la distancia entre
 
 ---
 
-## 4. Clases de la taxonomía **aún sin explorar**
+## 4. Cobertura v2 — qué hueco **aportaría** (no “T-05 porque toca”)
 
-| ID | Familia (taxonomía) | Región del espacio | ¿Por qué aportaría diversidad? |
-| -- | ------------------- | ------------------ | ------------------------------ |
-| **T-02** | Hard-core / min dist \(d\) | Geometría de exclusión **global** (no birth síncrono) | Distinto de T-01 (sin \(p_b\)) y de T-03 (sin tabla \(f\)) |
-| **T-04** | Renovación / gaps paramétricos | Proceso de **puntos en la recta** por ley de gaps | Genera conjuntos sin dinámica de vecindad binaria |
-| **T-05** | Embedding + umbral | Geometría en \(\mathbb{R}^d\) / distancia | Aristas/ocupación por **métrica embebida**, no CA ni exclusión 1D pura |
-| **T-06** | Memoria finita | Estado interno \(s_t\) | Dinámica **no Markov de orden 0** en la config sola |
-| **T-07** | Capacidad local (cupos) | Conteo en ventanas con capacidad | Distinto de umbral de muerte T-01 |
-| **T-08** | Contacto / infección 1D | Propagación epidémica | Frente de onda / umbral epidemiológico |
+### Ya cubierto
 
-### Regiones ya “cubiertas” (no re-explorar como “nueva clase”)
+| Región | ID |
+| ------ | -- |
+| Campo binario + estocástico local (conteo) | T-01 |
+| Campo binario + CA determinista \(r=1\) | T-03 |
+| Proceso de puntos + gaps i.i.d. | T-04 |
+| Variantes de params de lo anterior | ola 2 del **mismo** ID, no nueva familia |
 
-| Región | Cubierta por |
-| ------ | ------------ |
-| Markov local estocástico en la línea con conteo | T-01 |
-| CA binario determinista radio 1 | T-03 |
-| Variantes de lista \(W\) o de \((r,\theta,p_b)\) | **ola 2 del mismo ID**, no nueva familia |
+### Segundo eje de decisión (post T-04)
+
+> **¿Qué hueco aportaría una nueva representación  
+> o una nueva relación estructural  
+> que no esté cubierta por T-01, T-03 ni T-04?**
+
+No basta con “el siguiente nombre de la lista”.
+
+### Huecos que **sí** cambiarían el mapa
+
+| ID | Familia | ¿Nueva representación? | ¿Nueva relación estructural? | Notas de diversidad |
+| -- | ------- | ---------------------- | ---------------------------- | ------------------- |
+| **T-05** | Embedding + umbral | **sí** (\(\mathbb{R}^d\) / distancia) | cercanía métrica, no gap i.i.d. ni CA | Sale de la recta “plana” |
+| **T-02** | Hard-core min dist \(d\) | no (sigue siendo conjunto en \(\mathbb{N}\)) | **sí**: exclusión **global** sin birth ni campo evolutivo | Cercano a packing de T-01 N5 pero **sin** dinámica de birth; vigilar R-DIV vs T-04 |
+| **T-06** | Memoria finita | estado \(s_t\) extra | **sí**: no Markov-0 en la config sola | Representación ampliada |
+| **T-08** | Contacto / infección | campo o marcas | **sí**: frente / umbral epidémico | Dinámica de contagio ≠ exclusión T-01 |
+| **T-07** | Capacidad local | campo + cupos | parcial (variante de conteo) | Riesgo de “T-01 con cupo” — exige tabla anti-pintura fuerte |
+
+### Huecos **débiles** (no abrir sin justificación fuerte)
+
+| Tentación | Por qué no |
+| --------- | ---------- |
+| Otra geométrica / otra \(q\) | T-04 ola 2 |
+| Otros \(W\) Wolfram | T-03 ola 2 |
+| T-01 con \(p_b=0\) fijo | caso de T-01 N4–N5, no nueva clase |
+| “T-04 con gaps markovianos” | ola 2 de T-04 o T-04b con R-DIV explícito |
+
+### Ranking de cobertura (orientativo, **sin apertura automática**)
+
+1. **T-05** — nueva representación (embedding)  
+2. **T-06** o **T-08** — nueva relación (memoria / contagio)  
+3. **T-02** — solo si se argumenta distancia real a T-04 (conjunto) y a T-01 (packing)  
+4. **T-07** — último (riesgo de pintura)
 
 ---
 
@@ -167,38 +217,34 @@ Las restricciones de cartografía de T-01/T-03 sirven para:
 ## 6. Mapa de cobertura (visual)
 
 ```text
-                    determinista
-                         │
-            T-03 ●       │
-           (CA 1D)       │
-                         │
-   ──────────────────────┼──────────────────────  config binaria 1D
-                         │
-            T-01 ●       │
-         (excl+birth)    │
-                         │
-                    estocástico
+REPRESENTACIÓN
+  campo binario 1D          proceso de puntos           embedding / memoria
+  ─────────────────         ────────────────          ──────────────────
+  T-01 ● estocástico        T-04 ● renovación i.i.d.  [ ] T-05
+  T-03 ● determinista CA    [ ] T-02 hard-core?       [ ] T-06 / T-08
+                            (conjunto, sin campo)
 
-        [ hueco: hard-core global T-02 ]
-        [ hueco: proceso de gaps T-04 ]
-        [ hueco: embedding T-05 ]
-        [ hueco: memoria / infección T-06/T-08 ]
+INTERACCIÓN
+  local conteo/tabla        ninguna (i.i.d.)          métrica / contagio / cupo
+  T-01 · T-03               T-04                      T-05 · T-08 · T-07?
 ```
 
-La siguiente familia debe **ocupar un hueco**, no densificar el cuadrante ya marcado.
+La siguiente familia debe **ocupar un hueco de representación o de relación estructural**,  
+no densificar un cuadrante ya marcado.
 
 ---
 
-## 7. Decisión de síntesis (congelada aquí)
+## 7. Decisión de síntesis v2
 
 | Acción | ¿Ahora? |
 | ------ | ------- |
-| Otro generador arbitrario | **no** |
-| Documento de síntesis | **este** |
-| Elegir **una** clase nueva (T-02/T-04/T-05/…) | **después** de este doc, en MD dedicado |
+| T-05 “porque toca” | **no** |
+| Otro generador por acumulación | **no** |
+| Actualizar mapa de cobertura | **este doc (v2)** |
+| Elegir **una** clase en un hueco real | acto **posterior** consciente (MD dedicado) |
 | Intake / E008 | **no** |
 
-### Pregunta operativa de aquí en adelante
+### Pregunta operativa
 
 **No:**
 
@@ -206,20 +252,18 @@ La siguiente familia debe **ocupar un hueco**, no densificar el cuadrante ya mar
 
 **Sí:**
 
-> **¿Qué región del espacio de mecanismos todavía no hemos cartografiado?**
+> **¿Qué hueco de representación o de relación estructural  
+> aún no está en el mapa T-01 · T-03 · T-04?**
 
----
+### Resultado acumulado
 
-## 8. Candidatos a “única clase nueva” (solo ranking de cobertura, no apertura)
+```text
+3 clases · 2 representaciones · 3 dinámicas
+0 candidatos · 0 P*
+```
 
-| Prioridad de cobertura | ID | Motivo breve |
-| ---------------------- | -- | ------------ |
-| 1 | **T-04** | Sale del mundo “bits + vecindad”: genera el **conjunto** por ley de gaps |
-| 2 | **T-02** | Geometría de exclusión **sin** birth síncrono (eje distinto a T-01) |
-| 3 | **T-05** | Sale de la línea embebida en 1D puro |
-| 4 | T-06 / T-08 | Memoria / frentes — más complejos; después |
-
-**Ninguno se abre en este MD.** La elección es el **siguiente** acto consciente, no acumulación.
+La diversidad creció. Athena **sigue sin candidato**.  
+Eso es progreso del **mapa**, no estancamiento del laboratorio.
 
 ---
 
@@ -227,11 +271,13 @@ La siguiente familia debe **ocupar un hueco**, no densificar el cuadrante ya mar
 
 | Fecha | Evento |
 | ----- | ------ |
-| 2026-07-18 | Síntesis post T-01 + T-03; cobertura y R-DIV-1…6 |
+| 2026-07-18 | Síntesis v1 post T-01 + T-03 |
+| 2026-07-18 | Síntesis v2 post T-04; segundo eje de huecos; anti T-05-por-tocar |
 
 ---
 
 # FIN — MECHANISM DISCOVERY SYNTHESIS
 
-*Dos puntos firmes en la carretera.  
-El siguiente ladrillo aumenta cobertura, no el estacionamiento.*
+*Tres puntos firmes.  
+El mapa distingue terreno.  
+El siguiente ladrillo debe cambiar el mapa, no el conteo de vehículos.*

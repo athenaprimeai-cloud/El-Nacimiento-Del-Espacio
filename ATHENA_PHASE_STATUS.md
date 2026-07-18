@@ -10,20 +10,20 @@
 
 ```text
 NO E008 por inercia.
-PHASE III: T-01 y T-03 REFERENCE_COMPLETE; P*=NONE.
-SYNTHESIS de cobertura (no tercer generador por acumulación).
-INTAKE: vacío (ningún ℳ admitido).
+PHASE III: T-01 · T-03 · T-04 REFERENCE_COMPLETE; P*=NONE.
+SYNTHESIS v2: cobertura (representación × dinámica), no T-05-por-tocar.
+INTAKE: vacío.
 ```
 
 | Capa | Estado |
 | ---- | ------ |
 | Protocolos E001–E007 | ✓ congelados |
 | SURVIVORS / contrato | ✓ |
-| Intake / aduana | ✓ vacía de candidatos |
-| Mechanism Discovery | ✓ T-01 · T-03 cerrados |
-| **Discovery synthesis** | **✓** `ATHENA_MECHANISM_DISCOVERY_SYNTHESIS.md` |
-| Candidato ℳ en registro | ✗ |
-| \(P^*\) sellada | ✗ |
+| Intake / aduana | ✓ vacía |
+| Discovery | ✓ T-01 · T-03 · T-04 |
+| Synthesis | ✓ v2 (MD-071) |
+| Candidato ℳ | ✗ |
+| \(P^*\) | ✗ |
 
 ---
 
