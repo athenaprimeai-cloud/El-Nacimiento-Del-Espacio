@@ -1,0 +1,3 @@
+{"ts": "2026-07-18T00:16:37.800637+00:00", "event": "CREATE_QUESTION", "id": "Q-fcc3bb16", "text": "¿M_2 del Laplaciano inducido (grafo ordinal) discrimina primos vs controles?"}
+{"ts": "2026-07-18T00:16:37.804634+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-7f2e30b5", "question_id": "Q-fcc3bb16"}
+{"ts": "2026-07-18T00:16:37.805636+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-7f2e30b5", "control_id": "C-9e496bf2", "state": "SOPORTADA_BAJO_CONTROL"}

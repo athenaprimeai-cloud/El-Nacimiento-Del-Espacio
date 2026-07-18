@@ -1,0 +1,47 @@
+{
+  "campaign": "ATHENA_DOMAIN_E002",
+  "protocol": "v1.0 CONGELADO",
+  "P": "normalized spectral entropy of residual (excl. DC)",
+  "family_R": [
+    "T0_mean",
+    "T1_half_low",
+    "T2_half_high",
+    "T3_linear",
+    "T4_log_mean"
+  ],
+  "P_by_T": {
+    "T0_mean": 0.376269,
+    "T1_half_low": 0.376609,
+    "T2_half_high": 0.274963,
+    "T3_linear": 0.299833,
+    "T4_log_mean": 0.40701
+  },
+  "Delta_0": 0.101306,
+  "p_N1_permutation": 1.0,
+  "p_N2_block_bootstrap": 1.0,
+  "interpretation": "DESAPARECE",
+  "verdict": "H00_NO_DIFFERENTIAL_CONSERVATION",
+  "hypotheses": {
+    "H-ATH-D002-01": "MUERTA",
+    "H-ATH-D002-00": "SOPORTADA_BAJO_CONTROL"
+  },
+  "ficha": {
+    "Propiedad_P": "entropía espectral normalizada",
+    "Familia_T": "T0 mean, T1 half-low, T2 half-high, T3 linear, T4 log-mean",
+    "Rango": "N even in [4,10000]",
+    "Nulos": "N1 permutation, N2 block bootstrap B=50",
+    "Estabilidad_Delta0": 0.101306,
+    "p_vs_nulos": {
+      "p_N1": 1.0,
+      "p_N2": 1.0
+    },
+    "Interpretacion": "DESAPARECE"
+  },
+  "no_claims": [
+    "Not Riemann geometry",
+    "Not an operator",
+    "Not structure → primes",
+    "Only this P under this R vs these nulls"
+  ],
+  "mountain_step": "conservation under change of light — one brick"
+}

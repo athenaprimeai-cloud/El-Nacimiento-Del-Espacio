@@ -1,0 +1,3 @@
+{"ts": "2026-07-17T21:52:40.829870+00:00", "event": "CREATE_QUESTION", "id": "Q-280e39de", "text": "¿La firma espectral ~1/6 del residuo Goldbach es extrema vs nulos?"}
+{"ts": "2026-07-17T21:52:40.833903+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-36b18f39", "question_id": "Q-280e39de"}
+{"ts": "2026-07-17T21:52:40.847716+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-36b18f39", "control_id": "C-4d8bc312", "state": "MUERTA"}

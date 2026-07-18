@@ -1,0 +1,93 @@
+{
+  "campaign": "ATHENA_DOMAIN_E003",
+  "protocol": "v1.0 CONGELADO",
+  "phase": "FASE_1_rectangular",
+  "instrument": {
+    "name": "D_q fractional spectral discrepancy",
+    "q": 0.5,
+    "DC": "excluded",
+    "not_claimed": "classical metric"
+  },
+  "windows": {
+    "type": "rectangular",
+    "L": 2499,
+    "n": 4999,
+    "intervals": [
+      {
+        "id": "W1",
+        "a": 0,
+        "b": 2499
+      },
+      {
+        "id": "W2",
+        "a": 625,
+        "b": 3124
+      },
+      {
+        "id": "W3",
+        "a": 1250,
+        "b": 3749
+      },
+      {
+        "id": "W4",
+        "a": 1875,
+        "b": 4374
+      },
+      {
+        "id": "W5",
+        "a": 2500,
+        "b": 4999
+      }
+    ],
+    "morphology": "same scale, five positions (one instrument)"
+  },
+  "Delta_by_window_real": {
+    "W1": 19.40175078,
+    "W2": 4.54133535,
+    "W3": 0.27923644,
+    "W4": 3.39073865,
+    "W5": 7.37959999
+  },
+  "Delta_real": 4.54133535,
+  "median_Delta_null_N1": 0.31579777,
+  "median_Delta_null_N2": 1.87923652,
+  "p_N1_permutation": 1.0,
+  "p_N2_block_bootstrap": 0.99,
+  "real_lt_median_null": {
+    "N1": false,
+    "N2": false
+  },
+  "phase2_edge_audit": "NO_EJECUTADA",
+  "interpretation": "DESAPARECE",
+  "verdict": "H00_NO_DIFFERENTIAL_IDENTITY_RESISTANCE",
+  "hypotheses": {
+    "H-ATH-D003-01": "MUERTA",
+    "H-ATH-D003-00": "SOPORTADA_BAJO_CONTROL"
+  },
+  "ficha": {
+    "Objeto": "G(N) Goldbach, N even in [4,10000]",
+    "R": "residual media",
+    "G_adm": "W1–W5 rectangular L=n/2 five positions",
+    "instrumento": "D_1/2 discrepancia espectral fraccionaria (excl. DC)",
+    "Delta_real": 4.54133535,
+    "median_Delta_nulo": {
+      "N1": 0.31579777,
+      "N2": 1.87923652
+    },
+    "p_vs_nulos": {
+      "p_N1": 1.0,
+      "p_N2": 0.99
+    },
+    "FASE_2_borde": "NO_EJECUTADA",
+    "Interpretacion": "DESAPARECE"
+  },
+  "no_claims": [
+    "Not Riemann geometry",
+    "Not an operator",
+    "Not structure → primes",
+    "D_q is not claimed as a classical metric",
+    "Only this rectangular window family and this D_q vs these nulls",
+    "Hann/Hamming only if phase-2 edge audit is opened"
+  ],
+  "mountain_step": "identity resistance when moving the lamp — one brick"
+}

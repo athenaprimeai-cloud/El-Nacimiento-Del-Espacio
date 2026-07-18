@@ -1,0 +1,24 @@
+{
+  "campaign": "ATHENA_DOMAIN_E001",
+  "protocol": "v1.0 CONGELADO",
+  "n_max": 10000,
+  "n_samples": 4999,
+  "k_star": 833,
+  "f_star": 0.16663332666533306,
+  "T0": 0.8073826192024203,
+  "p_N1_permutation": 0.59,
+  "p_N2_gaussian": 0.59,
+  "n3_top5_both_halves": false,
+  "verdict": "H00_COMPATIBLE_WITH_NULL_OR_UNSTABLE",
+  "hypotheses": {
+    "H-ATH-D001-01": "MUERTA",
+    "H-ATH-D001-00": "SOPORTADA_BAJO_CONTROL"
+  },
+  "kernel_hypothesis_id": "H-36b18f39",
+  "no_claims": [
+    "Not a proof of prime distribution",
+    "Not fundamental structure → primes",
+    "Only: 1/6 signature extremity vs declared nulls on this window"
+  ],
+  "mountain": "primes / deep structure — one step, not the summit"
+}

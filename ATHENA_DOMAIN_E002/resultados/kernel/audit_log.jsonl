@@ -1,0 +1,3 @@
+{"ts": "2026-07-17T22:12:49.082160+00:00", "event": "CREATE_QUESTION", "id": "Q-1ff736ef", "text": "¿Entropía espectral del residual Goldbach se conserva bajo R y es diferencial vs nulos?"}
+{"ts": "2026-07-17T22:12:49.089919+00:00", "event": "CREATE_HYPOTHESIS", "id": "H-21980a3b", "question_id": "Q-1ff736ef"}
+{"ts": "2026-07-17T22:12:49.093705+00:00", "event": "RECORD_RESULT", "hypothesis_id": "H-21980a3b", "control_id": "C-9f508006", "state": "MUERTA"}
