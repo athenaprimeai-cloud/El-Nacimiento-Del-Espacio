@@ -1,7 +1,7 @@
-# ATHENA — Estado de fase (post MD-055)
+# ATHENA — Estado de fase (post MD-055 / MD-056)
 
 **Fecha:** 2026-07-18  
-**Estado:** **espera activa de \(\mathcal{M}\)** · no E008 por defecto · no catedral  
+**Estado:** **silencio productivo** · **espera de hipótesis, no de datos** · no E008 por defecto · no catedral  
 
 ---
 
@@ -117,6 +117,65 @@ Hasta que aparezca:
 
 ---
 
+## Condición de entrada (binaria)
+
+```text
+ℳ sin P*  →  no candidato experimental
+ℳ con P*  →  candidato elegible
+```
+
+Un mecanismo puede ser bello, compacto y reconstruir E004–E007  
+y **aun así** no merecer una corrida nueva.
+
+El pasado puede acomodarse.  
+El futuro no.
+
+---
+
+## Forma mínima de la próxima pieza legítima
+
+```text
+ℳ =
+    definición finita
+    + información admisible
+    + transformaciones especificadas
+    + parámetros limitados
+    + mecanismo explicativo
+    + P* nueva
+```
+
+Luego:
+
+```text
+P* → protocolo → hash → sello → ejecución
+```
+
+| Si P\* | Entonces |
+| ------ | -------- |
+| falla | \(\mathcal{M}\) cae (o se debilita según umbrales preescritos) |
+| acierta | \(\mathcal{M}\) gana peso |
+
+**No** prueba una teoría del universo.  
+**No** convierte \(M_2\) en operador.  
+**No** resuelve lo que Athena aún no ha tocado.
+
+Sí consigue, si acierta, algo modesto y sólido:
+
+> una explicación que sobrevivió al pasado  
+> y arriesgó correctamente una afirmación  
+> sobre datos que todavía no había visto.
+
+---
+
+## Frase operativa
+
+> **Athena está en espera de hipótesis, no en espera de datos.**
+
+Eso evita la inercia experimental: no E008, no otra representación, no otro grafo,  
+solo porque el laboratorio está disponible.
+
+---
+
 ## Postura operativa
 
 ```text
@@ -124,8 +183,9 @@ Máquina construida.
 Contrato escrito.
 Espacio de candidatos definido.
 
-Esperar al primer mecanismo
-que tenga el valor de equivocarse.
+Silencio productivo.
+Puerta abierta solo al primer ℳ
+con la valentía matemática de poder estar equivocado.
 ```
 
 Cualquier propuesta de \(\mathcal{M}\) se archiva en  
@@ -136,5 +196,6 @@ solo con: ficha 1–5 + hash de \(P^*\) prerregistrada.
 
 # FIN — ATHENA_PHASE_STATUS
 
-*No buscar explicaciones bonitas.  
-Esperar a quien se arriesgue a fallar en público.*
+*No actividad por demostrar avance.  
+Espera de hipótesis.  
+El derecho a corrida se gana con P\*.*

@@ -509,6 +509,15 @@
 | **Razón** | Evitar museo retrospectivo y experimentación por inercia |
 | **Reversión** | Apertura de E008 solo justificada por P\* o discriminación de ℳ |
 
+### MD-057
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Silencio productivo formalizado:** frase operativa *Athena está en espera de hipótesis, no en espera de datos*. Entrada binaria: ℳ sin P\* → no candidato; ℳ con P\* → elegible. Forma mínima de pieza legítima (definición + info + T + params + explicación + P\*) → protocolo → hash → sello → prueba. Falla → cae; acierta → gana peso (no teoría del universo). No dominio por defecto |
+| **Razón** | Cerrar la fase de acumulación experimental sin inercia de actividad |
+| **Reversión** | Solo con ℳ+P\* sellados o decisión de Era explícita |
+
 ---
 
-*Siguiente: \(\mathcal{M}\) mínimo + \(P^*\) sellable — o silencio productivo. No E008/catedral.*
+*Siguiente: silencio productivo — o el primer ℳ con P\* sellable. No E008/catedral.*
