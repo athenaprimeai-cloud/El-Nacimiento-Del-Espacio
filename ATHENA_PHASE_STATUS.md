@@ -1,8 +1,8 @@
 # ATHENA — Estado de fase (post MD-055 / MD-056)
 
 **Fecha:** 2026-07-18  
-**Cierre operativo:** **MD-057** · admisión cerrada en forma: **MD-059**  
-**Estado:** **silencio productivo** · **máquina capaz de probar hipótesis; aún sin hipótesis digna de prueba** · no E008 · no catedral  
+**Cierre operativo:** **MD-057** · admisión: **MD-059** · espera: **MD-060**  
+**Estado:** **NO CANDIDATE · NO TEST · NO E008** · silencio productivo  
 
 ---
 
