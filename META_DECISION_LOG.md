@@ -491,6 +491,15 @@
 | **Razón** | Evitar ontologizar S-xxx; mantener banco de pruebas vivo |
 | **Reversión** | Solo si se abandona la fase de acumulación (decisión de Era explícita) |
 
+### MD-055
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Tres capas + espacio de mecanismos:** PROTOCOLOS → OBSERVABLES → RESTRICCIONES → ℳ. Estado: *máquina de restricción empírica sin mecanismo explicativo*. Abrir `ATHENA_MECHANISM_SPACE.md`: clase de ℳ admisibles (información, transformaciones, parámetros, qué es “explicar”, **predicción nueva P\* prerregistrada**). Umbral de fase: ℳ pequeño que sobreviva al contrato **y** genere consecuencia aún no en SURVIVORS. E008 solo para distinguir ℳ o testar P\* |
+| **Razón** | Evitar descripción retrospectiva sofisticada disfrazada de mecanismo; no catedral |
+| **Reversión** | Solo con decisión de Era que reabra “exploración por defecto” |
+
 ---
 
-*Siguiente: confrontar ℳ con SURVIVORS (NO EXPLICADO / PROHIBICIONES) — no E008 ni catedral por defecto.*
+*Siguiente: proponer ℳ mínimo + P\* sellable — o esperar; no E008/catedral por defecto.*

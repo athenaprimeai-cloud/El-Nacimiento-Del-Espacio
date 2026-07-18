@@ -2,6 +2,7 @@
 
 **Estado:** núcleo organizativo de Era II · **fase de acumulación de evidencia**  
 **Fecha de apertura:** 2026-07-18  
+**Documento hermano:** `ATHENA_MECHANISM_SPACE.md` (clase de ℳ admisibles + predicción nueva)  
 **No es:** hipótesis · teoría · interpretación · operador · “la realidad”  
 
 ---
