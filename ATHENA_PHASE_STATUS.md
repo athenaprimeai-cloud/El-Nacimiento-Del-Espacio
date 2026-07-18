@@ -10,20 +10,20 @@
 
 ```text
 NO E008 por inercia.
-PHASE III: T-01 · T-03 · T-04 REFERENCE_COMPLETE; P*=NONE.
-SYNTHESIS v2: cobertura (representación × dinámica), no T-05-por-tocar.
+PHASE III: T-01·T-03·T-04·T-05 REFERENCE_COMPLETE; P*=NONE.
+SYNTHESIS v3: no más clases al azar; eje ausente = memoria/historia.
 INTAKE: vacío.
+T-06: no abierto.
 ```
 
 | Capa | Estado |
 | ---- | ------ |
-| Protocolos E001–E007 | ✓ congelados |
+| Protocolos E001–E007 | ✓ |
 | SURVIVORS / contrato | ✓ |
-| Intake / aduana | ✓ vacía |
-| Discovery | ✓ T-01 · T-03 · T-04 |
-| Synthesis | ✓ v2 (MD-071) |
-| Candidato ℳ | ✗ |
-| \(P^*\) | ✗ |
+| Intake | ✓ vacía |
+| Discovery | ✓ T-01…T-05 |
+| Synthesis | ✓ **v3** (MD-074) |
+| Candidato ℳ / \(P^*\) | ✗ |
 
 ---
 

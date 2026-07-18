@@ -666,10 +666,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Ejecutar y cerrar T-05:** generador ciego; 240 runs; hard-core 0 violaciones; N1–N4 (packing métrico); E1–E2/S1/U1; **REFERENCE_COMPLETE**; P\*=NONE; INTAKE=NOT_ELIGIBLE. Pregunta respondida: qué **obliga** la máquina (no si se parece a primos). Mapa: 4 clases · 3 representaciones (binario / puntos en ℕ / métrica ℝᵈ) · 0 candidatos |
-| **Razón** | Tercera representación genuina; reduce espacio de ℳ sin fabricar visitante |
+| **Motivo** | **Cierre T-05** REFERENCE_COMPLETE; P\*=NONE; tercera representación métrica |
+| **Razón** | Cartografía; reduce espacio de ℳ |
 | **Reversión** | raw inmutable |
+
+### MD-074
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Síntesis v3** (`ATHENA_MECHANISM_DISCOVERY_SYNTHESIS_v3.md`): T-01…T-05 = cartografía sin hipótesis; restricción negativa (no abrir familia sin relación estructural con posibilidad de P\*); eje ausente = **memoria / historia estructural**; criterios M1–M5 para T-06/T-08; **no** abrir T-06 aún. Frase: *cinco vehículos se mueven; ninguno sabe adónde va* |
+| **Razón** | Resolución del mapa suficiente para dejar de acumular clases; siguiente dimensión o pausa |
+| **Reversión** | T-06 solo con R-DIV + M1–M5 documentados |
 
 ---
 
-*Siguiente: síntesis v3 de cobertura o pausa Phase III; no Intake; no E008.*
+*Siguiente: pausa Phase III o T-06 solo si la memoria es estructural (M1–M5); no Intake; no E008.*
