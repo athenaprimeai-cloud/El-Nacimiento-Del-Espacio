@@ -603,10 +603,19 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Ejecutar T-03 Ola 1:** `t03_reference_generator.py` (CA Wolfram síncrono, ciego a Athena/T-01); 1800 runs; `results/T03_REFERENCE_WAVE1/`; análisis N1–N3 / E1–E2 / S1 / U1; reproducibilidad OK; **sin P\***; **sin** Intake. N1–N3 = determinismo / W=0 / aditividad 90·150; no forzar candidato |
-| **Razón** | Segundo motor de la carretera; cartografía de clase distinta |
-| **Reversión** | raw_runs inmutable; capa necesaria opcional antes de REFERENCE_COMPLETE |
+| **Motivo** | **Ejecutar T-03 Ola 1:** 1800 runs; N1–N3/E1–E2/S1/U1; sin P\* |
+| **Razón** | Segundo vehículo de la carretera |
+| **Reversión** | raw_runs inmutable |
+
+### MD-067
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Capa necesaria T-03 + cierre:** `T03_NECESSARY_LAYER` N4–N9 (quiescencia W par, cono de luz, aditividad, anti-teoremas); **no** P\*/Intake. `T03_STATUS=REFERENCE_COMPLETE`. Regla: matemática válida ≠ hipótesis Athena. Carretera: T-01 y T-03 archivados como clases distintas |
+| **Razón** | Auditar la regla sin forzar apuesta; no alas a cada bicicleta |
+| **Reversión** | Solo con P\* independiente sellable (no prevista) |
 
 ---
 
-*Siguiente: capa necesaria T-03 o REFERENCE_COMPLETE si no hay P\*; no Intake; no E008.*
+*Siguiente: tercer vehículo de taxonomía (clase distinta) o pausa Phase III; no Intake; no E008.*
