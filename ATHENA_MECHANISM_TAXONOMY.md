@@ -33,7 +33,7 @@ Respuestas: `sí` / `no` / `?` (hipótesis de inventario, no resultado experimen
 
 | ID | Familia | Estado | Info OK | Info NO | Salida | Clust. | Mono. \(S\) | Estab. \(N\) | ≠ dens. | Phase |
 | -- | ------- | ------ | ------- | ------- | ------ | ------ | ----------- | ------------ | ------- | ----- |
-| T-01 | Ocupación binaria + exclusión local | \(x_i\in\{0,1\}\) | vecindad \(\|i-j\|\le k\) | primos, factores | conjunto ocupado | ? | ? | ? | ? | inventario |
+| T-01 | Ocupación binaria + exclusión local | \(x_i\in\{0,1\}\) | vecindad \(\|i-j\|\le k\) | primos, factores | conjunto ocupado | ? | ? | ? | ? | **spec ref. 1.0** (`ATHENA_T01_REFERENCE_GENERATOR.md`) |
 | T-02 | Hard-core / repulsión en la línea | min dist \(d\) entre 1s | posiciones, \(d\) | \(p\mid n\), gcd en \(E\) | conjunto | ? | ? | ? | ? | inventario |
 | T-03 | Autómata 1D (regla finita) | config binaria, radio \(r\) | ventana local | aritmética de n | ocupación tras \(T\) pasos | ? | ? | ? | ? | inventario |
 | T-04 | Renovación / gaps paramétricos | puntos en \(\mathbb{N}\) | ley de gaps (params) | “porque primo” | conjunto | ? | ? | ? | ? | inventario |

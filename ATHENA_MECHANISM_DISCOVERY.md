@@ -158,14 +158,22 @@ EXPERIMENT    (solo con admisión)
 
 ---
 
-## Primer trabajo concreto (inmediato)
+## Primer trabajo concreto
 
-> **Construir una taxonomía de mecanismos mínimos permitidos por MD-035,  
-> sin intentar todavía explicar los primos ni los resultados E004–E007.**
+1. ~~Taxonomía mínima MD-035~~ → `ATHENA_MECHANISM_TAXONOMY.md`  
+2. **En curso:** un solo generador ciego de referencia — **T-01**  
+   → spec cerrada: `ATHENA_T01_REFERENCE_GENERATOR.md`  
+   → código **después** de la spec; sin leer SURVIVORS/E00x  
+3. No diez generadores en paralelo  
+
+### Primer trabajo (histórico)
+
+> Construir una taxonomía de mecanismos mínimos permitidos por MD-035,  
+> sin intentar todavía explicar los primos ni los resultados E004–E007.
 
 Entregable:
 
-`ATHENA_MECHANISM_TAXONOMY.md` (o sección § Taxonomía abajo ampliada)
+`ATHENA_MECHANISM_TAXONOMY.md`
 
 Cada entrada:
 

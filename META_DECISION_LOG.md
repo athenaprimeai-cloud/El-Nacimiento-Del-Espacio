@@ -562,6 +562,15 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | **Razón** | Corregir “guardia en la puerta” → construcción de candidatos legítima; evitar inercia experimental y post-hoc |
 | **Reversión** | Cerrar Phase III solo si se vuelve a exploración experimental por defecto (Era decision) |
 
+### MD-062
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **T-01 reference generator — spec 1.0 congelada** (`ATHENA_T01_REFERENCE_GENERATOR.md`): un solo vehículo; ciego a SURVIVORS/E00x; objeto abstracto (conjunto ocupación); regla local exclusión/nacimiento; rejilla ola 1 cerrada; P\* solo tras consecuencia necesaria (no “parecerse a”); **código aún no escrito**. No diez generadores. T-03 segundo vehículo |
+| **Razón** | Primer ladrillo de la carretera sin catedral ni post-hoc |
+| **Reversión** | Cambios de regla = spec 2.0 / T-01b, no edición silenciosa |
+
 ---
 
-*Siguiente: taxonomía / generador ciego (Phase III) — no E008; Intake sigue vacío de candidatos admitidos.*
+*Siguiente: implementar `discovery/t01_reference_generator.py` según spec 1.0 — ciego; luego ola 1. No Intake hasta P\*.*
