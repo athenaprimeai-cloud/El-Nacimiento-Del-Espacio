@@ -455,6 +455,15 @@
 | **Razón** | Transición exploración → replicación; una variable |
 | **Reversión** | Cualquier segundo cambio → nuevo ID, no E007 |
 
+### MD-051
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | Ejecutar y cerrar **DOMAIN-E007:** \(N=5\cdot10^4\), class_W30=PERSISTE, orden \(S\) monótono, **replica_verdict=REPRODUCIDA**; E006 unchanged. Valores \(S\) distintos (no exigidos). No teoría |
+| **Razón** | Estabilidad bajo cambio de escala; cadena de inferencia limpia |
+| **Reversión** | Réplica en otro \(N\) = nuevo ID (p.ej. E007b); no reabrir E007 con más variables |
+
 ---
 
-*Siguiente: sello GitLab E007 (opcional) + ejecutar réplica N=5e4 — no catedral.*
+*Siguiente: mecanismo mínimo E004+E006+E007 sin contrabando, o réplica N distinto con nuevo ID — no catedral.*
