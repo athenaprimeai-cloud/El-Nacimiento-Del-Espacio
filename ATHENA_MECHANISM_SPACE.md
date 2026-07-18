@@ -175,8 +175,9 @@ Ahí comienza realmente la siguiente fase.
 
 | ID | Nombre corto | ¿Pasa banquillo S-004..S-006? | Predicción P* | Estado |
 | -- | ------------ | ---------------------------- | ------------- | ------ |
-| — | — | — | — | (ninguno aún) |
+| — | — | — | — | **ningún candidato** (no inventar para llenar el vacío) |
 
+*Entrada solo vía `ATHENA_MECHANISM_INTAKE.md` (paquete 1–7 + independencia temporal).*  
 *Añadir filas solo con ficha de mecanismo + hash de predicción prerregistrada.*
 
 ---

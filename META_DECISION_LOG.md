@@ -526,6 +526,15 @@
 Sin predicción nueva, no hay candidatura experimental.  
 Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 
+### MD-058
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Aduana de mecanismos:** abrir `ATHENA_MECHANISM_INTAKE.md`. **No inventar candidato** para llenar el vacío. Estado: \(\mathcal{M}\)=NO. Paquete mínimo 1–7 (reglas, info, operación, explicación S-004..006, parámetros, P\*, muerte). **Prueba de independencia temporal** (¿escribible antes de los supervivientes?) → si no: MODELO RETROSPECTIVO, no explicación primaria. Intuiciones E004–E007 no se promueven a ℳ. Puerta construida; no fabricar al visitante |
+| **Razón** | Evitar post-hoc con traje de gala; filtro antes que relleno |
+| **Reversión** | Solo al registrar el primer ℳ-ID con paquete completo y decisión de aduana |
+
 ---
 
-*Siguiente: el primer \(\mathcal{M}\) mínimo que arriesgue \(P^*\) — o silencio. No dominio por defecto.*
+*Siguiente: silencio productivo — o el primer visitante con paquete 1–7. No fabricar ℳ. No E008.*

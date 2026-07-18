@@ -96,7 +96,8 @@ E004–E007  (familia reproducida de observables)
 | Máquina de restricción empírica | Teoría |
 | Contrato escrito | Operador / geometría reclamada |
 | Espacio de candidatos definido | \(\mathcal{M}\) en el registro |
-| E001–E007 congelados | Obligación de E008 |
+| **Intake / aduana** (`ATHENA_MECHANISM_INTAKE.md`) | **Candidato \(\mathcal{M}\)** |
+| E001–E007 congelados | \(P^*\) · obligación de E008 |
 
 **Estado preciso:**
 
