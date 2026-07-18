@@ -500,6 +500,15 @@
 | **Razón** | Evitar descripción retrospectiva sofisticada disfrazada de mecanismo; no catedral |
 | **Reversión** | Solo con decisión de Era que reabra “exploración por defecto” |
 
+### MD-056
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Cierre de umbral / espera activa:** Athena ya no busca modelos — define condiciones de consideración. Pieza decisiva = **P\*** (asimetría explicar-pasado vs arriesgar-futuro). Regla: elegancia no da privilegio, solo derecho a prueba. **No E008** hasta \(\mathcal{M}\) mínimo + \(P^*\) sellable. Documento `ATHENA_PHASE_STATUS.md`. Postura: *esperar al primer mecanismo con valor de equivocarse* |
+| **Razón** | Evitar museo retrospectivo y experimentación por inercia |
+| **Reversión** | Apertura de E008 solo justificada por P\* o discriminación de ℳ |
+
 ---
 
-*Siguiente: proponer ℳ mínimo + P\* sellable — o esperar; no E008/catedral por defecto.*
+*Siguiente: \(\mathcal{M}\) mínimo + \(P^*\) sellable — o silencio productivo. No E008/catedral.*
