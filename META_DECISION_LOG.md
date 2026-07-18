@@ -442,10 +442,19 @@
 | Campo | Contenido |
 | ----- | --------- |
 | **Fecha** | 2026-07-18 |
-| **Motivo** | **Siguiente ladrillo = DOMAIN-E007 (propuesto):** ¿es estable \(S(W)\) bajo el mismo protocolo E006 con otro \(N\) (p.ej. \(N=5\cdot10^4\) y/o \(N=2\cdot10^5\))? No más métricas; no HL todavía; no operador. Predicción a registrar en sello E007: monotonía se reproduce; \(S(30)\) sigue extremo vs rueda-30 o se disuelve al cambiar escala |
+| **Motivo** | **Siguiente ladrillo = DOMAIN-E007:** réplica de \(S(W)\), no descubrimiento |
 | **Razón** | “¿Es estable la curva?” > “más grande / más sofisticado” |
-| **Reversión** | Saltar a nulos HL solo con nuevo ID y justificación post-estabilidad |
+| **Reversión** | — |
+
+### MD-050
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Congelar DOMAIN-E007 v1.0:** réplica pura; único cambio \(N=5\cdot10^4\) (\(k=11\)); \(S(W)\), \(W\), grafo, \(M_2\), controles, pipeline **idénticos** E006; criterios pre-escritos REPRODUCIDA / SENAL_SIN_CURVA / NO_REPRODUCIDA / AMBIGUA; **regla anti-retrospectiva** (E007 no reescribe E006); prohibido nuevos grafos/observables/ruedas |
+| **Razón** | Transición exploración → replicación; una variable |
+| **Reversión** | Cualquier segundo cambio → nuevo ID, no E007 |
 
 ---
 
-*Siguiente: prerregistrar E007 (estabilidad de \(S(W)\)) con sello — no catedral.*
+*Siguiente: sello GitLab E007 (opcional) + ejecutar réplica N=5e4 — no catedral.*
