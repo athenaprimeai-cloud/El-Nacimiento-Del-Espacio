@@ -171,10 +171,15 @@ Sí consigue, si acierta, algo modesto y sólido:
 
 ## Frase operativa
 
-> **Athena está en espera de hipótesis, no en espera de datos.**
+> **Athena está en espera de hipótesis, no en espera de datos.**  
+> **No falta un experimento. Falta una hipótesis que acepte el riesgo de ser falsada.**
 
 Eso evita la inercia experimental: no E008, no otra representación, no otro grafo,  
 solo porque el laboratorio está disponible.
+
+> No buscamos una idea que parezca explicar Athena.  
+> Buscamos una regla que, al ejecutarse, obligue a Athena  
+> a comportarse de un modo que **todavía no conocemos**.
 
 ---
 

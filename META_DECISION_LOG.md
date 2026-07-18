@@ -535,6 +535,15 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | **Razón** | Evitar post-hoc con traje de gala; filtro antes que relleno |
 | **Reversión** | Solo al registrar el primer ℳ-ID con paquete completo y decisión de aduana |
 
+### MD-059
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Refino de intake:** las cuatro piezas las **trae el candidato** (no se descubren en Athena). Estatus distintos: REGLAS=definición implementable; INFORMACIÓN=frontera auditable (flujo + MD-035); EXPLICACIÓN=cadena causal + test de piezas (¿sin esta pieza desaparece la consecuencia?); P\*=apuesta **peligrosa** no espectacular. Arquitectura 4 capas: historial → restricciones → aduana → candidato. No idea que “explique Athena”: regla que **obligue** comportamiento aún no medido |
+| **Razón** | Precisión de aduana; evitar acomodación retrospectiva |
+| **Reversión** | — (ley de entrada; solo ampliar con primer ℳ-ID) |
+
 ---
 
-*Siguiente: silencio productivo — o el primer visitante con paquete 1–7. No fabricar ℳ. No E008.*
+*Siguiente: silencio productivo — o visitante con paquete cerrado (reglas/info/explicación/P\*). No fabricar ℳ. No E008.*
