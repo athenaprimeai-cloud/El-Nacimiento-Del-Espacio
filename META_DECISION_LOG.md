@@ -392,6 +392,33 @@
 | **Razón** | Andamiaje de candado cumplió; Cramér no disolvió \(M_2\) ordinal |
 | **Reversión** | Nuevo ID si se cambia \(M\), grafo, o nulo; no recontar este |
 
+### MD-044
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Predicción a priori falsada (sin maquillaje):** revisor predijo `MATERIAL_DISSOLVED_BY_CRAMER`; datos dieron PERSISTE. Cierre en issue #1 + push artefactos `3cb518c` |
+| **Razón** | El candado debe matar predicciones propias con la misma frialdad |
+| **Reversión** | — |
+
+### MD-045
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Addendum revisor post-E005:** Cramér es hombre de paja conocido (impares/gaps pares; HL/Maier). `MATERIAL_BEYOND_CRAMER` ≠ material nuevo; compatible con “detectó que los primos son impares”. MD-035 intacto (detectar ≠ presuponer en \(E\)). Escalera de nulos → peldaño 3 = Cramér-rueda |
+| **Razón** | Evitar catedral prematura sobre ladrillo protocolar |
+| **Reversión** | Solo si rueda 30 no disuelve (E006) con sello |
+
+### MD-046
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **Diseño E006 = opción directa con curva:** veredicto principal W=30; satélites W=1,2,6; pesos \(1/\ln n\) en \(U_W=\{\gcd(n,W)=1\}\); §7 heredado; predicción a priori colapso monótono de señal; código H-00 `MATERIAL_DISSOLVED_BY_WHEEL_30` |
+| **Razón** | Una campaña, curva informativa, barata; no escalera lenta |
+| **Reversión** | Cambiar a escalera solo con nuevo ID y justificación |
+
 ---
 
-*Siguiente: archivar JSON en remoto si se desea; no catedral / no Hilbert–Pólya.*
+*Siguiente: issue-candado E006 en GitLab + sha256 protocolo → runner — no catedral.*
