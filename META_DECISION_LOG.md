@@ -553,6 +553,15 @@ Sin \(\mathcal{M}+P^*\): **silencio productivo** — no E008 por inercia.
 | **Razón** | Preservar el vacío; no reabrir puertas a retrospectiva |
 | **Reversión** | Solo con el primer ℳ-ID admitido |
 
+### MD-061
+
+| Campo | Contenido |
+| ----- | --------- |
+| **Fecha** | 2026-07-18 |
+| **Motivo** | **PHASE III — MECHANISM DISCOVERY:** no E008; abrir `ATHENA_MECHANISM_DISCOVERY.md`. Trabajo = generar/filtrar ℳ **ciegos** a veredictos E004–E007; filtrar MD-035; reducir a mínimos; extraer P\*; luego Intake. Inventario + generadores + taxonomía T-01…. **No** inventar ℳ para explicar resultados. Carretera hacia la aduana; aduana sigue vacía hasta admisión. Primer entregable: taxonomía mínima MD-035 sin “explicar primos” |
+| **Razón** | Corregir “guardia en la puerta” → construcción de candidatos legítima; evitar inercia experimental y post-hoc |
+| **Reversión** | Cerrar Phase III solo si se vuelve a exploración experimental por defecto (Era decision) |
+
 ---
 
-*Siguiente: silencio productivo. La máquina está encendida; no inventar al visitante.*
+*Siguiente: taxonomía / generador ciego (Phase III) — no E008; Intake sigue vacío de candidatos admitidos.*

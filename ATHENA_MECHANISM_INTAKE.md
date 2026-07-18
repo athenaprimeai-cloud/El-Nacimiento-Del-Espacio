@@ -2,8 +2,11 @@
 
 **Estado:** **ley de entrada** · vigente con MD-058 · refinada MD-059  
 **Fecha:** 2026-07-18  
-**Hermanos:** `ATHENA_MECHANISM_SPACE.md` · `ATHENA_SURVIVORS.md` · `ATHENA_PHASE_STATUS.md`  
+**Hermanos:** `ATHENA_MECHANISM_SPACE.md` · `ATHENA_SURVIVORS.md` · `ATHENA_PHASE_STATUS.md` · `ATHENA_MECHANISM_DISCOVERY.md` (Phase III — carretera, no aduana)  
 **No es:** catálogo de ideas · fábrica de candidatos · promoción de E004–E007 a explicación  
+
+**Phase III** genera borradores **ciegos** y los trae aquí.  
+**Intake** no se relaja: sin paquete 1–7 + \(P^*\) no hay candidato experimental.  
 
 ---
 
