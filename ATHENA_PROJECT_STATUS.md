@@ -10,10 +10,11 @@ sustituye los documentos fuente.
 ## Ruta de lectura
 
 ~~~text
-README
+ATHENA_HANDOFF
+  → verificar ba33893
+  → identificar carril
   → ATHENA_PROJECT_STATUS
   → ATHENA_PHASE_STATUS
-  → ATHENA_HANDOFF
   → documento fuente del carril que se va a tocar
 ~~~
 
@@ -21,6 +22,7 @@ README
 
 | Carril | Hecho actual | Bloqueo y autoridad |
 | --- | --- | --- |
+| Continuidad / restauración | ba33893 es el punto de restauración canónico local y tiene una réplica remota verificable en GitHub. | La réplica conserva el estado; no valida ciencia ni autoriza ejecución. Ver ATHENA_HANDOFF.md y ATHENA_SNAPSHOT_MANIFEST.md. |
 | Laboratorio / kernel | Era II activa; diseño del laboratorio congelado. CORE, AUDITOR y validación del kernel están registrados como PASS. | Esto prueba disciplina de proceso, no una teoría. Ver LABORATORY.md y ATHENA_KERNEL_VALIDATION.md. |
 | Discovery | T-01, T-03, T-04 y T-05 son REFERENCE_COMPLETE. P* es NONE e Intake está vacío. | T-06 solo puede abrirse con R-DIV + M1–M5 documentados. Autoridad: ATHENA_MECHANISM_DISCOVERY_SYNTHESIS_v3.md. |
 | Evidencia de dominio | S-004…S-006 son restricciones reproducidas bajo protocolos sellados. | No son teoría, mecanismo ni invariante derivado. Ver ATHENA_SURVIVORS.md. |
@@ -52,6 +54,10 @@ El Gate Memory Axis todavía no está cerrado. Su próxima tarea es demostrar qu
 puede rechazar sus propios falsos positivos mediante G-01…G-06, según
 ATHENA_GATE_SELF_TEST_SPEC.md.
 
+~~~text
+self-test implementado ≠ self-test aprobado ≠ Gate aprobado
+~~~
+
 La expresión M4/M5 tiene dos usos en el repositorio y nunca deben mezclarse:
 
 | Nombre completo | Uso |
@@ -77,8 +83,8 @@ La expresión M4/M5 tiene dos usos en el repositorio y nunca deben mezclarse:
 
 ## Próximo trabajo permitido
 
-1. Preservar y navegar el estado actual.
-2. Preregistrar y resolver las autopruebas G-01…G-06 del Gate.
+1. Preservar y navegar el estado actual desde ATHENA_HANDOFF.md.
+2. Congelar, ejecutar, evaluar y corregir las autopruebas G-01…G-06 del Gate.
 3. Resolver el Gate antes de diseñar, ejecutar o reinterpretar T-06.
 
 Para Discovery, la síntesis v3 prevalece sobre rutas históricas que sugieran

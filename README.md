@@ -24,10 +24,10 @@ La frase importante es:
 
 ## Empieza aquí
 
-1. Lee [ATHENA_PROJECT_STATUS.md](ATHENA_PROJECT_STATUS.md).
-2. Continúa con [ATHENA_PHASE_STATUS.md](ATHENA_PHASE_STATUS.md).
-3. Lee [ATHENA_HANDOFF.md](ATHENA_HANDOFF.md) antes de editar, ejecutar o
-   interpretar un carril.
+1. Lee [ATHENA_HANDOFF.md](ATHENA_HANDOFF.md).
+2. Verifica el commit canónico **ba33893**.
+3. Identifica el carril y aplica su Gate antes de editar, ejecutar o
+   interpretar.
 4. Consulta el documento fuente del tema concreto.
 
 ## Carriles separados
@@ -54,8 +54,8 @@ la autoprueba del Gate: demostrar que puede rechazar circularidad, acumulación
 decorativa, identidad disfrazada y búsqueda retrospectiva, y que puede
 reconocer dos certificados estructurales mínimos.
 
-Para una fotografía completa de qué se incluyó en la instantánea local, consulta
-[ATHENA_SNAPSHOT_MANIFEST.md](ATHENA_SNAPSHOT_MANIFEST.md).
+Para una fotografía completa de qué se incluyó en la instantánea y su custodia
+local/remota, consulta [ATHENA_SNAPSHOT_MANIFEST.md](ATHENA_SNAPSHOT_MANIFEST.md).
 
 ---
 

@@ -34,10 +34,29 @@ estado local de Athena. Preservar no equivale a validar científicamente.
 - La instantánea se verifica con el estado de Git y pruebas locales antes de
   cerrarse.
 
-## Continuidad
+## Anclaje de restauración y continuidad
 
-Después de esta instantánea, el punto de entrada es README.md. La navegación
-continúa en ATHENA_PROJECT_STATUS.md y ATHENA_HANDOFF.md.
+- **Commit canónico:** **ba33893515dc9c3129c44ac1da5214c444a557b4**
+  (ba33893).
+- **Estado local:** punto de restauración canónico de Athena.
+- **Réplica remota verificable:** **main** en
+  https://github.com/athenaprimeai-cloud/El-Nacimiento-Del-Espacio contiene el
+  mismo commit.
+
+La continuidad de trabajo comienza en ATHENA_HANDOFF.md, no en memoria de
+conversaciones:
+
+~~~text
+ATHENA_HANDOFF.md
+  → verificar ba33893
+  → identificar carril
+  → aplicar Gate
+~~~
+
+La réplica remota elimina la dependencia exclusiva de la máquina local para
+restaurar este estado. No altera las fronteras científicas: T-06 permanece
+bloqueado hasta que el Gate supere su propia autoprueba y existan los requisitos
+posteriores de Discovery.
 
 ---
 

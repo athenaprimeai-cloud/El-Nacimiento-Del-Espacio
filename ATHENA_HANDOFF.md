@@ -7,13 +7,34 @@ conversaciones, nombres de carpetas o resultados aislados.
 Cuando haya conflicto, prevalece el documento fuente más reciente dentro de su
 propio carril.
 
-## Orden de lectura
+## Regla canónica de continuidad
 
 ~~~text
-README
+ATHENA_HANDOFF.md
+  → verificar ba33893
+  → identificar carril
+  → leer la autoridad documental correspondiente
+  → aplicar el Gate correspondiente
+  → solo entonces actuar
+~~~
+
+**Punto de restauración canónico:** **ba33893515dc9c3129c44ac1da5214c444a557b4**
+(ba33893).
+
+**Réplica remota verificable:** la rama **main** de
+https://github.com/athenaprimeai-cloud/El-Nacimiento-Del-Espacio contiene ese
+commit en su historia. Athena ya no depende exclusivamente de esta máquina para
+restaurar ese estado. Esta réplica conserva historia y evidencia; no valida
+resultados científicos ni concede autorizaciones de ejecución.
+
+## Orden de lectura de contexto
+
+~~~text
+ATHENA_HANDOFF
+  → verificar ba33893
+  → identificar carril
   → ATHENA_PROJECT_STATUS
   → ATHENA_PHASE_STATUS
-  → ATHENA_HANDOFF
   → documento fuente específico
 ~~~
 
@@ -71,13 +92,20 @@ resultados.
 
 ## Siguiente trabajo permitido
 
-1. Mantener esta instantánea y la navegación canónica.
-2. Congelar la especificación de G-01…G-06.
-3. Resolver la autoprueba del Gate sin usar datos de Athena ni ejecutar un
-   experimento de dominio.
+1. Mantener esta instantánea, su réplica remota y la navegación canónica.
+2. Congelar cada prueba G-01…G-06 contra su expectativa.
+3. Ejecutar, evaluar y registrar cada resultado sin usar datos de Athena ni
+   ejecutar un experimento de dominio.
+4. Corregir el criterio ante una discrepancia y volver a congelarlo antes de
+   reevaluar.
+
+~~~text
+self-test implementado ≠ self-test aprobado ≠ Gate aprobado
+~~~
 
 Un PASS de la autoprueba solo significaría que el Gate es apto para evaluar un
-futuro candidato. No crea P*, no resuelve R1–R3 y no desbloquea T-06.
+futuro candidato. No crea P*, no resuelve R1–R3 y no desbloquea T-06, que
+permanece bloqueado.
 
 ## Fuentes por pregunta
 
